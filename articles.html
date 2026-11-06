@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="scroll-smooth" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#004642" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles et conseils — El-Hafeed</title>
+    <meta
+      name="description"
+      content="Comprendre le Projet d’Accompagnement à Domicile d’El-Hafeed, la coordination des interventions et le soutien proposé aux proches."
+    />
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="./favicon.ico?v=2" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png?v=2" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v=2" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=2" />
+    <link rel="manifest" href="./site.webmanifest?v=2" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/articles.css" />
+    <script defer src="./js/lucide.js"></script>
+  </head>
+  <body
+    class="bg-surface text-on-surface font-body-md text-body-md selection:bg-secondary-container selection:text-on-secondary-container"
+  >
+    <div data-site-header aria-busy="true"></div>
+
+    <main class="articles-page" id="articles-main">
+      <div class="articles-shell">
+        <nav class="articles-breadcrumb" aria-label="Fil d’Ariane">
+          <a href="index.html#accueil">Accueil</a><span aria-hidden="true">/</span><span>Articles</span>
+        </nav>
+
+        <section class="articles-hero" id="articles-hero" aria-labelledby="articles-title">
+          <p class="articles-eyebrow">Articles · Conseils &amp; repères</p>
+          <h1 id="articles-title">Comprendre l’accompagnement à domicile.</h1>
+          <p>Des repères sur l’évaluation, les interventions et la coordination, pour les personnes âgées et leurs proches.</p>
+          <form class="article-search" id="article-search" role="search">
+            <i data-lucide="search" class="site-icon" aria-hidden="true"></i>
+            <input id="article-search-input" type="search" placeholder="Rechercher : autonomie, coordination, mobilité…" aria-label="Rechercher un article" />
+            <button type="submit">Rechercher</button>
+          </form>
+        </section>
+
+        <section id="article-topics" aria-labelledby="article-topics-title">
+          <div class="articles-section-heading">
+            <h2 id="article-topics-title">Quel aspect souhaitez-vous découvrir ?</h2>
+          </div>
+          <div class="article-filters" id="article-filters" aria-label="Filtrer les articles"></div>
+        </section>
+
+        <section id="articles-listing" aria-labelledby="article-list-title">
+          <div class="articles-section-heading">
+            <h2 id="article-list-title">À lire en ce moment</h2>
+            <span class="articles-count" id="article-count" aria-live="polite"></span>
+          </div>
+          <article class="article-featured" id="featured-article"></article>
+          <div class="articles-section-heading">
+            <h2>D’autres questions du quotidien</h2>
+          </div>
+          <div class="article-card-grid" id="article-card-grid"></div>
+          <aside class="articles-help">
+            <div>
+              <h2>Vous souhaitez échanger avec l’équipe ?</h2>
+              <p>Présentez-nous votre situation : nous prendrons le temps d’écouter vos besoins et de vous orienter.</p>
+            </div>
+            <a class="article-button" href="https://wa.me/212714531043?text=Bonjour%20El-Hafeed%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services.">Parlons-en <i data-lucide="arrow-up-right" class="site-icon" aria-hidden="true"></i></a>
+          </aside>
+        </section>
+
+        <article class="article-detail" id="article-detail" aria-live="polite"></article>
+      </div>
+    </main>
+
+    <div data-site-footer aria-busy="true"></div>
+
+    <div class="fixed bottom-6 right-6 z-50 hidden max-w-sm p-4 rounded-2xl bg-inverse-surface text-inverse-on-surface shadow-2xl flex items-center gap-3" id="notice-toast" role="status" aria-live="polite">
+      <i data-lucide="bell-ring" class="text-secondary-fixed text-2xl site-icon" aria-hidden="true"></i>
+      <p class="font-body-sm text-body-sm pr-2" id="notice-toast-text">Information El-Hafeed</p>
+      <button class="ml-auto text-outline hover:text-inverse-on-surface" type="button" data-action="toast-close" aria-label="Fermer"><i data-lucide="x" class="text-lg site-icon" aria-hidden="true"></i></button>
+    </div>
+
+    <a class="whatsapp-float" href="https://wa.me/212714531043?text=Bonjour%20El-Hafeed%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services." target="_blank" rel="noopener noreferrer" aria-label="Contacter El-Hafeed sur WhatsApp" title="Écrire à El-Hafeed sur WhatsApp">
+      <svg aria-hidden="true" viewBox="0 0 32 32" width="36" height="36" fill="currentColor"><path d="M16.04 2.67A13.25 13.25 0 0 0 4.66 22.7L2.9 29.13l6.59-1.73a13.26 13.26 0 1 0 6.55-24.73Zm0 24.1a10.9 10.9 0 0 1-5.56-1.52l-.4-.24-3.91 1.03 1.04-3.81-.26-.41a10.86 10.86 0 1 1 9.09 4.95Zm5.97-8.14c-.33-.16-1.95-.96-2.25-1.07-.3-.11-.52-.16-.74.17-.22.33-.85 1.07-1.04 1.29-.19.22-.39.25-.72.08-.33-.16-1.39-.51-2.65-1.63-.98-.87-1.64-1.95-1.83-2.28-.19-.33-.02-.51.14-.67.15-.15.33-.39.49-.58.16-.19.22-.33.33-.55.11-.22.06-.42-.03-.58-.08-.16-.74-1.78-1.01-2.44-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.58.08-.88.41-.3.33-1.15 1.12-1.15 2.74 0 1.62 1.18 3.18 1.34 3.4.16.22 2.32 3.54 5.62 4.96.78.34 1.39.54 1.87.69.79.25 1.5.21 2.06.13.63-.09 1.95-.8 2.23-1.56.27-.77.27-1.43.19-1.56-.08-.14-.3-.22-.63-.39Z"/></svg>
+    </a>
+    <script type="module" src="./js/articles.js"></script>
+      <script type="module" src="./js/site-shell.js"></script>
+</body>
+</html>

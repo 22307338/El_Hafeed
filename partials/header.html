@@ -1,0 +1,105 @@
+<header
+  class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/85 backdrop-blur-md shadow-[0_1px_8px_rgba(19,51,49,0.06)]"
+>
+  <div class="header-inner h-20 site-shell flex items-center justify-between">
+    <a class="flex items-center gap-3" href="./index.html#accueil">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="./resources/logo-symbol.webp" alt="" data-site-setting="brand-logo" />
+      </span>
+      <div class="flex flex-col">
+        <span
+          class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight"
+          data-site-setting="brand-name">El-Hafeed</span
+        >
+        <span
+          class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider hidden sm:inline-block"
+          data-site-setting="brand-tagline">Accompagnement Gériatrique</span
+        >
+      </div>
+    </a>
+
+    <nav
+      class="primary-nav hidden lg:flex items-center gap-space-md"
+      aria-label="Navigation principale"
+    >
+      <a
+        class="transition-colors duration-200 bg-secondary-container text-on-secondary-container font-semibold rounded-full px-4 py-2"
+        href="./index.html#accueil"
+        data-site-nav="home"
+        >Accueil</a
+      ><a
+        class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200 py-2 px-3 rounded-full hover:bg-surface-container-high"
+        href="./notre-equipe.html"
+        data-site-nav="team"
+        >Notre équipe</a
+      ><a
+        class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200 py-2 px-3 rounded-full hover:bg-surface-container-high"
+        href="./articles.html"
+        data-site-nav="articles"
+        >Articles</a
+      ><a
+        class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200 py-2 px-3 rounded-full hover:bg-surface-container-high"
+        href="./questions_reponses.html"
+        data-site-nav="faq"
+        >Questions &amp; réponses</a
+      >
+    </nav>
+
+    <a
+      class="hidden lg:inline-flex items-center justify-center min-h-[44px] px-5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container hover:text-on-primary-container transition-all"
+      href="#contact"
+      data-site-setting="contact-cta"
+      >Prendre contact</a
+    >
+
+    <div class="flex lg:hidden items-center gap-space-sm">
+      <button
+        aria-label="Ouvrir le menu de navigation"
+        class="p-2 rounded-xl text-primary hover:bg-surface-container"
+        type="button"
+        data-action="mobile-menu-toggle"
+        aria-expanded="false"
+      >
+        <i data-lucide="menu" class="text-2xl site-icon" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div
+    class="hidden lg:hidden bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_12px_32px_-4px_rgba(19,51,49,0.08)] site-shell py-space-md"
+    id="mobile-drawer"
+  >
+    <nav class="flex flex-col gap-space-sm" aria-label="Navigation mobile">
+      <a
+        data-site-nav="home"
+        class="font-label-lg text-label-lg text-primary px-4 py-3 rounded-xl bg-secondary-container"
+        href="./index.html#accueil"
+        data-action="mobile-menu-close"
+        >Accueil</a
+      ><a
+        data-site-nav="team"
+        class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary px-4 py-3 rounded-xl hover:bg-surface-container-high transition-colors"
+        href="./notre-equipe.html#notre-equipe"
+        data-action="mobile-menu-close"
+        >Notre équipe</a
+      ><a
+        data-site-nav="articles"
+        class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary px-4 py-3 rounded-xl hover:bg-surface-container-high transition-colors"
+        href="./articles.html"
+        data-action="mobile-menu-close"
+        >Articles</a
+      ><a
+        data-site-nav="faq"
+        class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary px-4 py-3 rounded-xl hover:bg-surface-container-high transition-colors"
+        href="./questions_reponses.html"
+        data-action="mobile-menu-close"
+        >Questions &amp; réponses</a
+      ><a
+        class="mt-space-sm flex items-center justify-center min-h-[48px] px-6 rounded-full bg-primary text-on-primary font-label-lg text-label-lg text-center"
+        href="#contact"
+        data-site-setting="contact-cta"
+        data-action="mobile-menu-close"
+        >Prendre contact</a
+      >
+    </nav>
+  </div>
+</header>
