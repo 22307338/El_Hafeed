@@ -58,12 +58,12 @@ const articles = [
       "Quelques repères pour observer les pièces de vie et discuter d’aménagements adaptés avec votre proche et les professionnels qui l’accompagnent.",
     minutes: 5,
     date: "8 juin 2026",
-    image: "resources/article_image.webp",
+    image: "resources/home-safety-article.webp",
     imageAlt: "Un aménagement du domicile pensé pour faciliter les déplacements et réduire les risques de chute",
     media: [
       {
         type: "image",
-        src: "resources/article_image.webp",
+        src: "resources/home-safety-article.webp",
         alt: "Un aménagement du domicile pensé pour faciliter les déplacements et réduire les risques de chute",
       },
     ],

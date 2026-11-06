@@ -5,9 +5,6 @@ import {
   portableTextToHtml,
 } from "./sanity.js";
 
-// ---------------------------------------------------------------------------
-// Content from Sanity
-// ---------------------------------------------------------------------------
 const QA_QUERY = `*[_id == "qaPage"][0]{
   eyebrow, title, intro, overviewHint,
   topics[]{ title, questions[]{ question, answer } },
@@ -15,6 +12,12 @@ const QA_QUERY = `*[_id == "qaPage"][0]{
   contactTitle, contactText, contactButtonLabel, contactButtonUrl,
   metaTitle, metaDescription
 }`;
+
+async function loadLocalQaContent() {
+  const response = await fetch("./content/qa.json");
+  if (!response.ok) throw new Error(`Website content ${response.status}`);
+  return response.json();
+}
 
 const qaRoot = document.querySelector("#qa-root");
 
@@ -99,17 +102,17 @@ async function initPage() {
   qaRoot.innerHTML = `<p class="qa-intro" style="padding:2rem 0">Chargement…</p>`;
   try {
     const data = await sanityFetch(QA_QUERY);
-    if (!data) {
-      qaRoot.innerHTML = `<p class="qa-intro" style="padding:2rem 0">Le contenu de cette page arrive bientôt.</p>`;
-      return;
-    }
-    renderPage(data);
+    renderPage(data || (await loadLocalQaContent()));
   } catch (error) {
     console.error(error);
-    qaRoot.innerHTML = `<p class="qa-intro" style="padding:2rem 0">Impossible de charger cette page pour le moment. Veuillez réessayer plus tard.</p>`;
+    try {
+      renderPage(await loadLocalQaContent());
+    } catch (fallbackError) {
+      console.error(fallbackError);
+      qaRoot.innerHTML = `<p class="qa-intro" style="padding:2rem 0">Impossible de charger cette page pour le moment. Veuillez réessayer plus tard.</p>`;
+    }
   }
 }
-
 initPage();
 
 // ---------------------------------------------------------------------------
@@ -164,10 +167,9 @@ document.addEventListener("click", (event) => {
       linkedin: "Le compte LinkedIn sera connecté très prochainement.",
       instagram: "Le compte Instagram sera connecté très prochainement.",
       facebook: "Le compte Facebook sera connecté très prochainement.",
-      callback:
-        "Formulaire de rappel direct : un coordinateur vous contactera sous 24 h.",
-      legal: "Document en cours d’actualisation.",
-      privacy: "La politique de confidentialité sera bientôt disponible.",
+      callback: "Pour organiser un échange, contactez directement l’équipe El-Hafeed.",
+      legal: "Les informations légales seront communiquées par El-Hafeed.",
+      privacy: "Les informations confiées à l’équipe sont traitées avec confidentialité.",
     };
     document.querySelector("#notice-toast-text").textContent =
       messages[toastTrigger.dataset.toastTrigger] ||

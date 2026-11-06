@@ -1,0 +1,77 @@
+[
+  {
+    "id": "infirmerie",
+    "label": "Infirmerie",
+    "image": "infirmerie.webp",
+    "alt": "Une infirmière prend la tension d’une patiente âgée dans une salle de soins lumineuse",
+    "tagline": "Des soins attentifs, au quotidien",
+    "intro": "Formée à la méthode Humanitude, l’équipe infirmière accompagne les soins quotidiens et assure un suivi global de la santé de la personne.",
+    "details": "L’infirmier coordinateur organise le lien avec les proches et les professionnels concernés afin de soutenir la continuité de l’accompagnement à domicile.",
+    "prestations": [
+      "Soins quotidiens et méthode Humanitude",
+      "Suivi global de l’état de santé",
+      "Coordination avec les professionnels concernés",
+      "Lien régulier avec les proches désignés"
+    ]
+  },
+  {
+    "id": "kinesitherapie",
+    "label": "Kinésithérapie",
+    "image": "kinesitherapie.webp",
+    "alt": "Un kinésithérapeute accompagne un patient lors d’un exercice de rééducation du genou",
+    "tagline": "Retrouver le mouvement, en confiance",
+    "intro": "Le kinésithérapeute évalue les besoins et accompagne la mobilité, l’équilibre et le maintien des capacités physiques.",
+    "details": "Son intervention peut contribuer à prévenir les chutes et à accompagner les douleurs chroniques, dans le respect du rythme et des capacités de la personne.",
+    "prestations": [
+      "Évaluation de la mobilité",
+      "Travail de l’équilibre et prévention des chutes",
+      "Maintien des capacités physiques",
+      "Accompagnement des douleurs chroniques"
+    ]
+  },
+  {
+    "id": "orthophonie",
+    "label": "Orthophonie",
+    "image": "orthophonie.webp",
+    "alt": "Une orthophoniste travaille avec un enfant à l’aide de cartes illustrées",
+    "tagline": "Communiquer, échanger, s’exprimer",
+    "intro": "L’orthophoniste accompagne la communication et propose des exercices cognitifs adaptés aux besoins de la personne âgée.",
+    "details": "En lien avec l’infirmier coordinateur, les exercices peuvent s’intégrer au quotidien. L’accompagnement prend aussi en compte la prévention des fausses routes.",
+    "prestations": [
+      "Accompagnement de la communication",
+      "Exercices cognitifs adaptés",
+      "Prévention des fausses routes selon les besoins",
+      "Lien avec l’infirmier coordinateur"
+    ]
+  },
+  {
+    "id": "psychologie",
+    "label": "Psychologie",
+    "image": "psychologie.webp",
+    "alt": "Une psychologue écoute attentivement un patient dans un bureau apaisant",
+    "tagline": "Un espace d’écoute et de soutien",
+    "intro": "La psychologue accompagne les personnes âgées et leurs proches face aux bouleversements psychiques liés à la perte d’autonomie.",
+    "details": "Elle intervient aussi autour des refus de soins, des questions d’identité et du sentiment d’impuissance ou d’épuisement des familles, et soutient les équipes dans leur pratique.",
+    "prestations": [
+      "Écoute des bouleversements liés à la perte d’autonomie",
+      "Soutien aux proches et aux familles",
+      "Accompagnement des refus de soins et des questions d’identité",
+      "Analyse des pratiques avec les équipes"
+    ]
+  },
+  {
+    "id": "nutrition",
+    "label": "Aides-soignants",
+    "image": "nutrition.webp",
+    "alt": "Un accompagnement à domicile autour des gestes du quotidien et des repas",
+    "tagline": "Les gestes du quotidien, avec attention",
+    "intro": "Les aides-soignants accompagnent la toilette, l’habillage et les repas du matin, en respectant les habitudes de la personne.",
+    "details": "L’après-midi, ils proposent des activités de stimulation cognitive en lien avec l’orthophoniste, selon le programme et les capacités de la personne.",
+    "prestations": [
+      "Aide à l’hygiène et au confort",
+      "Aide à l’habillage et aux repas",
+      "Activités de stimulation cognitive",
+      "Coordination avec l’orthophoniste"
+    ]
+  }
+]

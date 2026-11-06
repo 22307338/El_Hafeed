@@ -1,57 +1,57 @@
 const teamMissions = {
   youssef: {
-    name: "Youssef El Amrani",
+    name: "Équipe infirmière",
     role: "Infirmier Coordinateur Référent",
     pole: "Pôle Soins Médicaux",
     points: [
-      "Supervision des pansements complexes, perfusions et traitements chroniques.",
-      "Interface constante avec le médecin traitant et le gériatre référent.",
-      "Mise en place de piluliers sécurisés et vérification de l’observance thérapeutique.",
-      "Alerte précoce en cas d’altération subtile des paramètres vitaux.",
+      "Suivi global de la santé et coordination des besoins médicaux et paramédicaux.",
+      "Lien régulier avec les proches désignés et les professionnels concernés.",
+      "Observation de l’état général et transmission des changements utiles à l’équipe.",
+      "Organisation des sorties hebdomadaires avec l’orthophoniste lorsque le projet le prévoit.",
     ],
   },
   zahra: {
-    name: "Zahra Berrada",
+    name: "Kinésithérapie",
     role: "Kinésithérapeute à domicile & ergonomie",
     pole: "Pôle Rééducation",
     points: [
-      "Exercices de proprioception et d’équilibre doux pour prévenir le risque de chute.",
-      "Maintien de l’amplitude articulaire chez les personnes alitées ou sédentaires.",
-      "Recommandations d’aménagement du domicile : barres de maintien, tapis et éclairage.",
-      "Transmission des gestes et postures sûrs aux auxiliaires de vie familiales.",
+      "Évaluation de la mobilité et des capacités physiques de la personne.",
+      "Accompagnement de l’équilibre et des déplacements selon les besoins évalués.",
+      "Contribution à la prévention des chutes et à l’accompagnement des douleurs chroniques.",
+      "Coordination avec l’équipe pour adapter les activités au rythme de la personne.",
     ],
   },
   amina: {
-    name: "Amina El Fassi",
+    name: "Orthophonie",
     role: "Orthophoniste spécialiste de la déglutition",
     pole: "Pôle Langage & Déglutition",
     points: [
-      "Bilan précis de la déglutition pour éviter les fausses routes et pneumopathies.",
-      "Adaptation des textures alimentaires et des postures lors des repas.",
-      "Rééducation de l’expression orale après un AVC ou dans les troubles neuro-évolutifs.",
-      "Stimulation douce du vocabulaire et de la mémoire sémantique.",
+      "Accompagnement de la communication et des exercices cognitifs adaptés.",
+      "Contribution à la prévention des fausses routes selon les besoins évalués.",
+      "Lien avec l’infirmier coordinateur pour intégrer les exercices au quotidien.",
+      "Adaptation des propositions aux capacités et au rythme de la personne.",
     ],
   },
   leila: {
-    name: "Dr. Leila Mansouri",
+    name: "Psychologie",
     role: "Psychologue clinicienne & écoute des aidants",
     pole: "Pôle Soutien Émotionnel",
     points: [
-      "Entretiens de soutien auprès de l’aîné pour valoriser son vécu et rompre l’isolement.",
-      "Accompagnement psychologique des enfants et conjoints aidants.",
-      "Ateliers personnalisés de réminiscence et stimulation cognitive douce.",
-      "Médiation bienveillante lors des étapes de dépendance accrue.",
+      "Écoute des bouleversements psychiques liés à la perte d’autonomie et aux changements de vie.",
+      "Soutien aux proches confrontés au sentiment d’impuissance ou à l’épuisement.",
+      "Accompagnement des situations de refus de soins et des questions liées à l’identité.",
+      "Temps d’analyse des pratiques pour soutenir les équipes, dans un cadre sans jugement.",
     ],
   },
   fatimazahra: {
-    name: "Fatima Zahra Cherkaoui",
-    role: "Diététicienne clinique gériatrique",
-    pole: "Pôle Nutrition & Vitalité",
+    name: "Équipe aides-soignantes",
+    role: "Accompagnement au quotidien",
+    pole: "Soins et activités adaptés",
     points: [
-      "Évaluation précise du statut nutritionnel et calcul des apports protéiques.",
-      "Élaboration de menus marocains traditionnels équilibrés et réconfortants.",
-      "Gestion des régimes sans sel, du diabète et de l’hydratation.",
-      "Coordination avec l’aide ménagère pour la préparation sereine des repas.",
+      "Accompagnement de l’hygiène et du confort le matin.",
+      "Aide à l’habillage et aux repas selon les habitudes de la personne.",
+      "Activités cognitives adaptées au programme de l’après-midi.",
+      "Lien avec l’orthophoniste pour intégrer les exercices au quotidien.",
     ],
   },
 };
@@ -70,7 +70,7 @@ window.toggleMissionModal = function (memberKey) {
     return;
   }
 
-  const member = teamMissions[memberKey];
+  const member = window.teamMissionsData?.[memberKey] || teamMissions[memberKey];
   if (!member) return;
 
   document.getElementById("team-mission-pole").textContent = member.pole;

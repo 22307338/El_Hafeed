@@ -5,9 +5,8 @@ export const SANITY = {
   projectId: "pxacju14",
   dataset: "production",
   apiVersion: "2024-01-01",
-  // "apicdn.sanity.io" = fast, cached (use in production)
-  // "api.sanity.io"    = always fresh (handy while developing)
-  host: "apicdn.sanity.io",
+  // Use the uncached API host so newly published CMS edits appear promptly.
+  host: "api.sanity.io",
 };
 
 export async function sanityFetch(query, params = {}) {

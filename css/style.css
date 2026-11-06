@@ -110,7 +110,7 @@
       rgba(0, 70, 66, 0.3) 72%,
       rgba(0, 70, 66, 0.12) 100%
     ),
-    url("../resources/hero_new_image.webp");
+    var(--hero-image-desktop, url("../resources/hero-desktop.webp"));
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -144,7 +144,7 @@
   .hero-section {
     background-image:
       linear-gradient(rgba(0, 70, 66, 0.68), rgba(0, 70, 66, 0.76)),
-      url("../resources/hero_new_image.webp");
+      var(--hero-image-desktop, url("../resources/hero-desktop.webp"));
     background-position: 58% center;
     background-size: cover;
   }
@@ -666,7 +666,7 @@
   .hero-section {
     background-image:
       linear-gradient(rgba(0, 70, 66, 0.62), rgba(0, 70, 66, 0.72)),
-      url("../resources/mobile_hero.webp");
+      var(--hero-image-mobile, url("../resources/hero-mobile.webp"));
     background-position: center;
     background-size: cover;
   }
@@ -1875,6 +1875,18 @@
   object-fit: contain;
   background: #0b2927;
 }
+.legitimacy-video-frame[data-inline-video-active]::after { display: none; }
+[data-inline-video-active] { position: relative; }
+[data-inline-video-active] > mux-player {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #0b2927;
+  --media-object-fit: contain;
+  --media-object-position: center;
+}
 .legitimacy-video-frame::after {
   position: absolute;
   inset: 35% 0 0;
@@ -1952,16 +1964,16 @@
   touch-action: pan-y;
 }
 .legitimacy-carousel-slides {
+  position: relative;
   display: grid;
   width: 100%;
-  aspect-ratio: 1.22 / 1;
   overflow: hidden;
 }
 .legitimacy-carousel-slide,
 .legitimacy-carousel-slide[hidden] {
   grid-area: 1 / 1;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
 }
 .legitimacy-carousel-slide {
@@ -1973,6 +1985,10 @@
     transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
     visibility 0s linear 420ms;
   pointer-events: none;
+}
+.legitimacy-carousel-slide:not(.is-active) {
+  position: absolute;
+  inset: 0;
 }
 .legitimacy-carousel-slide.is-active {
   z-index: 1;
@@ -1986,9 +2002,8 @@
 .legitimacy-carousel-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: inherit;
-  object-fit: cover;
 }
 .legitimacy-carousel-controls {
   position: absolute;
@@ -2036,6 +2051,15 @@
 .legitimacy-story-copy > span { display: block; margin-bottom: 0.35rem; }
 .legitimacy-play:focus-visible { outline: 3px solid #a3f0ea; outline-offset: 3px; }
 
+#decouvrez .space-y-space-lg [data-video-container] {
+  width: min(100%, 16.25rem);
+  aspect-ratio: 9 / 16;
+  margin-inline: auto;
+}
+#decouvrez .space-y-space-lg [data-video-container] > .aspect-video {
+  aspect-ratio: 9 / 16;
+}
+
 @media (max-width: 900px) {
   .legitimacy-layout { grid-template-columns: minmax(0, 1fr); }
   .legitimacy-video-card { width: min(100%, 30rem); margin-inline: auto; }
@@ -2049,7 +2073,6 @@
   .legitimacy-stories { grid-template-columns: minmax(0, 1fr); }
   .legitimacy-story { display: block; }
   .legitimacy-carousel { margin: 0.4rem 0.4rem 0; }
-  .legitimacy-carousel-slides { aspect-ratio: 1.2 / 1; }
   .legitimacy-story-copy { padding: 0.75rem 0.8rem; }
   .legitimacy-story-copy p { font-size: 0.82rem; }
 }

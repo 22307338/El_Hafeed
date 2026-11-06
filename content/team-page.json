@@ -1,0 +1,32 @@
+{
+  "intro": {
+    "eyebrow":"Accompagner · Préserver · Soulager",
+    "title":"Une équipe attentive à chaque personne",
+    "description":"À Rabat et Casablanca, des professionnels coordonnent leurs interventions pour préserver les repères, les capacités et la dignité des personnes âgées à leur domicile.",
+    "highlights":[
+      {"label":"Une équipe pluridisciplinaire","icon":"users-round"},
+      {"label":"Présence 7 jours sur 7","icon":"clock-3"},
+      {"label":"À domicile, selon les besoins","icon":"house-plus"}
+    ]
+  },
+  "director": {
+    "name":"Fatima-Zahra El Amrani",
+    "role":"Psychologue clinicienne · Fondatrice et directrice",
+    "photo":"resources/team-members/directrice.webp",
+    "photoAlt":"Portrait de Fatima-Zahra El Amrani, fondatrice et directrice d’El-Hafeed",
+    "locations":"Rabat · Casablanca",
+    "biography":"Psychologue clinicienne diplômée de Paris XI en psychopathologie clinique, Fatima-Zahra El Amrani a exercé plus de dix ans en France. L’expérience de ses grands-parents, atteints de la maladie d’Alzheimer, l’a conduite à créer El-Hafeed au Maroc. Son projet place l’histoire, les habitudes, la dignité et les capacités de chaque personne au cœur de l’accompagnement.",
+    "quote":"Accompagner, préserver, soulager — avec dignité, amour et bienveillance."
+  },
+  "members":[
+    {"name":"Équipe infirmière","role":"Infirmiers · Coordination","speciality":"Soins médicaux","photo":"resources/team-members/driss.jpg","photoAlt":"Portrait d’un membre de l’équipe infirmière El-Hafeed","description":"Suivi global de la santé, coordination médicale et lien régulier entre la personne accompagnée et sa famille.","missions":["Suivi global de la santé et coordination des besoins médicaux et paramédicaux.","Lien régulier avec les proches désignés et les professionnels concernés.","Observation de l’état général et transmission des changements utiles à l’équipe.","Organisation des sorties hebdomadaires avec l’orthophoniste lorsque le projet le prévoit."]},
+    {"name":"Kinésithérapie","role":"Kinésithérapeutes","speciality":"Mobilité et équilibre","photo":"resources/team-members/zahra.jpg","photoAlt":"Portrait d’une kinésithérapeute de l’équipe El-Hafeed","description":"Évaluation de la mobilité et accompagnement de l’équilibre, des déplacements et des douleurs chroniques.","missions":["Évaluation de la mobilité et des capacités physiques de la personne.","Accompagnement de l’équilibre et des déplacements selon les besoins évalués.","Contribution à la prévention des chutes et à l’accompagnement des douleurs chroniques.","Coordination avec l’équipe pour adapter les activités au rythme de la personne."]},
+    {"name":"Orthophonie","role":"Orthophonistes","speciality":"Langage et déglutition","photo":"resources/team-members/amina.jpg","photoAlt":"Portrait d’une orthophoniste de l’équipe El-Hafeed","description":"Accompagnement de la communication, exercices cognitifs et prévention des fausses routes, en lien avec l’équipe.","missions":["Accompagnement de la communication et des exercices cognitifs adaptés.","Contribution à la prévention des fausses routes selon les besoins évalués.","Lien avec l’infirmier coordinateur pour intégrer les exercices au quotidien.","Adaptation des propositions aux capacités et au rythme de la personne."]},
+    {"name":"Psychologie","role":"Psychologue clinicienne","speciality":"Soutien des personnes et des proches","photo":"resources/team-members/leila.jpg","photoAlt":"Portrait d’une psychologue clinicienne de l’équipe El-Hafeed","description":"Écoute de la personne et de ses proches face à la perte d’autonomie, aux refus de soins ou à l’épuisement.","missions":["Écoute des bouleversements psychiques liés à la perte d’autonomie et aux changements de vie.","Soutien aux proches confrontés au sentiment d’impuissance ou à l’épuisement.","Accompagnement des situations de refus de soins et des questions liées à l’identité.","Temps d’analyse des pratiques pour soutenir les équipes, dans un cadre sans jugement."]},
+    {"name":"Aides-soignants","role":"Accompagnement au quotidien","speciality":"Soins et activités adaptés","photo":"resources/team-members/fatima-zahra.jpg","photoAlt":"Portrait d’un membre de l’équipe aides-soignante El-Hafeed","description":"Aide à l’hygiène, à l’habillage et aux repas, puis activités de stimulation cognitive en lien avec l’orthophoniste.","missions":["Accompagnement de l’hygiène et du confort le matin.","Aide à l’habillage et aux repas selon les habitudes de la personne.","Activités cognitives adaptées au programme de l’après-midi.","Lien avec l’orthophoniste pour intégrer les exercices au quotidien."]}
+  ],
+  "services": {"eyebrow":"Nos services","intro":"Sélectionnez une bulle pour découvrir chaque spécialité."},
+  "closingQuote":"Chaque personne âgée mérite un accompagnement qui honore ce qu’elle a été, respecte ce qu’elle est, et soutient ce qu’elle traverse.",
+  "metaTitle":"Notre équipe — El-Hafeed",
+  "metaDescription":"Découvrez la fondatrice d’El-Hafeed et les compétences mobilisées pour accompagner les personnes âgées à domicile, à Rabat et Casablanca."
+}

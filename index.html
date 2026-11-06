@@ -7,13 +7,28 @@
     <title>El-Hafeed — Accompagnement gériatrique à domicile</title>
     <meta
       name="description"
-      content="El-Hafeed accompagne les personnes âgées et leurs familles grâce à une coordination gériatrique et gérontologique à domicile."
+      content="El-Hafeed accompagne les personnes âgées en perte d’autonomie à domicile, à Rabat et Casablanca, dans le respect de leur histoire et de leur rythme."
     />
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="./favicon.ico?v=2" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png?v=2" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v=2" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=2" />
+    <link rel="manifest" href="./site.webmanifest?v=2" />
 
-
-
-    <link rel="preload" as="image" href="./resources/hero_new_image.webp" media="(min-width: 768px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="./resources/mobile_hero.webp" media="(max-width: 767px)" fetchpriority="high" />
+    <link
+      rel="preload"
+      as="image"
+      href="./resources/hero-desktop.webp"
+      media="(min-width: 768px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./resources/hero-mobile.webp"
+      media="(max-width: 767px)"
+      fetchpriority="high"
+    />
     <link rel="stylesheet" href="./css/tailwind.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -51,14 +66,12 @@
 
                   <!-- Supporting Paragraph -->
                   <p class="hero-description font-body-lg text-body-lg">
-                    <br />
-                    El-Hafeed coordonne à domicile les soins et l’accompagnement
-                    adaptés aux besoins des personnes âgées.<br />
-                    En collaboration avec leurs proches et les professionnels de
-                    santé, nous assurons un suivi personnalisé.<br />
-                    Notre mission est d'offrir à vos proches une meilleure
-                    qualité de vie dans le confort de leur foyer, tout en
-                    apportant sérénité et tranquillité d'esprit aux familles.
+                    El-Hafeed accompagne à domicile les personnes âgées en perte
+                    d’autonomie, à Rabat et Casablanca.<br />
+                    Nous coordonnons les interventions dans le respect de leur
+                    histoire, de leurs habitudes et de leur rythme.<br />
+                    Accompagner, préserver, soulager — avec dignité, amour et
+                    bienveillance.
                   </p>
                 </div>
 
@@ -82,7 +95,7 @@
                     <span
                       class="text-sm text-[#004642] font-medium leading-tight"
                     >
-                      Coordination pluridisciplinaire
+                      Équipe pluridisciplinaire
                     </span>
                   </div>
 
@@ -122,7 +135,7 @@
                     <span
                       class="text-sm text-[#004642] font-medium leading-tight"
                     >
-                      Présence reconnue au Maroc
+                      Jour et nuit, 7j/7
                     </span>
                   </div>
                 </div>
@@ -150,126 +163,274 @@
               d="M0 62 C150 8 260 18 410 78 C560 138 680 154 820 96 C960 38 1040 16 1160 55 C1275 92 1370 110 1440 44 L1440 180 L0 180 Z"
               fill="#fbf8f2"
             />
-            <path
-              d="M0 62 C150 8 260 18 410 78 C560 138 680 154 820 96 C960 38 1040 16 1160 55 C1275 92 1370 110 1440 44"
-              fill="none"
-              stroke="#4b9e96"
-              stroke-width="5"
-              vector-effect="non-scaling-stroke"
-              opacity="0.8"
-            />
           </svg>
         </section>
 
-        <!-- ========================================== -->
-        <!-- Notre légitimité dans le secteur           -->
-        <!-- ========================================== -->
-      
-
-        <section class="legitimacy-section" id="legitimite" aria-labelledby="legitimacy-title">
+        <section class="legitimacy-section" aria-labelledby="legitimacy-title">
           <div class="site-shell legitimacy-shell">
             <header class="legitimacy-heading">
-              <span class="legitimacy-eyebrow">
-                <i data-lucide="badge-check" class="site-icon" aria-hidden="true"></i>
-                Engagement &amp; reconnaissance
-              </span>
+              <p class="legitimacy-eyebrow">
+                Un accompagnement fondé sur l’expérience
+              </p>
               <h2 id="legitimacy-title">Notre légitimité dans le secteur</h2>
-              <p>Un aperçu des rencontres, des échanges et des initiatives qui nourrissent notre engagement au service de la santé et du grand âge.</p>
-              <span class="legitimacy-demo-note">Maquette de démonstration — les contenus seront remplacés par ceux du client.</span>
+              <p>
+                El-Hafeed accompagne à domicile les personnes âgées en perte
+                d’autonomie et leurs proches. Notre approche pluridisciplinaire
+                s’appuie sur le respect de l’histoire, des habitudes et du
+                rythme de chacun, à Rabat et Casablanca.
+              </p>
             </header>
 
             <div class="legitimacy-layout">
               <article class="legitimacy-video-card">
-                <div class="legitimacy-video-frame">
-                  <img src="./resources/healthcare-services-assets/infirmerie.webp" alt="" loading="lazy" decoding="async" />
-                  
-                  <button class="legitimacy-play" type="button" data-video-trigger="salon" aria-label="À propos de la vidéo du Salon International de la Santé" aria-haspopup="dialog" aria-controls="video-modal">
-                    <i data-lucide="play" class="site-icon" aria-hidden="true"></i>
+                <div class="legitimacy-video-frame" data-video-container="salon">
+                  <img
+                    src="./resources/healthcare-services-assets/infirmerie.webp"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+
+                  <button
+                    class="legitimacy-play"
+                    type="button"
+                    data-video-trigger="salon"
+                    aria-label="À propos du Projet d’Accompagnement à Domicile"
+                  >
+                    <i
+                      data-lucide="play"
+                      class="site-icon"
+                      aria-hidden="true"
+                    ></i>
                   </button>
                 </div>
                 <div class="legitimacy-video-copy">
-                  <p class="legitimacy-kicker">Salon International de la Santé</p>
-                  <h3>Des échanges autour de la santé et du grand âge</h3>
-                  <p>Emplacement réservé à la vidéo portrait fournie par le client. Son format vertical sera conservé lors de son intégration.</p>
+                  <p class="legitimacy-kicker">
+                    Projet d’Accompagnement à Domicile
+                  </p>
+                  <h3>Un accompagnement pensé pour chaque personne</h3>
+                  <p>
+                    Un aperçu de notre approche de l’accompagnement à domicile
+                    et de la coordination autour de la personne âgée.
+                  </p>
                 </div>
               </article>
 
-                            <div class="legitimacy-stories" aria-label="Galerie de photos de démonstration">
+              <div
+                class="legitimacy-stories"
+                aria-label="Illustrations des pratiques d’accompagnement El Hafeed"
+              >
                 <article class="legitimacy-story" data-legitimacy-carousel>
-                  <div class="legitimacy-carousel" role="group" aria-roledescription="carrousel" aria-label="Photos : rencontres professionnelles">
+                  <div
+                    class="legitimacy-carousel"
+                    role="group"
+                    aria-roledescription="carrousel"
+                    aria-label="Photos : rencontres professionnelles"
+                  >
                     <div class="legitimacy-carousel-slides">
                       <figure class="legitimacy-carousel-slide is-active">
-                        <img src="./resources/team-members/directrice.webp" alt="Portrait de la directrice El-Hafeed, visuel temporaire" loading="lazy" decoding="async" />
+                        <img
+                          src="./resources/team-members/directrice.webp"
+                          alt="Portrait de la directrice El-Hafeed, visuel temporaire"
+                          loading="lazy"
+                          decoding="async"
+                        />
                       </figure>
-                      <figure class="legitimacy-carousel-slide" hidden aria-hidden="true">
-                        <img src="./resources/article_image.webp" alt="Échange entre une personne âgée et une professionnelle, visuel temporaire" loading="lazy" decoding="async" />
+                      <figure
+                        class="legitimacy-carousel-slide"
+                        hidden
+                        aria-hidden="true"
+                      >
+                        <img
+                          src="./resources/home-safety-article.webp"
+                          alt="Échange entre une personne âgée et une professionnelle, visuel temporaire"
+                          loading="lazy"
+                          decoding="async"
+                        />
                       </figure>
                     </div>
                     <div class="legitimacy-carousel-controls">
-                      <button class="legitimacy-carousel-arrow" type="button" data-carousel-direction="-1" aria-label="Photo précédente">
-                        <i data-lucide="arrow-left" class="site-icon" aria-hidden="true"></i>
+                      <button
+                        class="legitimacy-carousel-arrow"
+                        type="button"
+                        data-carousel-direction="-1"
+                        aria-label="Photo précédente"
+                      >
+                        <i
+                          data-lucide="arrow-left"
+                          class="site-icon"
+                          aria-hidden="true"
+                        ></i>
                       </button>
-                      <span class="legitimacy-carousel-counter" aria-live="polite"><span data-carousel-index>1</span><span aria-hidden="true"> / 2</span></span>
-                      <button class="legitimacy-carousel-arrow" type="button" data-carousel-direction="1" aria-label="Photo suivante">
-                        <i data-lucide="arrow-right" class="site-icon" aria-hidden="true"></i>
+                      <span
+                        class="legitimacy-carousel-counter"
+                        data-carousel-index
+                        aria-live="polite"
+                        >1</span
+                      >
+                      <button
+                        class="legitimacy-carousel-arrow"
+                        type="button"
+                        data-carousel-direction="1"
+                        aria-label="Photo suivante"
+                      >
+                        <i
+                          data-lucide="arrow-right"
+                          class="site-icon"
+                          aria-hidden="true"
+                        ></i>
                       </button>
                     </div>
                   </div>
                   <div class="legitimacy-story-copy">
-                    <span>Rencontres professionnelles</span>
-                    <p>Visuels temporaires — le dialogue et la coopération au cœur de l’accompagnement.</p>
+                    <span>Une expérience clinique et de terrain</span>
+                    <p>
+                      Diplômée en psychopathologie clinique de Paris XI, la
+                      fondatrice a exercé plus de dix ans en France avant de
+                      créer El-Hafeed au Maroc.
+                    </p>
                   </div>
                 </article>
 
                 <article class="legitimacy-story" data-legitimacy-carousel>
-                  <div class="legitimacy-carousel" role="group" aria-roledescription="carrousel" aria-label="Photos : la santé, une démarche collective">
+                  <div
+                    class="legitimacy-carousel"
+                    role="group"
+                    aria-roledescription="carrousel"
+                    aria-label="Photos : la santé, une démarche collective"
+                  >
                     <div class="legitimacy-carousel-slides">
                       <figure class="legitimacy-carousel-slide is-active">
-                        <img src="./resources/healthcare-services-assets/infirmerie.webp" alt="Professionnelle de santé auprès d’une patiente, visuel temporaire" loading="lazy" decoding="async" />
+                        <img
+                          src="./resources/healthcare-services-assets/infirmerie.webp"
+                          alt="Professionnelle de santé auprès d’une patiente, visuel temporaire"
+                          loading="lazy"
+                          decoding="async"
+                        />
                       </figure>
-                      <figure class="legitimacy-carousel-slide" hidden aria-hidden="true">
-                        <img src="./resources/healthcare-services-assets/kinesitherapie.webp" alt="Séance de kinésithérapie, visuel temporaire" loading="lazy" decoding="async" />
+                      <figure
+                        class="legitimacy-carousel-slide"
+                        hidden
+                        aria-hidden="true"
+                      >
+                        <img
+                          src="./resources/healthcare-services-assets/kinesitherapie.webp"
+                          alt="Séance de kinésithérapie, visuel temporaire"
+                          loading="lazy"
+                          decoding="async"
+                        />
                       </figure>
                     </div>
                     <div class="legitimacy-carousel-controls">
-                      <button class="legitimacy-carousel-arrow" type="button" data-carousel-direction="-1" aria-label="Photo précédente">
-                        <i data-lucide="arrow-left" class="site-icon" aria-hidden="true"></i>
+                      <button
+                        class="legitimacy-carousel-arrow"
+                        type="button"
+                        data-carousel-direction="-1"
+                        aria-label="Photo précédente"
+                      >
+                        <i
+                          data-lucide="arrow-left"
+                          class="site-icon"
+                          aria-hidden="true"
+                        ></i>
                       </button>
-                      <span class="legitimacy-carousel-counter" aria-live="polite"><span data-carousel-index>1</span><span aria-hidden="true"> / 2</span></span>
-                      <button class="legitimacy-carousel-arrow" type="button" data-carousel-direction="1" aria-label="Photo suivante">
-                        <i data-lucide="arrow-right" class="site-icon" aria-hidden="true"></i>
+                      <span
+                        class="legitimacy-carousel-counter"
+                        data-carousel-index
+                        aria-live="polite"
+                        >1</span
+                      >
+                      <button
+                        class="legitimacy-carousel-arrow"
+                        type="button"
+                        data-carousel-direction="1"
+                        aria-label="Photo suivante"
+                      >
+                        <i
+                          data-lucide="arrow-right"
+                          class="site-icon"
+                          aria-hidden="true"
+                        ></i>
                       </button>
                     </div>
                   </div>
                   <div class="legitimacy-story-copy">
                     <span>La santé, une démarche collective</span>
-                    <p>Visuels temporaires — regards croisés des professionnels de santé.</p>
+                    <p>
+                      L’infirmière coordinatrice organise les interventions et
+                      maintient le lien entre les professionnels et la famille.
+                    </p>
                   </div>
                 </article>
 
                 <article class="legitimacy-story" data-legitimacy-carousel>
-                  <div class="legitimacy-carousel" role="group" aria-roledescription="carrousel" aria-label="Photos : partager les savoirs">
+                  <div
+                    class="legitimacy-carousel"
+                    role="group"
+                    aria-roledescription="carrousel"
+                    aria-label="Photos : partager les savoirs"
+                  >
                     <div class="legitimacy-carousel-slides">
                       <figure class="legitimacy-carousel-slide is-active">
-                        <img src="./resources/healthcare-services-assets/orthophonie.webp" alt="Accompagnement en orthophonie, visuel temporaire" loading="lazy" decoding="async" />
+                        <img
+                          src="./resources/healthcare-services-assets/orthophonie.webp"
+                          alt="Accompagnement en orthophonie, visuel temporaire"
+                          loading="lazy"
+                          decoding="async"
+                        />
                       </figure>
-                      <figure class="legitimacy-carousel-slide" hidden aria-hidden="true">
-                        <img src="./resources/healthcare-services-assets/psychologie.webp" alt="Entretien de soutien psychologique, visuel temporaire" loading="lazy" decoding="async" />
+                      <figure
+                        class="legitimacy-carousel-slide"
+                        hidden
+                        aria-hidden="true"
+                      >
+                        <img
+                          src="./resources/healthcare-services-assets/psychologie.webp"
+                          alt="Entretien de soutien psychologique, visuel temporaire"
+                          loading="lazy"
+                          decoding="async"
+                        />
                       </figure>
                     </div>
                     <div class="legitimacy-carousel-controls">
-                      <button class="legitimacy-carousel-arrow" type="button" data-carousel-direction="-1" aria-label="Photo précédente">
-                        <i data-lucide="arrow-left" class="site-icon" aria-hidden="true"></i>
+                      <button
+                        class="legitimacy-carousel-arrow"
+                        type="button"
+                        data-carousel-direction="-1"
+                        aria-label="Photo précédente"
+                      >
+                        <i
+                          data-lucide="arrow-left"
+                          class="site-icon"
+                          aria-hidden="true"
+                        ></i>
                       </button>
-                      <span class="legitimacy-carousel-counter" aria-live="polite"><span data-carousel-index>1</span><span aria-hidden="true"> / 2</span></span>
-                      <button class="legitimacy-carousel-arrow" type="button" data-carousel-direction="1" aria-label="Photo suivante">
-                        <i data-lucide="arrow-right" class="site-icon" aria-hidden="true"></i>
+                      <span
+                        class="legitimacy-carousel-counter"
+                        data-carousel-index
+                        aria-live="polite"
+                        >1</span
+                      >
+                      <button
+                        class="legitimacy-carousel-arrow"
+                        type="button"
+                        data-carousel-direction="1"
+                        aria-label="Photo suivante"
+                      >
+                        <i
+                          data-lucide="arrow-right"
+                          class="site-icon"
+                          aria-hidden="true"
+                        ></i>
                       </button>
                     </div>
                   </div>
                   <div class="legitimacy-story-copy">
                     <span>Partager les savoirs</span>
-                    <p>Visuels temporaires — expertise, écoute et coordination au service des aînés.</p>
+                    <p>
+                      L’analyse des pratiques offre à l’équipe un espace
+                      d’échange animé par une psychologue, sans jugement.
+                    </p>
                   </div>
                 </article>
 
@@ -277,13 +438,21 @@
                   <div class="legitimacy-carousel">
                     <div class="legitimacy-carousel-slides">
                       <figure class="legitimacy-carousel-slide is-active">
-                        <img src="./resources/healthcare-services-assets/nutrition.webp" alt="Conseil nutritionnel adapté aux personnes âgées, visuel temporaire" loading="lazy" decoding="async" />
+                        <img
+                          src="./resources/healthcare-services-assets/nutrition.webp"
+                          alt="Moment de repas au domicile, visuel illustratif temporaire"
+                          loading="lazy"
+                          decoding="async"
+                        />
                       </figure>
                     </div>
                   </div>
                   <div class="legitimacy-story-copy">
-                    <span>Une présence engagée</span>
-                    <p>Visuel temporaire — une approche attentive à la dignité et au bien-être.</p>
+                    <span>Soutenir aussi les proches</span>
+                    <p>
+                      La psychologue accompagne les familles face aux
+                      bouleversements, à l’impuissance et à l’épuisement.
+                    </p>
                   </div>
                 </article>
               </div>
@@ -308,18 +477,18 @@
                   class="text-base site-icon"
                   aria-hidden="true"
                 ></i>
-                Regard sur notre quotidien
+                Une organisation pensée pour chaque personne
               </div>
               <h2
                 class="font-headline-lg text-headline-lg text-primary tracking-tight"
               >
-                Découvrez l'univers El-Hafeed
+                L’accompagnement, étape par étape
               </h2>
               <p
                 class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed"
               >
-                Mieux comprendre notre engagement, nos valeurs et notre vision
-                d'un accompagnement digne et solidaire de nos aînés.
+                Découvrir le Projet d’Accompagnement à Domicile, les
+                interventions coordonnées et la place des proches.
               </p>
             </div>
             <!-- 4 Alternating Editorial Rows -->
@@ -334,8 +503,7 @@
                   <div
                     class="md:col-span-5 relative group cursor-pointer overflow-hidden rounded-2xl"
                     data-video-trigger="mission"
-                    aria-haspopup="dialog"
-                    aria-controls="video-modal"
+                    data-video-container="mission"
                     role="button"
                     tabindex="0"
                     aria-label="Visionner : Une mission tournée vers l’humain"
@@ -346,7 +514,10 @@
                       <img
                         alt="Conversation chaleureuse à domicile entre une personne âgée et un proche"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYF-Xwx7l0Ooijll_yqDC0tpTVac3dW-rfuAR136i2KCw8CePKzS61qU0xEgOqa-oLWOskoBaMKzcJqu2L0UPV9kF1kEnvQ1U2Ke2G6V2z7OUte1TM54JALmQqLKBCAuOi1vvSLhvnYL4nIaGVFgTeny8aWrNRq3S3Qg1xAjHpBplrWWvFhrqdP3sfSNUXF5r2rBUpsY6ITRLO65AQ-O0MsXlYDN1RHqMilCeeu0M" loading="lazy" decoding="async" />
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYF-Xwx7l0Ooijll_yqDC0tpTVac3dW-rfuAR136i2KCw8CePKzS61qU0xEgOqa-oLWOskoBaMKzcJqu2L0UPV9kF1kEnvQ1U2Ke2G6V2z7OUte1TM54JALmQqLKBCAuOi1vvSLhvnYL4nIaGVFgTeny8aWrNRq3S3Qg1xAjHpBplrWWvFhrqdP3sfSNUXF5r2rBUpsY6ITRLO65AQ-O0MsXlYDN1RHqMilCeeu0M"
+                        loading="lazy"
+                        decoding="async"
+                      />
                     </div>
                     <div
                       class="absolute inset-0 bg-primary/20 group-hover:bg-primary/35 transition-colors flex items-center justify-center"
@@ -364,48 +535,27 @@
                     <div
                       class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm backdrop-blur-sm"
                     >
-                      01 • Notre mission
+                      01 • L’évaluation
                     </div>
                   </div>
                   <div class="md:col-span-7 space-y-space-xs">
                     <span
                       class="font-label-sm text-label-sm text-secondary uppercase font-semibold tracking-wider"
                     >
-                      Capsule 01 • Les fondements
+                      Capsule 01 • Le projet à domicile
                     </span>
                     <h3
                       class="font-headline-md text-headline-md text-primary tracking-tight"
                     >
-                      Une mission tournée vers l'humain
+                      Chaque accompagnement commence par une évaluation
                     </h3>
                     <p
                       class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
                     >
-                      Découvrez El-Hafeed, une structure dédiée à la
-                      coordination gériatrique et gérontologique à domicile, qui
-                      place la personne âgée au cœur de chaque démarche.
+                      La fondatrice conduit une évaluation d’admission qui prend
+                      en compte l’histoire de vie, les habitudes, la mobilité,
+                      l’autonomie et les besoins de la personne.
                     </p>
-                    <div class="pt-2">
-                      <button
-                        class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-semibold hover:text-secondary group"
-                        data-video-trigger="mission"
-                        aria-haspopup="dialog"
-                        aria-controls="video-modal"
-                        type="button"
-                      >
-                        <i
-                          data-lucide="circle-play"
-                          class="text-lg site-icon"
-                          aria-hidden="true"
-                        ></i>
-                        <span class="">Visionner la présentation (2 min)</span>
-                        <i
-                          data-lucide="arrow-right"
-                          class="text-base group-hover:translate-x-1 transition-transform site-icon"
-                          aria-hidden="true"
-                        ></i>
-                      </button>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -419,8 +569,7 @@
                   <div
                     class="md:col-span-5 md:order-2 relative group cursor-pointer overflow-hidden rounded-2xl"
                     data-video-trigger="services"
-                    aria-haspopup="dialog"
-                    aria-controls="video-modal"
+                    data-video-container="services"
                     role="button"
                     tabindex="0"
                     aria-label="Visionner : Un accompagnement coordonné et personnalisé"
@@ -431,7 +580,10 @@
                       <img
                         alt="Professionnel de santé souriant réalisant un bilan gériatrique à domicile"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwhLg3-6_WLbAZbzWWbp482gszu-uqFDe2N5f9y6NCxTRmGiGG9v1AhsS8yJfY_CZukv5u2ZvHjLWF9sDTxDWAoZuZkHRPVcHwwRlQNd9jkQBhgHMejv8QxC_AC1AJKsWxLwGdMv8kSMG5BNT1a9c2Qun9AVewtRI000bG5WZ02r9YV0ACPLJdvD4A6JN8B1Qs_aLbSLSCIC0XW45Uy1zCL_hCQM6WlxqGJCJZMTg" loading="lazy" decoding="async" />
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwhLg3-6_WLbAZbzWWbp482gszu-uqFDe2N5f9y6NCxTRmGiGG9v1AhsS8yJfY_CZukv5u2ZvHjLWF9sDTxDWAoZuZkHRPVcHwwRlQNd9jkQBhgHMejv8QxC_AC1AJKsWxLwGdMv8kSMG5BNT1a9c2Qun9AVewtRI000bG5WZ02r9YV0ACPLJdvD4A6JN8B1Qs_aLbSLSCIC0XW45Uy1zCL_hCQM6WlxqGJCJZMTg"
+                        loading="lazy"
+                        decoding="async"
+                      />
                     </div>
                     <div
                       class="absolute inset-0 bg-primary/20 group-hover:bg-primary/35 transition-colors flex items-center justify-center"
@@ -449,51 +601,28 @@
                     <div
                       class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm backdrop-blur-sm"
                     >
-                      02 • Nos services
+                      02 • L’organisation quotidienne
                     </div>
                   </div>
                   <div class="md:col-span-7 md:order-1 space-y-space-xs">
                     <span
                       class="font-label-sm text-label-sm text-secondary uppercase font-semibold tracking-wider"
                     >
-                      Capsule 02 • Synergie clinique
+                      Capsule 02 • Soins et accompagnement
                     </span>
                     <h3
                       class="font-headline-md text-headline-md text-primary tracking-tight"
                     >
-                      Un accompagnement coordonné et personnalisé
+                      Des soins le matin, un accompagnement l’après-midi
                     </h3>
                     <p
                       class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
                     >
-                      Infirmerie, kinésithérapie, orthophonie, psychologie et
-                      nutrition : découvrez comment nos différents pôles
-                      s'inscrivent dans une approche globale du bien-être des
-                      personnes âgées.
+                      Le matin est consacré aux soins, à l’hygiène et au
+                      confort. L’après-midi, les activités cognitives, les
+                      échanges et les sorties suivent le programme défini avec
+                      la personne.
                     </p>
-                    <div class="pt-2">
-                      <button
-                        class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-semibold hover:text-secondary group"
-                        data-video-trigger="services"
-                        aria-haspopup="dialog"
-                        aria-controls="video-modal"
-                        type="button"
-                      >
-                        <i
-                          data-lucide="circle-play"
-                          class="text-lg site-icon"
-                          aria-hidden="true"
-                        ></i>
-                        <span class=""
-                          >Comprendre notre coordination (3 min)</span
-                        >
-                        <i
-                          data-lucide="arrow-right"
-                          class="text-base group-hover:translate-x-1 transition-transform site-icon"
-                          aria-hidden="true"
-                        ></i>
-                      </button>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -507,8 +636,7 @@
                   <div
                     class="md:col-span-5 relative group cursor-pointer overflow-hidden rounded-2xl"
                     data-video-trigger="families"
-                    aria-haspopup="dialog"
-                    aria-controls="video-modal"
+                    data-video-container="families"
                     role="button"
                     tabindex="0"
                     aria-label="Visionner : Accompagner aussi ceux qui accompagnent"
@@ -519,7 +647,10 @@
                       <img
                         alt="Famille marocaine réunie trois générations réunies avec tendresse"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJChtxYd4eCzNhL09axch3zVYfA9Ef8PcPWgUEGaZJunl41NwtXTcHLk0UYKefYo9z0tGLblZDojH7MuXoJAU0GEqgVFoh2lGGGeaJLVVtdYlHemNFQ8QP6R5Cuer6Qv_6L9hbyl-i-mOADUhDznh66zm_e5c06mghUc6l98i31rnZzUXnIhx2n9fuiAKD0rKXdoS1ajwfIxh1OV5WPutMkiQ41K8yG3V9i0i2fo0" loading="lazy" decoding="async" />
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJChtxYd4eCzNhL09axch3zVYfA9Ef8PcPWgUEGaZJunl41NwtXTcHLk0UYKefYo9z0tGLblZDojH7MuXoJAU0GEqgVFoh2lGGGeaJLVVtdYlHemNFQ8QP6R5Cuer6Qv_6L9hbyl-i-mOADUhDznh66zm_e5c06mghUc6l98i31rnZzUXnIhx2n9fuiAKD0rKXdoS1ajwfIxh1OV5WPutMkiQ41K8yG3V9i0i2fo0"
+                        loading="lazy"
+                        decoding="async"
+                      />
                     </div>
                     <div
                       class="absolute inset-0 bg-primary/20 group-hover:bg-primary/35 transition-colors flex items-center justify-center"
@@ -537,51 +668,28 @@
                     <div
                       class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm backdrop-blur-sm"
                     >
-                      03 • Soutien aux proches
+                      03 • Le travail en équipe
                     </div>
                   </div>
                   <div class="md:col-span-7 space-y-space-xs">
                     <span
                       class="font-label-sm text-label-sm text-secondary uppercase font-semibold tracking-wider"
                     >
-                      Capsule 03 • Liens intergénérationnels
+                      Capsule 03 • Coordination pluridisciplinaire
                     </span>
                     <h3
                       class="font-headline-md text-headline-md text-primary tracking-tight"
                     >
-                      Accompagner aussi ceux qui accompagnent
+                      Des professionnels qui partagent leurs repères
                     </h3>
                     <p
                       class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
                     >
-                      Parce que le bien-être des aînés concerne toute la
-                      famille, nous valorisons l'écoute, le dialogue et la
-                      solidarité entre les générations, afin de soulager la
-                      charge mentale des aidants.
+                      L’infirmière coordinatrice travaille en lien avec
+                      l’orthophoniste et les aides-soignants pour intégrer les
+                      exercices cognitifs au quotidien et assurer la continuité
+                      des informations.
                     </p>
-                    <div class="pt-2">
-                      <button
-                        class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-semibold hover:text-secondary group"
-                        data-video-trigger="families"
-                        aria-haspopup="dialog"
-                        aria-controls="video-modal"
-                        type="button"
-                      >
-                        <i
-                          data-lucide="circle-play"
-                          class="text-lg site-icon"
-                          aria-hidden="true"
-                        ></i>
-                        <span class=""
-                          >Découvrir l'espace familles (2 min)</span
-                        >
-                        <i
-                          data-lucide="arrow-right"
-                          class="text-base group-hover:translate-x-1 transition-transform site-icon"
-                          aria-hidden="true"
-                        ></i>
-                      </button>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -595,8 +703,7 @@
                   <div
                     class="md:col-span-5 md:order-2 relative group cursor-pointer overflow-hidden rounded-2xl"
                     data-video-trigger="vision"
-                    aria-haspopup="dialog"
-                    aria-controls="video-modal"
+                    data-video-container="vision"
                     role="button"
                     tabindex="0"
                     aria-label="Visionner : Faire de la dignité des aînés une priorité"
@@ -607,7 +714,10 @@
                       <img
                         alt="Moment tendre et rires partagés entre un aîné et son petit-fils"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAigSJXk-IRdiVL2EV0sUFZf8wQGP5tOVVqZfX9lWe333jPp-BR02zZ7orL87O0C4w961lbWeOYAeEx1BtamBj2dZvF95gA_fev58hNnncskMN7UUv9gjv_7MLi5riZBjLegBBmbdjS7RJIFPx81nahP-B1Rrm_wHq4GMaFM3NFMaenbbYJ6z9kyMCQfAMgFH5upGKHHATLXFyXq7ifMrDZRKTPZjMFj4GmDnPcfA" loading="lazy" decoding="async" />
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAigSJXk-IRdiVL2EV0sUFZf8wQGP5tOVVqZfX9lWe333jPp-BR02zZ7orL87O0C4w961lbWeOYAeEx1BtamBj2dZvF95gA_fev58hNnncskMN7UUv9gjv_7MLi5riZBjLegBBmbdjS7RJIFPx81nahP-B1Rrm_wHq4GMaFM3NFMaenbbYJ6z9kyMCQfAMgFH5upGKHHATLXFyXq7ifMrDZRKTPZjMFj4GmDnPcfA"
+                        loading="lazy"
+                        decoding="async"
+                      />
                     </div>
                     <div
                       class="absolute inset-0 bg-primary/20 group-hover:bg-primary/35 transition-colors flex items-center justify-center"
@@ -625,7 +735,7 @@
                     <div
                       class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm backdrop-blur-sm"
                     >
-                      04 • Prospective
+                      04 • Préserver les capacités
                     </div>
                   </div>
                   <div class="md:col-span-7 md:order-1 space-y-space-xs">
@@ -637,37 +747,15 @@
                     <h3
                       class="font-headline-md text-headline-md text-primary tracking-tight"
                     >
-                      Faire de la dignité des aînés une priorité
+                      Respecter le rythme et les capacités de chacun
                     </h3>
                     <p
                       class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
                     >
-                      El-Hafeed défend une vision d'avenir dans laquelle la
-                      gériatrie et la gérontologie occupent une place
-                      essentielle dans les évolutions sociales et sanitaires du
-                      Maroc et du continent africain.
+                      L’équipe adapte les soins au rythme de la personne et
+                      cherche à préserver ses capacités, ses repères et son
+                      autonomie résiduelle.
                     </p>
-                    <div class="pt-2">
-                      <button
-                        class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-semibold hover:text-secondary group"
-                        data-video-trigger="vision"
-                        aria-haspopup="dialog"
-                        aria-controls="video-modal"
-                        type="button"
-                      >
-                        <i
-                          data-lucide="circle-play"
-                          class="text-lg site-icon"
-                          aria-hidden="true"
-                        ></i>
-                        <span class="">Voir notre plaidoyer (3 min)</span>
-                        <i
-                          data-lucide="arrow-right"
-                          class="text-base group-hover:translate-x-1 transition-transform site-icon"
-                          aria-hidden="true"
-                        ></i>
-                      </button>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -700,24 +788,23 @@
                     class="text-base site-icon"
                     aria-hidden="true"
                   ></i>
-                  Rayonnement &amp; Vision d'Avenir
+                  Notre engagement
                 </div>
                 <h2
                   class="font-headline-lg text-headline-lg text-primary tracking-tight"
                 >
-                  Un engagement qui dépasse les frontières
+                  Un projet construit autour de la personne
                 </h2>
                 <p
                   class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto leading-relaxed"
                 >
-                  Présent lors de la première rencontre
+                  El-Hafeed coordonne les interventions à domicile pour
                   <strong class="text-primary font-semibold"
-                    >African Global Health</strong
-                  >, El-Hafeed affirme son engagement pour une meilleure
-                  reconnaissance de la santé et de la dignité des personnes
-                  âgées. Une conviction forte : offrir à nos aînés la place
-                  qu'ils méritent au sein de nos sociétés, au Maroc comme à
-                  l'échelle africaine.
+                    >préserver les repères, les capacités et la dignité</strong
+                  >
+                  des personnes âgées. Le Projet d’Accompagnement à Domicile est
+                  construit avec la personne, ses proches et les professionnels
+                  concernés.
                 </p>
                 <!-- Editorial Highlight Callout -->
                 <div
@@ -731,8 +818,8 @@
                   <p
                     class="font-headline-sm italic text-primary text-lg md:text-xl font-medium mt-1"
                   >
-                    «&nbsp;Plus qu'un cabinet, El-Hafeed est un partenaire
-                    engagé pour l'avenir de nos aînés.&nbsp;»
+                    « Accompagner, préserver, soulager — avec dignité, amour et
+                    bienveillance. »
                   </p>
                 </div>
                 <!-- Key Takeaway Tags -->
@@ -742,22 +829,22 @@
                   <span
                     class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-semibold"
                   >
-                    African Global Health
+                    Équipe mobile pluridisciplinaire
                   </span>
                   <span
                     class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-semibold"
                   >
-                    Africa World 2050
+                    Projet d’Accompagnement à Domicile
                   </span>
                   <span
                     class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-semibold"
                   >
-                    35 pays représentés
+                    Évaluation à l’admission
                   </span>
                   <span
                     class="px-3.5 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold"
                   >
-                    Plaidoyer pour la gériatrie
+                    Suivi jour et nuit, 7j/7
                   </span>
                 </div>
               </div>
@@ -768,83 +855,6 @@
         <!-- FOOTER ET COORDONNÉES PRATIQUES            -->
         <!-- ========================================== -->
         <div data-site-footer aria-busy="true"></div>
-        <!-- ========================================== -->
-        <!-- VIDEO PRESENTATION MODAL                   -->
-        <!-- ========================================== -->
-        <div
-          class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-inverse-surface/80 backdrop-blur-md transition-all"
-          id="video-modal"
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="video-modal-title"
-          aria-describedby="video-modal-desc"
-        >
-          <div
-            class="bg-surface-container-lowest rounded-3xl max-w-lg w-full p-space-lg shadow-2xl relative animate-[fadeIn_0.2s_ease-out]"
-          >
-            <!-- Close Button -->
-            <button
-              class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface-container hover:bg-surface-container-high text-primary flex items-center justify-center transition-colors"
-              data-action="modal-close"
-              type="button"
-            >
-              <i
-                data-lucide="x"
-                class="text-xl site-icon"
-                aria-hidden="true"
-              ></i>
-            </button>
-            <div
-              class="w-12 h-12 rounded-2xl bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-sm"
-            >
-              <i
-                data-lucide="clapperboard"
-                class="text-2xl site-icon"
-                aria-hidden="true"
-              ></i>
-            </div>
-            <h3
-              class="font-headline-sm text-headline-sm text-primary pr-6"
-              id="video-modal-title"
-            >
-              Capsule vidéo El-Hafeed
-            </h3>
-            <p
-              class="font-body-md text-body-md text-on-surface-variant mt-2"
-              id="video-modal-desc"
-            >
-              Aperçu de la vidéo de présentation.
-            </p>
-            <div
-              class="my-space-md p-space-md rounded-2xl bg-surface-container text-on-surface flex items-start gap-3"
-            >
-              <i
-                data-lucide="info"
-                class="text-secondary text-2xl flex-shrink-0 mt-0.5 site-icon"
-                aria-hidden="true"
-              ></i>
-              <div class="space-y-1">
-                <span
-                  class="font-label-md text-label-md font-semibold text-primary block"
-                  >Vidéo de présentation El-Hafeed</span
-                >
-                <p class="font-body-sm text-body-sm text-on-surface-variant">
-                  Bientôt disponible. Cette capsule vidéo sera intégrée lors de
-                  la mise en ligne finale des reportages cliniques.
-                </p>
-              </div>
-            </div>
-            <div class="flex justify-end gap-2 pt-2">
-              <button
-                class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container hover:text-on-primary-container transition-all"
-                data-action="modal-close"
-                type="button"
-              >
-                Compris, fermer
-              </button>
-            </div>
-          </div>
-        </div>
         <!-- ========================================== -->
         <!-- TOAST NOTIFICATION                         -->
         <!-- ========================================== -->
@@ -893,6 +903,6 @@
       </svg>
     </a>
     <script type="module" src="./js/main.js"></script>
-      <script type="module" src="./js/site-shell.js"></script>
-</body>
+    <script type="module" src="./js/site-shell.js"></script>
+  </body>
 </html>

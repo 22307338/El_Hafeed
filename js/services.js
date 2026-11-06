@@ -1,97 +1,11 @@
-export function initServicesSection() {
-  const services = [
-    {
-      id: "infirmerie",
-      label: "Infirmerie",
-      image: "infirmerie.webp",
-      alt: "Une infirmière prend la tension d’une patiente âgée dans une salle de soins lumineuse",
-      tagline: "Des soins attentifs, au quotidien",
-      intro:
-        "Notre équipe infirmière assure une présence continue et bienveillante. Elle accompagne chaque patient dans ses soins quotidiens, le suivi de ses traitements et la surveillance de son état de santé.",
-      details:
-        "En lien étroit avec les médecins et les autres professionnels de l’établissement, les infirmières et infirmiers coordonnent le parcours de soins et veillent au confort, à la sécurité et à la dignité de chacun.",
-      prestations: [
-        "Soins techniques et pansements",
-        "Administration et suivi des traitements",
-        "Prise des constantes et prévention",
-        "Éducation thérapeutique du patient",
-      ],
-      hours: "Présence 24 h/24, 7 j/7",
-    },
-    {
-      id: "kinesitherapie",
-      label: "Kinésithérapie",
-      image: "kinesitherapie.webp",
-      alt: "Un kinésithérapeute accompagne un patient lors d’un exercice de rééducation du genou",
-      tagline: "Retrouver le mouvement, en confiance",
-      intro:
-        "Le service de kinésithérapie aide les patients à retrouver leur mobilité, leur autonomie et leur équilibre grâce à des séances personnalisées et progressives.",
-      details:
-        "Après un bilan initial, le kinésithérapeute définit un programme adapté aux besoins de chacun : rééducation après une intervention, prévention des chutes, soulagement des douleurs ou maintien des capacités physiques.",
-      prestations: [
-        "Rééducation fonctionnelle et motrice",
-        "Prévention des chutes et travail de l’équilibre",
-        "Kinésithérapie respiratoire",
-        "Massages et traitement de la douleur",
-      ],
-      hours: "Du lundi au vendredi, 8 h – 18 h",
-    },
-    {
-      id: "orthophonie",
-      label: "Orthophonie",
-      image: "orthophonie.webp",
-      alt: "Une orthophoniste travaille avec un enfant à l’aide de cartes illustrées",
-      tagline: "Communiquer, échanger, s’exprimer",
-      intro:
-        "L’orthophonie prend en charge les troubles de la communication, du langage, de la voix et de la déglutition, chez l’enfant comme chez l’adulte.",
-      details:
-        "Nos orthophonistes proposent un accompagnement sur mesure, en lien avec les familles, pour favoriser l’expression, la compréhension et une alimentation en toute sécurité.",
-      prestations: [
-        "Bilans du langage oral et écrit",
-        "Rééducation de la parole et de la voix",
-        "Prise en charge des troubles de la déglutition",
-        "Accompagnement des aidants et des familles",
-      ],
-      hours: "Sur rendez-vous, du lundi au vendredi",
-    },
-    {
-      id: "psychologie",
-      label: "Psychologie",
-      image: "psychologie.webp",
-      alt: "Une psychologue écoute attentivement un patient dans un bureau apaisant",
-      tagline: "Un espace d’écoute et de soutien",
-      intro:
-        "Le service de psychologie offre un lieu d’écoute confidentiel pour accompagner les patients et leurs proches dans les moments de fragilité, de changement ou de difficulté.",
-      details:
-        "Entretiens individuels, soutien aux familles ou groupes de parole : nos psychologues aident chacun à mieux vivre sa situation, à apaiser ses inquiétudes et à retrouver un équilibre.",
-      prestations: [
-        "Entretiens de soutien individuels",
-        "Accompagnement des familles et des aidants",
-        "Évaluations psychologiques",
-        "Groupes de parole et ateliers",
-      ],
-      hours: "Sur rendez-vous, du lundi au samedi",
-    },
-    {
-      id: "nutrition",
-      label: "Nutrition",
-      image: "nutrition.webp",
-      alt: "Une diététicienne présente un plan alimentaire entourée de fruits et légumes frais",
-      tagline: "Bien manger pour mieux se soigner",
-      intro:
-        "Notre diététicienne veille à ce que l’alimentation de chaque patient soit adaptée à ses besoins, à son état de santé et à ses goûts.",
-      details:
-        "Elle établit des recommandations personnalisées, travaille avec l’équipe de restauration et accompagne les patients dans la prévention de la dénutrition et la gestion des régimes spécifiques.",
-      prestations: [
-        "Bilans nutritionnels personnalisés",
-        "Prévention et suivi de la dénutrition",
-        "Régimes adaptés et textures modifiées",
-        "Conseils et ateliers d’éducation alimentaire",
-      ],
-      hours: "Du lundi au vendredi, 9 h – 17 h",
-    },
-  ];
-  const section = document.querySelector(".hs-section");
+export function initServicesSection(services = []) {
+  const section = document.querySelector(".equipe-services.hs-section");
+  if (!section || !Array.isArray(services) || !services.length) return;
+  services = services.map((service) => ({
+    ...service,
+    image: service.image || service.imageUrl || "",
+    prestations: service.prestations || service.benefits || [],
+  }));
   const layer = section.querySelector(".hs-bubbles");
   const director = section.querySelector("#hs-director");
   const directorCard = director?.querySelector(".hs-director-card");
@@ -106,7 +20,9 @@ export function initServicesSection() {
   function loadSelectedDetailImage(service) {
     const image = details.querySelector("img[data-service-image]");
     if (!image || !service) return;
-    image.src = "resources/healthcare-services-assets/" + service.image;
+    image.src = /^https:\/\//i.test(service.image)
+      ? service.image
+      : "resources/healthcare-services-assets/" + service.image;
     image.loading = "eager";
     image.fetchPriority = "high";
     image.removeAttribute("data-src");
@@ -200,8 +116,8 @@ export function initServicesSection() {
     const update = () => {
       details.dataset.service = s.id;
       details.innerHTML =
-      '<div class="hs-photo"><img data-service-image data-src="resources/healthcare-services-assets/' +
-      esc(s.image) +
+      '<div class="hs-photo"><img data-service-image data-src="' +
+      esc(/^https:\/\//i.test(s.image) ? s.image : "resources/healthcare-services-assets/" + s.image) +
       '" alt="' +
       esc(s.alt) +
       '" loading="lazy" decoding="async"><span class="hs-pill">' +
@@ -273,7 +189,9 @@ export function initServicesSection() {
           rad = (angle * Math.PI) / 180;
         const x = main ? 0 : distance * Math.cos(rad) + satelliteShift,
           y = main ? 380 : 380 + distance * Math.sin(rad);
-        const imageSrc = "resources/healthcare-services-assets/" + s.image;
+        const imageSrc = /^https:\/\//i.test(s.image)
+          ? s.image
+          : "resources/healthcare-services-assets/" + s.image;
         const imageSourceAttribute = servicePhotosReady ? "href" : "data-src";
         const clipId = "hs-flower-clip-" + s.id;
         const labelX = main ? mainCutX + 12 : 124;

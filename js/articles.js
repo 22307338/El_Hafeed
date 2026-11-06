@@ -1,27 +1,23 @@
-// ---------------------------------------------------------------------------
-// Sanity connection
-// ---------------------------------------------------------------------------
-const SANITY = {
-  projectId: "pxacju14",
-  dataset: "production",
-  apiVersion: "2024-01-01",
-  // "apicdn.sanity.io" = fast, cached (use in production)
-  // "api.sanity.io"    = always fresh (handy while developing)
-  host: "apicdn.sanity.io",
-};
+import { sanityFetch } from "./sanity.js";
 
 const ARTICLES_QUERY = `*[_type == "article" && defined(slug.current)] | order(publishedAt desc){
   title,
   "slug": slug.current,
   excerpt,
-  category,
+  "category": category->title,
   publishedAt,
+  metaTitle,
+  metaDescription,
   "imageUrl": mainImage.asset->url,
+  mainImageAlt,
+  "media": media[]{type, "imageUrl": image.asset->url, "posterUrl": poster.asset->url, videoUrl, alt, caption},
   body[]{..., "imageUrl": asset->url}
 }`;
-
+const ARTICLE_PAGE_QUERY = `*[_id == "articlePage"][0]`;
+const CATEGORIES_QUERY = `*[_type == "articleCategory"] | order(title asc){title}`;
 let articles = [];
 let categories = ["Tous les sujets"];
+let pageContent = {};
 
 const listing = document.querySelector("#articles-listing");
 const detail = document.querySelector("#article-detail");
@@ -46,6 +42,11 @@ function escapeHtml(value = "") {
     };
     return entities[character];
   });
+}
+
+function safeContentUrl(value, fallback = "#contact") {
+  const url = String(value || "").trim();
+  return /^(https?:|mailto:|tel:|\/|#|\.)/i.test(url) ? url : fallback;
 }
 
 // ---------------------------------------------------------------------------
@@ -123,44 +124,125 @@ function portableTextToHtml(blocks = []) {
 }
 
 function normalizeArticle(raw) {
-  const text = (raw.body || [])
-    .filter((b) => b._type === "block")
-    .map((b) => (b.children || []).map((c) => c.text).join(" "))
+  const body = raw.body || [];
+  const text = body
+    .filter((block) => block._type === "block")
+    .map((block) => (block.children || []).map((child) => child.text).join(" "))
     .join(" ");
   const words = text.split(/\s+/).filter(Boolean).length;
-  const cover = raw.imageUrl
-    ? `${raw.imageUrl}?w=1200&auto=format`
-    : "resources/logo-cropped.webp";
+  const imageUrl = raw.imageUrl || raw.mainImage || "resources/logo-cropped.webp";
+  const cover = /^https?:/.test(imageUrl) ? `${imageUrl}?w=1200&auto=format` : imageUrl;
+  const supplementaryMedia = (raw.media || []).map((item) => ({
+    type: item.type === "video" ? "video" : "image",
+    src: item.type === "video" ? item.videoUrl : (item.imageUrl || item.image),
+    poster: item.posterUrl || item.poster || "",
+    alt: item.alt || raw.title,
+    caption: item.caption || "",
+  })).filter((item) => item.src);
 
   return {
-    slug: raw.slug,
+    slug: raw.slug?.current || raw.slug,
     title: raw.title,
     excerpt: raw.excerpt || "",
-    category: raw.category || "Autres sujets",
+    category: typeof raw.category === "string" ? raw.category : (raw.category?.title || "Autres sujets"),
     minutes: Math.max(1, Math.ceil(words / 200)),
     date: raw.publishedAt
-      ? new Date(raw.publishedAt).toLocaleDateString("fr-FR", {
-          day: "numeric",
-          month: "long",
-          year: "numeric",
-        })
+      ? new Date(raw.publishedAt).toLocaleDateString("fr-FR", {day: "numeric", month: "long", year: "numeric"})
       : "",
-    media: [{ type: "image", src: cover, alt: raw.title }],
-    bodyHtml: portableTextToHtml(raw.body),
+    media: [{type: "image", src: cover, alt: raw.mainImageAlt || raw.title}, ...supplementaryMedia],
+    bodyHtml: portableTextToHtml(body),
   };
 }
 
-async function loadArticles() {
-  const url = `https://${SANITY.projectId}.${SANITY.host}/v${SANITY.apiVersion}/data/query/${SANITY.dataset}?query=${encodeURIComponent(ARTICLES_QUERY)}`;
-  const response = await fetch(url);
-  if (!response.ok) throw new Error(`Sanity ${response.status}`);
-  const { result } = await response.json();
-  return (result || []).map(normalizeArticle);
+async function loadLocalArticleCopy() {
+  const response = await fetch("./content/articles.json");
+  if (!response.ok) throw new Error(`Website content ${response.status}`);
+  const localArticles = await response.json();
+  return localArticles.map(normalizeArticle);
 }
 
-// ---------------------------------------------------------------------------
+async function loadPageContent() {
+  try {
+    const result = await sanityFetch(ARTICLE_PAGE_QUERY);
+    if (result) return result;
+  } catch (error) {
+    console.warn("Using the local Articles page copy while Sanity is unavailable.", error);
+  }
+  const response = await fetch("./content/articles-page.json");
+  if (!response.ok) throw new Error(`Website page content ${response.status}`);
+  return response.json();
+}
+
+async function loadCategories() {
+  try {
+    const result = await sanityFetch(CATEGORIES_QUERY);
+    if (result?.length) return result.map((item) => item.title).filter(Boolean);
+  } catch (error) {
+    console.warn("Using article categories as filters while Sanity is unavailable.", error);
+  }
+  return [...new Set(articles.map((article) => article.category).filter(Boolean))];
+}
+
+function applyPageContent() {
+  const setText = (selector, value) => {
+    const element = document.querySelector(selector);
+    if (element && value) element.textContent = value;
+  };
+  setText(".articles-eyebrow", pageContent.eyebrow);
+  setText("#articles-title", pageContent.title);
+  setText(".articles-hero > p:not(.articles-eyebrow)", pageContent.intro);
+  setText("#article-topics-title", pageContent.filtersHeading);
+  setText("#article-list-title", pageContent.featuredHeading);
+  setText("#articles-listing .articles-section-heading:nth-of-type(2) h2", pageContent.otherArticlesHeading);
+  setText("#articles-listing .articles-help h2", pageContent.contactTitle);
+  setText("#articles-listing .articles-help p", pageContent.contactText);
+  const search = document.querySelector("#article-search-input");
+  if (search) {
+    if (pageContent.searchPlaceholder) search.placeholder = pageContent.searchPlaceholder;
+    if (pageContent.searchLabel) search.setAttribute("aria-label", pageContent.searchLabel);
+  }
+  setText("#article-search button", pageContent.searchButtonLabel);
+  const contact = document.querySelector("#articles-listing .articles-help .article-button");
+  if (contact) {
+    contact.href = safeContentUrl(pageContent.contactButtonUrl, "index.html#contact");
+    const icon = contact.querySelector("i");
+    contact.textContent = pageContent.contactButtonLabel || "Parlons-en";
+    if (icon) contact.append(icon);
+  }
+  if (pageContent.metaTitle) document.title = pageContent.metaTitle;
+  if (pageContent.metaDescription) document.querySelector('meta[name="description"]')?.setAttribute("content", pageContent.metaDescription);
+}
+
+async function loadArticles() {
+  try {
+    const result = await sanityFetch(ARTICLES_QUERY);
+    if (result?.length) return result.map(normalizeArticle);
+  } catch (error) {
+    console.warn("Using the Website article copy while Sanity is unavailable.", error);
+  }
+  return loadLocalArticleCopy();
+}
 // Rendering (unchanged design)
 // ---------------------------------------------------------------------------
+function getVideoEmbedUrl(value = "") {
+  try {
+    const url = new URL(value);
+    const host = url.hostname.replace(/^www\./, "");
+    if (host === "youtu.be") {
+      const id = url.pathname.slice(1);
+      return id ? `https://www.youtube-nocookie.com/embed/${id}` : "";
+    }
+    if (host === "youtube.com" || host === "m.youtube.com") {
+      const id = url.searchParams.get("v") || url.pathname.match(/^\/embed\/([^/]+)/)?.[1];
+      return id ? `https://www.youtube-nocookie.com/embed/${id}` : "";
+    }
+    if (host === "vimeo.com" || host === "player.vimeo.com") {
+      const id = url.pathname.match(/\/(?:video\/)?(\d+)/)?.[1];
+      return id ? `https://player.vimeo.com/video/${id}` : "";
+    }
+  } catch {}
+  return "";
+}
 function mediaMarkup(
   media,
   className = "article-cover",
@@ -180,7 +262,7 @@ function cardCoverMarkup(media) {
 }
 
 function articleLink(article, className = "article-read-link") {
-  return `<a class="${className}" href="articles.html?article=${encodeURIComponent(article.slug)}" data-article-link="${escapeHtml(article.slug)}">Lire la réponse <i data-lucide="arrow-up-right" class="site-icon" aria-hidden="true"></i></a>`;
+  return `<a class="${className}" href="articles.html?article=${encodeURIComponent(article.slug)}" data-article-link="${escapeHtml(article.slug)}">${escapeHtml(pageContent.readArticleLabel || "Lire la réponse")} <i data-lucide="arrow-up-right" class="site-icon" aria-hidden="true"></i></a>`;
 }
 
 function articleMeta(article) {
@@ -237,7 +319,7 @@ function renderListing() {
     ? otherArticles.map(renderCard).join("")
     : matches.length
       ? ""
-      : `<p class="articles-empty">Aucun article ne correspond à votre recherche. Essayez un autre mot-clé.</p>`;
+      : `<p class="articles-empty">${escapeHtml(pageContent.emptySearchText || "Aucun article ne correspond à votre recherche. Essayez un autre mot-clé.")}</p>`;
   resultCount.textContent = `${matches.length} article${matches.length > 1 ? "s" : ""}`;
   window.lucide?.createIcons();
 }
@@ -246,7 +328,7 @@ function renderFilters() {
   filters.innerHTML = categories
     .map(
       (category) =>
-        `<button class="article-filter" type="button" data-category="${escapeHtml(category)}" aria-pressed="${category === activeCategory}">${escapeHtml(category)}</button>`,
+        `<button class="article-filter" type="button" data-category="${escapeHtml(category)}" aria-pressed="${category === activeCategory}">${escapeHtml(category === categories[0] ? (pageContent.allCategoriesLabel || category) : category)}</button>`,
     )
     .join("");
 }
@@ -270,15 +352,15 @@ function renderDetail(article) {
       ${articleMeta(article)}
       <h1>${escapeHtml(article.title)}</h1>
       <p class="article-excerpt">${escapeHtml(article.excerpt)}</p>
-      <div class="article-author"><span class="article-author-mark"><i data-lucide="heart-handshake" class="site-icon" aria-hidden="true"></i></span><span>La rédaction El-Hafeed · ${escapeHtml(article.date)} · ${article.minutes} min de lecture</span></div>
+      <div class="article-author"><span class="article-author-mark"><i data-lucide="heart-handshake" class="site-icon" aria-hidden="true"></i></span><span>${escapeHtml(pageContent.articleAuthorLabel || "La rédaction El-Hafeed")} · ${escapeHtml(article.date)} · ${article.minutes} min de lecture</span></div>
     </header>
     <div class="article-media-grid" data-count="${article.media.length}" aria-label="Médias de l’article">${media}</div>
     <div class="article-body">${article.bodyHtml}
-      <aside class="article-callout">Chaque situation est différente. Les informations de cet article sont générales : échangez avec l’équipe de santé qui accompagne votre proche pour obtenir un avis adapté.</aside>
+      <aside class="article-callout">${escapeHtml(pageContent.articleDisclaimer || "Chaque situation est différente. Les informations de cet article sont générales : échangez avec l’équipe de santé qui accompagne votre proche pour obtenir un avis adapté.")}</aside>
     </div>
     <div class="article-detail-footer">
-      <a class="article-back-link" href="articles.html" data-articles-back><i data-lucide="arrow-left" class="site-icon" aria-hidden="true"></i>Retour aux articles</a>
-      <a class="article-button" href="index.html#contact">Parler à notre équipe<i data-lucide="arrow-up-right" class="site-icon" aria-hidden="true"></i></a>
+      <a class="article-back-link" href="articles.html" data-articles-back><i data-lucide="arrow-left" class="site-icon" aria-hidden="true"></i>${escapeHtml(pageContent.backToArticlesLabel || "Retour aux articles")}</a>
+      <a class="article-button" href="${escapeHtml(safeContentUrl(pageContent.contactButtonUrl, "index.html#contact"))}">${escapeHtml(pageContent.detailContactLabel || "Parler à notre équipe")}<i data-lucide="arrow-up-right" class="site-icon" aria-hidden="true"></i></a>
     </div>`;
   window.lucide?.createIcons();
 }
@@ -292,10 +374,10 @@ function showCurrentPage({ scroll = false } = {}) {
     topicsSection.hidden = true;
     detail.classList.add("is-visible");
     renderDetail(article);
-    document.title = `${article.title} — El-Hafeed`;
+    document.title = article.metaTitle || `${article.title} — El-Hafeed`;
     document
       .querySelector('meta[name="description"]')
-      ?.setAttribute("content", article.excerpt);
+      ?.setAttribute("content", article.metaDescription || article.excerpt);
     if (scroll) window.scrollTo({ top: 0, behavior: "smooth" });
     return;
   }
@@ -305,13 +387,7 @@ function showCurrentPage({ scroll = false } = {}) {
   topicsSection.hidden = false;
   listing.hidden = false;
   renderListing();
-  document.title = "Articles et conseils — El-Hafeed";
-  document
-    .querySelector('meta[name="description"]')
-    ?.setAttribute(
-      "content",
-      "Des repères pratiques et des conseils pour accompagner les personnes âgées et leurs proches au quotidien.",
-    );
+  applyPageContent();
   if (scroll) window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
@@ -323,22 +399,19 @@ async function init() {
   cardGrid.hidden = false;
   cardGrid.innerHTML = `<p class="articles-empty">Chargement des articles…</p>`;
 
-  try {
-    articles = await loadArticles();
-  } catch (error) {
-    console.error(error);
-    cardGrid.innerHTML = `<p class="articles-empty">Impossible de charger les articles pour le moment. Veuillez réessayer plus tard.</p>`;
-    return;
-  }
+  articles = await loadArticles();
+  pageContent = await loadPageContent();
+  applyPageContent();
 
   if (articles.length === 0) {
-    cardGrid.innerHTML = `<p class="articles-empty">Les premiers articles arrivent bientôt.</p>`;
+    cardGrid.innerHTML = `<p class="articles-empty">${escapeHtml(pageContent.emptyArticlesText || "Les premiers articles arrivent bientôt.")}</p>`;
     resultCount.textContent = "";
     return;
   }
 
-  const found = [...new Set(articles.map((a) => a.category))];
-  categories = ["Tous les sujets", ...found];
+  const found = await loadCategories();
+  const allLabel = pageContent.allCategoriesLabel || "Tous les sujets";
+  categories = [allLabel, ...found.filter((item) => item !== allLabel)];
   activeCategory = categories[0];
   renderFilters();
   showCurrentPage();
@@ -428,8 +501,7 @@ document.addEventListener("click", (event) => {
     linkedin: "Le compte LinkedIn sera connecté très prochainement.",
     instagram: "Le compte Instagram sera connecté très prochainement.",
     facebook: "Le compte Facebook sera connecté très prochainement.",
-    callback:
-      "Formulaire de rappel direct : un coordinateur vous contactera sous 24 h.",
+    callback: "Pour organiser un échange, contactez directement l’équipe El-Hafeed.",
     legal: "Document en cours d’actualisation.",
     privacy: "La politique de confidentialité sera bientôt disponible.",
   };
@@ -449,3 +521,4 @@ if (window.lucide) {
     once: true,
   });
 }
+

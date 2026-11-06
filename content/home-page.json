@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "title": "Un accompagnement, au plus près de vos aînés.",
+    "description": "El-Hafeed accompagne à domicile les personnes âgées en perte d’autonomie, à Rabat et Casablanca. Nous coordonnons les interventions dans le respect de leur histoire, de leurs habitudes et de leur rythme.",
+    "supportingText": "Accompagner, préserver, soulager — avec dignité, amour et bienveillance.",
+    "desktopBackground": "resources/hero-desktop.webp",
+    "mobileBackground": "resources/hero-mobile.webp",
+    "brandSymbol": "resources/logo-symbol.webp",
+    "badges": [
+      {"label":"Équipe pluridisciplinaire","icon":"users-round"},
+      {"label":"Accompagnement à domicile","icon":"house-plus"},
+      {"label":"Jour et nuit, 7j/7","icon":"shield-check"}
+    ]
+  },
+  "legitimacy": {
+    "eyebrow":"Un accompagnement fondé sur l’expérience",
+    "title":"Notre légitimité dans le secteur",
+    "intro":"El-Hafeed accompagne à domicile les personnes âgées en perte d’autonomie et leurs proches. Notre approche pluridisciplinaire s’appuie sur le respect de l’histoire, des habitudes et du rythme de chacun, à Rabat et Casablanca.",
+    "videoTitle":"Un accompagnement pensé pour chaque personne",
+    "videoDescription":"Un aperçu de notre approche de l’accompagnement à domicile et de la coordination autour de la personne âgée.",
+    "videoPoster":"resources/healthcare-services-assets/infirmerie.webp",
+    "videoUrl":"",
+    "stories":[
+      {"title":"Une expérience clinique et de terrain","description":"Diplômée en psychopathologie clinique de Paris XI, la fondatrice a exercé plus de dix ans en France avant de créer El-Hafeed au Maroc.","photos":["resources/team-members/directrice.webp","resources/home-safety-article.webp"]},
+      {"title":"La santé, une démarche collective","description":"L’infirmière coordinatrice organise les interventions et maintient le lien entre les professionnels et la famille.","photos":["resources/healthcare-services-assets/infirmerie.webp","resources/healthcare-services-assets/kinesitherapie.webp"]},
+      {"title":"Partager les savoirs","description":"L’analyse des pratiques offre à l’équipe un espace d’échange animé par une psychologue, sans jugement.","photos":["resources/healthcare-services-assets/orthophonie.webp","resources/healthcare-services-assets/psychologie.webp"]},
+      {"title":"Soutenir aussi les proches","description":"La psychologue accompagne les familles face aux bouleversements, à l’impuissance et à l’épuisement.","photos":["resources/healthcare-services-assets/nutrition.webp"]}
+    ]
+  },
+  "approach": {
+    "eyebrow":"Une organisation pensée pour chaque personne",
+    "title":"L’accompagnement, étape par étape",
+    "intro":"Découvrir le Projet d’Accompagnement à Domicile, les interventions coordonnées et la place des proches.",
+    "steps":[
+      {"eyebrow":"Capsule 01 · Le projet à domicile","title":"Chaque accompagnement commence par une évaluation","description":"La fondatrice conduit une évaluation d’admission qui prend en compte l’histoire de vie, les habitudes, la mobilité, l’autonomie et les besoins de la personne.","buttonLabel":"Découvrir le projet à domicile","videoId":"mission","cover":"resources/healthcare-services-assets/infirmerie.webp"},
+      {"eyebrow":"Capsule 02 · Soins et accompagnement","title":"Des soins le matin, un accompagnement l’après-midi","description":"Le matin est consacré aux soins, à l’hygiène et au confort. L’après-midi, les activités cognitives, les échanges et les sorties suivent le programme défini avec la personne.","buttonLabel":"Voir comment la journée s’organise","videoId":"services","cover":"resources/healthcare-services-assets/kinesitherapie.webp"},
+      {"eyebrow":"Capsule 03 · Coordination pluridisciplinaire","title":"Des professionnels qui partagent leurs repères","description":"L’infirmière coordinatrice travaille en lien avec l’orthophoniste et les aides-soignants pour intégrer les exercices cognitifs au quotidien et assurer la continuité des informations.","buttonLabel":"Découvrir l’espace familles","videoId":"families","cover":"resources/healthcare-services-assets/psychologie.webp"},
+      {"eyebrow":"Capsule 04 · Respecter les capacités","title":"Respecter le rythme et les capacités de chacun","description":"L’équipe adapte les soins au rythme de la personne et cherche à préserver ses capacités, ses repères et son autonomie résiduelle.","buttonLabel":"En savoir plus sur notre approche","videoId":"vision","cover":"resources/healthcare-services-assets/orthophonie.webp"}
+    ]
+  },
+  "closing": {
+    "eyebrow":"Notre engagement",
+    "title":"Un projet construit autour de la personne",
+    "body":"El-Hafeed coordonne les interventions à domicile pour préserver les repères, les capacités et la dignité des personnes âgées. Le Projet d’Accompagnement à Domicile est construit avec la personne, ses proches et les professionnels concernés.",
+    "quote":"Accompagner, préserver, soulager — avec dignité, amour et bienveillance.",
+    "tags":["Respecter les choix et le rythme","Préserver les capacités","Coordonner autour de la personne"]
+  },
+  "metaTitle":"El-Hafeed — Accompagnement gériatrique à domicile",
+  "metaDescription":"El-Hafeed accompagne les personnes âgées en perte d’autonomie à domicile, à Rabat et Casablanca, dans le respect de leur histoire et de leur rythme."
+}
