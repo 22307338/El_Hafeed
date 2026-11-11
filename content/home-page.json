@@ -9,7 +9,7 @@
     "brandSymbol": "resources/logo-symbol.webp",
     "values": [
       {"title":"ACCOMPAGNER","description":"Être présents auprès de nos aînés et leur proposer un accompagnement adapté à leurs besoins.","icon":"users-round"},
-      {"title":"PRÉSERVER","description":"Préserver leurs capacités, leur autonomie et leur qualité de vie.","icon":"shield-check"},
+      {"title":"PRÉSERVER","description":"Préserver leurs capacités, leur autonomie et leur qualité de vie.","icon":"person-protected"},
       {"title":"SOULAGER","description":"Soulager les familles et accompagner leurs proches dans les différentes étapes du vieillissement.","icon":"heart-handshake"}
     ]
   },

@@ -107,7 +107,14 @@ function renderMembers(members) {
     setText(card.querySelector(".team-member-capsule-heading h3"), member.name);
     setText(card.querySelector(".team-member-capsule-heading p"), member.role);
     setText(card.querySelector(".team-member-role"), member.speciality || member.specialty);
-    setText(card.querySelector(".team-member-copy > p"), member.description);
+    const missionPreview = card.querySelector(".team-member-missions-preview");
+    if (missionPreview) {
+      missionPreview.replaceChildren(...(Array.isArray(member.missions) ? member.missions : []).slice(0, 3).map((mission) => {
+        const item = document.createElement("li");
+        item.textContent = mission;
+        return item;
+      }));
+    }
     const image = card.querySelector(".team-member-photo img");
     const photoUrl = member.photoUrl || (typeof member.photo === "string" ? member.photo : "");
     if (image) {
@@ -124,6 +131,7 @@ function renderMembers(members) {
       name: member.name || "",
       role: member.role || "",
       pole: member.speciality || member.specialty || "",
+      description: member.description || "",
       points: Array.isArray(member.missions) ? member.missions : [],
     };
   });

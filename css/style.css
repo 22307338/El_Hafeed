@@ -401,7 +401,7 @@
     display: flex;
     flex-direction: column;
     align-self: start;
-    gap: clamp(0.5rem, 1vh, 0.75rem);
+    gap: clamp(4.5rem, 6vw, 6rem);
   }
 
   .hero-intro {
@@ -435,7 +435,7 @@
   .hero-brand-wrap {
     position: absolute;
     z-index: 2;
-    top: 20%;
+    top: 30%;
     left: 50%;
     display: flex;
     width: min(15vw, 250px);
@@ -447,8 +447,8 @@
   }
 
   .hero-brand-symbol {
-    width: 100%;
-    max-width: 200px;
+    width: 150%;
+    max-width: 400px;
     aspect-ratio: 1 / 1;
     background: transparent;
     border-radius: 0;
@@ -2092,7 +2092,7 @@
   max-width: 56rem;
   margin-top: clamp(1.25rem, 2vw, 2rem);
   color: #f3fffc;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .hero-values-heading {
@@ -2163,7 +2163,7 @@
 }
 
 .hero-value-card--soulager {
-  background: #e7deee;
+  background: #e2efeb;
 }
 
 .hero-value-icon {
@@ -2177,7 +2177,7 @@
 }
 
 .hero-value-card--soulager .hero-value-icon {
-  background: #82739b;
+  background: #4b958b;
 }
 
 .hero-value-icon .site-icon {

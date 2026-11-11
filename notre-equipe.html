@@ -27,9 +27,7 @@
     <main class="team-page-main pt-20">
       <section class="team-page-intro" aria-labelledby="team-page-title">
         <div class="team-page-intro-inner">
-          <p class="team-eyebrow">
-            <span aria-hidden="true"></span>Accompagner · Préserver · Soulager
-          </p>
+         
           <h1 id="team-page-title">Une équipe attentive à chaque personne</h1>
           <p class="team-page-intro-copy" id="team-page-intro-copy">
             À Rabat et Casablanca, des professionnels coordonnent leurs
@@ -40,10 +38,6 @@
             <li>
               <i data-lucide="users-round" aria-hidden="true"></i>Une équipe
               pluridisciplinaire
-            </li>
-            <li>
-              <i data-lucide="clock-3" aria-hidden="true"></i>Présence
-              7 jours sur 7
             </li>
             <li>
               <i data-lucide="house-plus" aria-hidden="true"></i>À domicile,
@@ -71,11 +65,7 @@
                 Nous sommes convaincus qu’un accompagnement de qualité nécessite de croiser les compétences et les regards de plusieurs professionnels. Cette complémentarité nous permet de mieux comprendre les besoins de votre proche, de préserver ses capacités et d’adapter son accompagnement au fil du temps.
               </p>
             </div>
-            <div class="team-multidisciplinary-values" aria-label="Nos repères d’accompagnement">
-              <span><i data-lucide="heart-handshake" aria-hidden="true"></i>Accompagnement humain</span>
-              <span><i data-lucide="users-round" aria-hidden="true"></i>Coordination des interventions</span>
-              <span><i data-lucide="shield-check" aria-hidden="true"></i>Dignité et confiance</span>
-            </div>
+           
           </div>
         </article>
       </section>
@@ -100,156 +90,126 @@
             <article class="team-member-card" data-member-key="coordinatrice">
               <div class="team-member-capsule team-member-infirmary">
                 <div class="team-member-capsule-heading">
-                  <h3>L’infirmière coordinatrice</h3>
-                  <p>Coordination de l’accompagnement</p>
+                  <h3>Infirmière coordinatrice</h3>
+                  <p>Coordonne l’accompagnement autour de votre proche.</p>
                 </div>
                 <div class="team-member-photo"><img src="./resources/healthcare-services-assets/infirmerie.webp" alt="Illustration de soins infirmiers et de coordination à domicile" loading="lazy" decoding="async" /></div>
               </div>
               <div class="team-member-copy">
                 <span class="team-member-role">Coordination des soins</span>
-                <p>Elle assure la coordination de l’accompagnement et veille à sa cohérence, en lien avec les professionnels de l’équipe, les familles et les médecins.</p>
+                <ul class="team-member-missions-preview" aria-label="Missions principales">
+                  <li>Veiller à la cohérence de l’accompagnement.</li>
+                  <li>Faire le lien entre l’équipe, les familles et les médecins.</li>
+                </ul>
                 <button class="team-member-mission-button" onclick="toggleMissionModal('coordinatrice')" type="button" aria-haspopup="dialog" aria-controls="team-mission-modal"><span>Voir ses missions</span><i data-lucide="arrow-right" aria-hidden="true"></i></button>
               </div>
             </article>
             <article class="team-member-card" data-member-key="aides-soignants">
               <div class="team-member-capsule team-member-care">
                 <div class="team-member-capsule-heading">
-                  <h3>Nos aides-soignants à domicile</h3>
-                  <p>Accompagnement au quotidien</p>
+                  <h3>Aides-soignants, infirmiers auxiliaires et infirmiers polyvalents</h3>
+                  <p>Accompagnent les soins et les gestes du quotidien.</p>
                 </div>
                 <div class="team-member-photo"><img src="./resources/healthcare-services-assets/infirmerie.webp" alt="Illustration d’un accompagnement de soins à domicile" loading="lazy" decoding="async" /></div>
               </div>
               <div class="team-member-copy">
-                <span class="team-member-role">Vie quotidienne &amp; autonomie</span>
-                <p>Ils accompagnent votre proche dans les actes essentiels de la vie quotidienne : toilette, hygiène, repas, déplacements, sorties et activités de stimulation, tout en favorisant le maintien de son autonomie.</p>
+                <span class="team-member-role">Soins &amp; autonomie</span>
+                <ul class="team-member-missions-preview" aria-label="Missions principales">
+                  <li>Accompagner la toilette, l’hygiène, les repas et les déplacements.</li>
+                  <li>Proposer sorties et activités qui soutiennent l’autonomie.</li>
+                </ul>
                 <button class="team-member-mission-button" onclick="toggleMissionModal('aides-soignants')" type="button" aria-haspopup="dialog" aria-controls="team-mission-modal"><span>Voir ses missions</span><i data-lucide="arrow-right" aria-hidden="true"></i></button>
               </div>
             </article>
             <article class="team-member-card" data-member-key="psychologue">
               <div class="team-member-capsule team-member-psychology">
                 <div class="team-member-capsule-heading">
-                  <h3>La psychologue</h3>
-                  <p>Soutien psychologique</p>
+                  <h3>Psychologue clinicienne</h3>
+                  <p>Soutient la personne, ses proches et les équipes.</p>
                 </div>
                 <div class="team-member-photo"><img src="./resources/healthcare-services-assets/psychologie.webp" alt="Illustration d’un temps d’écoute psychologique" loading="lazy" decoding="async" /></div>
               </div>
               <div class="team-member-copy">
                 <span class="team-member-role">Écoute &amp; soutien</span>
-                <p>Elle accompagne les personnes confrontées aux difficultés psychologiques liées au vieillissement, aux maladies neurodégénératives et aux troubles du comportement. Elle apporte également un soutien aux familles et aux équipes.</p>
+                <ul class="team-member-missions-preview" aria-label="Missions principales">
+                  <li>Accompagner les difficultés liées au vieillissement et aux troubles du comportement.</li>
+                  <li>Soutenir les familles et les équipes.</li>
+                </ul>
                 <button class="team-member-mission-button" onclick="toggleMissionModal('psychologue')" type="button" aria-haspopup="dialog" aria-controls="team-mission-modal"><span>Voir ses missions</span><i data-lucide="arrow-right" aria-hidden="true"></i></button>
               </div>
             </article>
             <article class="team-member-card" data-member-key="orthophoniste">
               <div class="team-member-capsule team-member-speech">
                 <div class="team-member-capsule-heading">
-                  <h3>L’orthophoniste</h3>
-                  <p>Communication &amp; déglutition</p>
+                  <h3>Orthophoniste</h3>
+                  <p>Soutient la communication, le langage et la déglutition.</p>
                 </div>
                 <div class="team-member-photo"><img src="./resources/healthcare-services-assets/orthophonie.webp" alt="Illustration d’un accompagnement en orthophonie" loading="lazy" decoding="async" /></div>
               </div>
               <div class="team-member-copy">
-                <span class="team-member-role">Langage &amp; capacités cognitives</span>
-                <p>Elle intervient dans la préservation des fonctions de communication, du langage et des capacités cognitives, ainsi que dans la prévention et l’accompagnement des troubles de la déglutition.</p>
+                <span class="team-member-role">Communication &amp; déglutition</span>
+                <ul class="team-member-missions-preview" aria-label="Missions principales">
+                  <li>Préserver la communication, le langage et les capacités cognitives.</li>
+                  <li>Prévenir et accompagner les troubles de la déglutition.</li>
+                </ul>
                 <button class="team-member-mission-button" onclick="toggleMissionModal('orthophoniste')" type="button" aria-haspopup="dialog" aria-controls="team-mission-modal"><span>Voir ses missions</span><i data-lucide="arrow-right" aria-hidden="true"></i></button>
               </div>
             </article>
             <article class="team-member-card" data-member-key="kinesitherapeute">
               <div class="team-member-capsule team-member-physio">
                 <div class="team-member-capsule-heading">
-                  <h3>La kinésithérapeute</h3>
-                  <p>Mobilité &amp; capacités motrices</p>
+                  <h3>Kinésithérapeutes</h3>
+                  <p>Préservent la mobilité et les capacités motrices.</p>
                 </div>
                 <div class="team-member-photo"><img src="./resources/healthcare-services-assets/kinesitherapie.webp" alt="Illustration d’un accompagnement en kinésithérapie" loading="lazy" decoding="async" /></div>
               </div>
               <div class="team-member-copy">
                 <span class="team-member-role">Mouvement &amp; autonomie</span>
-                <p>Elle contribue au maintien des capacités motrices, de la mobilité et de la force musculaire afin de préserver le mouvement et l’autonomie.</p>
+                <ul class="team-member-missions-preview" aria-label="Missions principales">
+                  <li>Maintenir les capacités motrices, la mobilité et la force musculaire.</li>
+                  <li>Préserver le mouvement et l’autonomie.</li>
+                </ul>
                 <button class="team-member-mission-button" onclick="toggleMissionModal('kinesitherapeute')" type="button" aria-haspopup="dialog" aria-controls="team-mission-modal"><span>Voir ses missions</span><i data-lucide="arrow-right" aria-hidden="true"></i></button>
               </div>
             </article>
             <article class="team-member-card" data-member-key="nutritionniste">
               <div class="team-member-capsule team-member-nutrition">
                 <div class="team-member-capsule-heading">
-                  <h3>La nutritionniste</h3>
-                  <p>Équilibre nutritionnel</p>
+                  <h3>Nutritionniste</h3>
+                  <p>Adapte l’alimentation à la santé et aux besoins de chacun.</p>
                 </div>
                 <div class="team-member-photo"><img src="./resources/healthcare-services-assets/nutrition.webp" alt="Illustration d’un accompagnement nutritionnel adapté" loading="lazy" decoding="async" /></div>
               </div>
               <div class="team-member-copy">
                 <span class="team-member-role">Nutrition &amp; santé</span>
-                <p>Elle évalue les besoins nutritionnels et adapte les apports alimentaires à l’état de santé et à l’évolution des besoins de votre proche.</p>
+                <ul class="team-member-missions-preview" aria-label="Missions principales">
+                  <li>Évaluer les besoins nutritionnels.</li>
+                  <li>Adapter les apports alimentaires à l’état de santé et à son évolution.</li>
+                </ul>
                 <button class="team-member-mission-button" onclick="toggleMissionModal('nutritionniste')" type="button" aria-haspopup="dialog" aria-controls="team-mission-modal"><span>Voir ses missions</span><i data-lucide="arrow-right" aria-hidden="true"></i></button>
               </div>
             </article>
             <article class="team-member-card" data-member-key="psychomotricienne">
               <div class="team-member-capsule team-member-psychomotor">
                 <div class="team-member-capsule-heading">
-                  <h3>La psychomotricienne</h3>
-                  <p>Équilibre &amp; sensorialité</p>
+                  <h3>Psychomotricienne</h3>
+                  <p>Mobilise les capacités motrices, cognitives et sensorielles.</p>
                 </div>
                 <div class="team-member-photo"><img src="./resources/healthcare-services-assets/kinesitherapie.webp" alt="Illustration d’un accompagnement du mouvement et de l’équilibre" loading="lazy" decoding="async" /></div>
               </div>
               <div class="team-member-copy">
-                <span class="team-member-role">Corps &amp; coordination</span>
-                <p>Elle travaille sur l’équilibre, la coordination, la perception du corps et la sensorialité, en mobilisant les capacités motrices et cognitives de la personne.</p>
+                <span class="team-member-role">Équilibre &amp; sensorialité</span>
+                <ul class="team-member-missions-preview" aria-label="Missions principales">
+                  <li>Travailler l’équilibre, la coordination et la perception du corps.</li>
+                  <li>Mobiliser les capacités motrices et cognitives.</li>
+                </ul>
                 <button class="team-member-mission-button" onclick="toggleMissionModal('psychomotricienne')" type="button" aria-haspopup="dialog" aria-controls="team-mission-modal"><span>Voir ses missions</span><i data-lucide="arrow-right" aria-hidden="true"></i></button>
               </div>
             </article>
           </div>
         </div>
       </section>
-      <section
-        class="hs-section equipe-services"
-        id="services"
-        aria-labelledby="team-services-title"
-      >
-        <h2 id="team-services-title" class="hs-visually-hidden">
-          Nos services
-        </h2>
-        <div class="hs-flower-column">
-          <div class="hs-intro" id="equipe">
-            <p>Nos services</p>
-            <span
-              >Sélectionnez une bulle pour découvrir chaque spécialité.</span
-            >
-          </div>
-          <div class="hs-flower-wrap">
-            <svg
-              class="hs-flower"
-              viewBox="0 -20 480 800"
-              preserveAspectRatio="xMinYMid meet"
-              role="radiogroup"
-              aria-label="Choisissez un service de santé"
-            >
-              <defs>
-                <filter
-                  id="hs-shadow"
-                  x="-30%"
-                  y="-30%"
-                  width="160%"
-                  height="160%"
-                >
-                  <feDropShadow
-                    dx="0"
-                    dy="10"
-                    stdDeviation="12"
-                    flood-color="#1F3B38"
-                    flood-opacity=".18"
-                  />
-                </filter>
-              </defs>
-              <g class="hs-bubbles"></g>
-            </svg>
-          </div>
-        </div>
-        <div class="hs-details-wrap">
-          <article
-            class="hs-details"
-            id="hs-details"
-            aria-live="polite"
-          ></article>
-        </div>
-      </section>
+      
       <section
         class="team-homecare-timeline-section"
         aria-labelledby="team-homecare-timeline-title"
@@ -294,18 +254,6 @@
           </ol>
         </div>
       </section>
-      <blockquote class="team-values-quote">
-        <i
-          data-lucide="quote"
-          class="team-values-quote-icon site-icon"
-          aria-hidden="true"
-        ></i>
-        <p class="team-values-quote-text">
-          «&nbsp;Chaque personne âgée mérite un accompagnement qui honore ce
-          qu’elle a été, respecte ce qu’elle est, et soutient ce qu’elle
-          traverse.&nbsp;»
-        </p>
-      </blockquote>
     </main>
     <dialog
       class="team-mission-dialog"
@@ -325,6 +273,7 @@
           <span class="team-mission-pole" id="team-mission-pole"></span>
           <h2 id="team-mission-title"></h2>
           <p class="team-mission-role" id="team-mission-role"></p>
+          <p class="team-mission-description" id="team-mission-description"></p>
           <h3 class="team-mission-label">Missions au chevet du patient :</h3>
           <ul class="team-mission-points" id="team-mission-points"></ul>
           <div class="team-mission-actions">

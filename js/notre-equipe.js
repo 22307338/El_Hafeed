@@ -1,65 +1,72 @@
 const teamMissions = {
   coordinatrice: {
-    name: "L’infirmière coordinatrice",
-    role: "Coordination de l’accompagnement",
+    name: "Infirmière coordinatrice",
+    role: "Coordonne l’accompagnement autour de votre proche.",
     pole: "Coordination des soins",
+    description: "Elle assure la coordination de l’accompagnement et veille à sa cohérence, en lien avec les professionnels de l’équipe, les familles et les médecins.",
     points: [
-      "Elle assure la coordination de l’accompagnement et veille à sa cohérence.",
-      "Elle travaille en lien avec les professionnels de l’équipe, les familles et les médecins.",
+      "Veiller à la cohérence de l’accompagnement.",
+      "Faire le lien entre l’équipe, les familles et les médecins.",
     ],
   },
   "aides-soignants": {
-    name: "Nos aides-soignants à domicile",
-    role: "Accompagnement au quotidien",
-    pole: "Vie quotidienne et autonomie",
+    name: "Aides-soignants, infirmiers auxiliaires et infirmiers polyvalents",
+    role: "Accompagnent les soins et les gestes du quotidien.",
+    pole: "Soins et autonomie",
+    description: "Ils accompagnent votre proche dans les actes essentiels de la vie quotidienne : toilette, hygiène, repas, déplacements, sorties et activités de stimulation, tout en favorisant le maintien de son autonomie.",
     points: [
-      "Ils accompagnent la toilette, l’hygiène, les repas et les déplacements.",
-      "Ils accompagnent les sorties et les activités de stimulation tout en favorisant le maintien de l’autonomie.",
+      "Accompagner la toilette, l’hygiène, les repas et les déplacements.",
+      "Proposer sorties et activités qui soutiennent l’autonomie.",
     ],
   },
   psychologue: {
-    name: "La psychologue",
-    role: "Soutien psychologique",
+    name: "Psychologue clinicienne",
+    role: "Soutient la personne, ses proches et les équipes.",
     pole: "Écoute et soutien",
+    description: "Elle accompagne les personnes confrontées aux difficultés psychologiques liées au vieillissement, aux maladies neurodégénératives et aux troubles du comportement. Elle apporte également un soutien aux familles et aux équipes.",
     points: [
-      "Elle accompagne les difficultés psychologiques liées au vieillissement, aux maladies neurodégénératives et aux troubles du comportement.",
-      "Elle apporte également un soutien aux familles et aux équipes.",
+      "Accompagner les difficultés liées au vieillissement et aux troubles du comportement.",
+      "Soutenir les familles et les équipes.",
     ],
   },
   orthophoniste: {
-    name: "L’orthophoniste",
-    role: "Communication et déglutition",
+    name: "Orthophoniste",
+    role: "Soutient la communication, le langage et la déglutition.",
     pole: "Langage et capacités cognitives",
+    description: "Elle intervient dans la préservation des fonctions de communication, du langage et des capacités cognitives, ainsi que dans la prévention et l’accompagnement des troubles de la déglutition.",
     points: [
-      "Elle intervient pour préserver les fonctions de communication, le langage et les capacités cognitives.",
-      "Elle participe à la prévention et à l’accompagnement des troubles de la déglutition.",
+      "Préserver la communication, le langage et les capacités cognitives.",
+      "Prévenir et accompagner les troubles de la déglutition.",
     ],
   },
   kinesitherapeute: {
-    name: "La kinésithérapeute",
-    role: "Mobilité et capacités motrices",
+    name: "Kinésithérapeutes",
+    role: "Préservent la mobilité et les capacités motrices.",
     pole: "Mouvement et autonomie",
+    description: "Leur accompagnement contribue au maintien des capacités motrices, de la mobilité et de la force musculaire afin de préserver le mouvement et l’autonomie.",
     points: [
-      "Elle contribue au maintien des capacités motrices, de la mobilité et de la force musculaire.",
-      "Elle agit afin de préserver le mouvement et l’autonomie.",
+      "Maintenir les capacités motrices, la mobilité et la force musculaire.",
+      "Préserver le mouvement et l’autonomie.",
     ],
   },
   nutritionniste: {
-    name: "La nutritionniste",
-    role: "Équilibre nutritionnel",
+    name: "Nutritionniste",
+    role: "Adapte l’alimentation à la santé et aux besoins de chacun.",
     pole: "Nutrition et santé",
+    description: "Elle évalue les besoins nutritionnels et adapte les apports alimentaires à l’état de santé et à l’évolution des besoins de votre proche.",
     points: [
-      "Elle évalue les besoins nutritionnels.",
-      "Elle adapte les apports alimentaires à l’état de santé et à l’évolution des besoins de votre proche.",
+      "Évaluer les besoins nutritionnels.",
+      "Adapter les apports à l’état de santé et à son évolution.",
     ],
   },
   psychomotricienne: {
-    name: "La psychomotricienne",
-    role: "Équilibre et sensorialité",
+    name: "Psychomotricienne",
+    role: "Mobilise les capacités motrices, cognitives et sensorielles.",
     pole: "Corps et coordination",
+    description: "Elle travaille sur l’équilibre, la coordination, la perception du corps et la sensorialité, en mobilisant les capacités motrices et cognitives de la personne.",
     points: [
-      "Elle travaille l’équilibre, la coordination, la perception du corps et la sensorialité.",
-      "Elle mobilise les capacités motrices et cognitives de la personne.",
+      "Travailler l’équilibre, la coordination et la perception du corps.",
+      "Mobiliser les capacités motrices et cognitives.",
     ],
   },
 };
@@ -84,6 +91,7 @@ window.toggleMissionModal = function (memberKey) {
   document.getElementById("team-mission-pole").textContent = member.pole;
   document.getElementById("team-mission-title").textContent = member.name;
   document.getElementById("team-mission-role").textContent = member.role;
+  document.getElementById("team-mission-description").textContent = member.description || "";
   missionList.replaceChildren(
     ...member.points.map((point) => {
       const item = document.createElement("li");
