@@ -194,8 +194,9 @@ export function initServicesSection(services = []) {
           : "resources/healthcare-services-assets/" + s.image;
         const imageSourceAttribute = servicePhotosReady ? "href" : "data-src";
         const clipId = "hs-flower-clip-" + s.id;
-        const labelX = main ? mainCutX + 12 : 124;
-        const labelY = main ? -mainCutY + 34 : 5;
+        // The SVG viewBox starts at x=0, so keep the main label in its visible area.
+        const labelX = main ? 12 : 124;
+        const labelY = main ? -110 : 5;
         const shape = main
           ? `<g class="hs-bubble-pop">
               <defs>
@@ -256,7 +257,7 @@ export function initServicesSection(services = []) {
         const movingBubble = bubble.firstElementChild;
         movingBubble.innerHTML =
           shape +
-          `<text class="hs-bubble-title" x="${labelX}" y="${labelY}" text-anchor="start">${esc(s.label)}</text>`;
+          `<text class="hs-bubble-title${main ? " hs-bubble-title-main" : ""}" x="${labelX}" y="${labelY}" text-anchor="start">${esc(s.label)}</text>`;
         if (
           main &&
           !window.matchMedia("(prefers-reduced-motion: reduce)").matches

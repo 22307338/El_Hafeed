@@ -1,10 +1,10 @@
 import { sanityFetch } from "./sanity.js";
 
 const HOME_PAGE_QUERY = `*[_id == "homePage"][0]{
-  hero{title,description,supportingText,badges[],"desktopBackgroundUrl":desktopBackground.asset->url,"mobileBackgroundUrl":mobileBackground.asset->url,"brandSymbolUrl":brandSymbol.asset->url},
+  hero{title,description,supportingText,valuesTitle,values[]{title,description,icon},"desktopBackgroundUrl":desktopBackground.asset->url,"mobileBackgroundUrl":mobileBackground.asset->url,"brandSymbolUrl":brandSymbol.asset->url},
   legitimacy{eyebrow,title,intro,videoTitle,videoDescription,video{asset->{playbackId}},"videoPosterUrl":videoPoster.asset->url,stories[]{title,description,"photos":photos[].asset->url}},
   approach{eyebrow,title,intro,steps[]{eyebrow,title,description,videoId,video{asset->{playbackId}},"coverUrl":cover.asset->url}},
-  closing{eyebrow,title,body,quote,tags[]},metaTitle,metaDescription
+  closing{eyebrow,title,intro,founderName,founderRole,message,values[],"portraitUrl":founderPortrait.asset->url},metaTitle,metaDescription
 }`;
 let muxPlayerLoadPromise;
 let activeInlineVideo = null;
@@ -126,28 +126,29 @@ async function loadHomepageContent() {
   if (heroTitle && hero.title) heroTitle.textContent = hero.title;
   if (heroDescription) heroDescription.textContent = [hero.description, hero.supportingText].filter(Boolean).join("\n");
   setImage(document.querySelector(".hero-brand-symbol img"), hero.brandSymbolUrl || hero.brandSymbol, "Symbole El-Hafeed", {priority: true});
-  const badgeList = document.querySelector(".hero-copy > div:nth-child(2)");
-  const initialBadges = badgeList ? Array.from(badgeList.children) : [];
-  while (badgeList && badgeList.children.length < (hero.badges || []).length && initialBadges.length) {
-    badgeList.append(initialBadges[badgeList.children.length % initialBadges.length].cloneNode(true));
-  }
-  const badges = badgeList ? Array.from(badgeList.children) : [];
-  (hero.badges || []).forEach((badge, index) => {
-    const item = badges[index];
-    if (!item) return;
-    item.hidden = false;
-    const label = item.querySelector("span");
-    if (label) label.textContent = badge.label || "";
-    const previousIcon = item.querySelector("i, svg");
-    if (badge.icon && previousIcon) {
-      const icon = document.createElement("i");
-      icon.dataset.lucide = badge.icon;
-      icon.className = "text-[16px] site-icon";
-      icon.setAttribute("aria-hidden", "true");
-      previousIcon.replaceWith(icon);
+  const valuesTitle = document.querySelector("#hero-values-title");
+  if (valuesTitle && hero.valuesTitle) valuesTitle.textContent = hero.valuesTitle;
+  const valueCards = Array.from(document.querySelectorAll(".hero-value-card"));
+  if (Array.isArray(hero.values) && hero.values.length) {
+    const templates = valueCards.slice();
+    while (valueCards.length < hero.values.length && templates.length) {
+      const card = templates[valueCards.length % templates.length].cloneNode(true);
+      templates[0].parentElement.append(card);
+      valueCards.push(card);
     }
-  });
-  Array.from(badges).slice((hero.badges || []).length).forEach((item) => item.hidden = true);
+    hero.values.forEach((value, index) => {
+      const card = valueCards[index];
+      if (!card) return;
+      card.hidden = false;
+      const title = card.querySelector(".hero-value-title");
+      const description = card.querySelector(".hero-value-description");
+      const icon = card.querySelector(".hero-value-icon [data-lucide]");
+      if (title) title.textContent = value.title || "";
+      if (description) description.textContent = value.description || "";
+      if (icon && value.icon) icon.dataset.lucide = value.icon;
+    });
+    valueCards.slice(hero.values.length).forEach((card) => card.hidden = true);
+  }
 
   const legitimacy = data.legitimacy || {};
   const legitimacyHeading = document.querySelector(".legitimacy-heading");
@@ -194,30 +195,55 @@ async function loadHomepageContent() {
   updateApproachSteps(approach.steps || []);
 
   const closing = data.closing || {};
-  const closingContent = document.querySelector("main .bg-gradient-to-br > .relative.z-10");
-  if (closingContent) {
-    const badge = closingContent.querySelector(".inline-flex");
-    const badgeIcon = badge?.querySelector("i,svg");
-    if (badge) {
-      badge.textContent = closing.eyebrow || "";
-      if (badgeIcon) badge.prepend(badgeIcon);
+  const founderSection = document.querySelector(".founder-engagement");
+  if (founderSection) {
+    const eyebrow = founderSection.querySelector(".founder-engagement-eyebrow");
+    const title = founderSection.querySelector(".founder-engagement-title");
+    const intro = founderSection.querySelector(".founder-engagement-intro");
+    const message = founderSection.querySelector(".founder-message-text");
+    const placeholderLabel = founderSection.querySelector(".founder-message-placeholder-label");
+    const portrait = founderSection.querySelector(".founder-portrait-image");
+
+    if (eyebrow && closing.eyebrow) eyebrow.textContent = closing.eyebrow;
+    if (title && closing.title) title.textContent = closing.title;
+    if (intro && closing.intro) intro.textContent = closing.intro;
+    if (message && closing.message) {
+      message.textContent = "« " + closing.message + " »";
+      if (placeholderLabel) placeholderLabel.hidden = !closing.message.trim().startsWith("[");
     }
-    const title = closingContent.querySelector("h2");
-    const body = closingContent.querySelector("h2 + p");
-    const quote = closingContent.querySelector("blockquote p, .my-space-md p");
-    if (title) title.textContent = closing.title || "";
-    if (body) body.textContent = closing.body || "";
-    if (quote) quote.textContent = `« ${closing.quote || ""} »`;
-    const tagList = closingContent.querySelector(".flex.flex-wrap");
-    if (tagList) {
-      const tags = Array.from(tagList.querySelectorAll("span"));
-      (closing.tags || []).forEach((tag, index) => {
-        if (tags[index]) { tags[index].hidden = false; tags[index].textContent = tag; }
+    if (portrait) {
+      setImage(
+        portrait,
+        closing.portraitUrl || closing.founderPortrait,
+        "Portrait de " + (closing.founderName || "la fondatrice d’El-Hafeed"),
+      );
+    }
+
+    if (closing.founderName) {
+      founderSection.querySelectorAll(".founder-name").forEach((name) => {
+        name.textContent = closing.founderName;
       });
-      tags.slice((closing.tags || []).length).forEach((tag) => tag.hidden = true);
+      if (portrait) portrait.alt = "Portrait de " + closing.founderName + ", fondatrice et directrice d’El-Hafeed";
+    }
+    if (closing.founderRole) {
+      founderSection.querySelectorAll(".founder-role").forEach((role) => {
+        role.textContent = closing.founderRole;
+      });
+    }
+
+    const valueItems = Array.from(founderSection.querySelectorAll(".founder-value-label"));
+    if (Array.isArray(closing.values) && closing.values.length) {
+      valueItems.forEach((item, index) => {
+        const listItem = item.closest("li");
+        if (closing.values[index]) {
+          item.textContent = closing.values[index];
+          if (listItem) listItem.hidden = false;
+        } else if (listItem) {
+          listItem.hidden = true;
+        }
+      });
     }
   }
-
   if (data.metaTitle) document.title = data.metaTitle;
   if (data.metaDescription) document.querySelector('meta[name="description"]')?.setAttribute("content", data.metaDescription);
   window.lucide?.createIcons();

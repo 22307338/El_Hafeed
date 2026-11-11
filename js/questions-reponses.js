@@ -67,14 +67,6 @@ function renderPage(data) {
       ? `<aside class="qa-disclaimer" aria-labelledby="qa-disclaimer-title"><span class="qa-disclaimer-mark" aria-hidden="true">i</span><div><h2 id="qa-disclaimer-title">${escapeHtml(data.disclaimerTitle)}</h2><p>${escapeHtml(data.disclaimerText)}</p></div></aside>`
       : "";
 
-  const contact =
-    data.contactTitle || data.contactText
-      ? `<aside class="qa-contact" aria-labelledby="qa-contact-title"><div class="qa-contact-copy"><span class="qa-contact-icon" aria-hidden="true"><i data-lucide="message-circle" class="site-icon"></i></span><div><h2 id="qa-contact-title">${escapeHtml(data.contactTitle)}</h2><p>${escapeHtml(data.contactText)}</p></div></div>${
-          buttonUrl && data.contactButtonLabel
-            ? `<a class="qa-contact-link" href="${escapeHtml(buttonUrl)}">${escapeHtml(data.contactButtonLabel)} <i data-lucide="arrow-up-right" class="site-icon" aria-hidden="true"></i></a>`
-            : ""
-        }</aside>`
-      : "";
 
   qaRoot.innerHTML = `
         <section class="qa-hero" aria-labelledby="qa-title">
@@ -86,7 +78,6 @@ function renderPage(data) {
           <div class="qa-overview"><p><strong>${plural(questionCount, "question")}</strong><span aria-hidden="true">·</span><strong>${plural(topics.length, "sujet")}</strong></p>${data.overviewHint ? `<p>${escapeHtml(data.overviewHint)}</p>` : ""}</div>
           ${topics.map(renderTopic).join("")}
           ${disclaimer}
-          ${contact}
         </div>`;
 
   if (data.metaTitle) document.title = data.metaTitle;

@@ -3,13 +3,14 @@
     "title": "Un accompagnement, au plus près de vos aînés.",
     "description": "El-Hafeed accompagne à domicile les personnes âgées en perte d’autonomie, à Rabat et Casablanca. Nous coordonnons les interventions dans le respect de leur histoire, de leurs habitudes et de leur rythme.",
     "supportingText": "Accompagner, préserver, soulager — avec dignité, amour et bienveillance.",
+    "valuesTitle": "NOS VALEURS",
     "desktopBackground": "resources/hero-desktop.webp",
     "mobileBackground": "resources/hero-mobile.webp",
     "brandSymbol": "resources/logo-symbol.webp",
-    "badges": [
-      {"label":"Équipe pluridisciplinaire","icon":"users-round"},
-      {"label":"Accompagnement à domicile","icon":"house-plus"},
-      {"label":"Jour et nuit, 7j/7","icon":"shield-check"}
+    "values": [
+      {"title":"ACCOMPAGNER","description":"Être présents auprès de nos aînés et leur proposer un accompagnement adapté à leurs besoins.","icon":"users-round"},
+      {"title":"PRÉSERVER","description":"Préserver leurs capacités, leur autonomie et leur qualité de vie.","icon":"shield-check"},
+      {"title":"SOULAGER","description":"Soulager les familles et accompagner leurs proches dans les différentes étapes du vieillissement.","icon":"heart-handshake"}
     ]
   },
   "legitimacy": {
@@ -40,10 +41,13 @@
   },
   "closing": {
     "eyebrow":"Notre engagement",
-    "title":"Un projet construit autour de la personne",
-    "body":"El-Hafeed coordonne les interventions à domicile pour préserver les repères, les capacités et la dignité des personnes âgées. Le Projet d’Accompagnement à Domicile est construit avec la personne, ses proches et les professionnels concernés.",
-    "quote":"Accompagner, préserver, soulager — avec dignité, amour et bienveillance.",
-    "tags":["Respecter les choix et le rythme","Préserver les capacités","Coordonner autour de la personne"]
+    "title":"Une vision profondément humaine du vieillissement",
+    "intro":"Cette section est consacrée à la vision personnelle de Fatima-Zahra El Amrani sur le vieillissement et sa philosophie de l’accompagnement. Son message sera ajouté après validation de la fondatrice.",
+    "founderName":"Fatima-Zahra El Amrani",
+    "founderRole":"Psychologue clinicienne · Fondatrice & directrice",
+    "founderPortrait":"resources/team-members/directrice.webp",
+    "message":"[Message personnel de la fondatrice à ajouter ici, à la première personne.]",
+    "values":["Respect de la personne","Préservation de l’autonomie","Bienveillance et écoute"]
   },
   "metaTitle":"El-Hafeed — Accompagnement gériatrique à domicile",
   "metaDescription":"El-Hafeed accompagne les personnes âgées en perte d’autonomie à domicile, à Rabat et Casablanca, dans le respect de leur histoire et de leur rythme."

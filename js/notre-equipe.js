@@ -1,57 +1,65 @@
 const teamMissions = {
-  youssef: {
-    name: "Équipe infirmière",
-    role: "Infirmier Coordinateur Référent",
-    pole: "Pôle Soins Médicaux",
+  coordinatrice: {
+    name: "L’infirmière coordinatrice",
+    role: "Coordination de l’accompagnement",
+    pole: "Coordination des soins",
     points: [
-      "Suivi global de la santé et coordination des besoins médicaux et paramédicaux.",
-      "Lien régulier avec les proches désignés et les professionnels concernés.",
-      "Observation de l’état général et transmission des changements utiles à l’équipe.",
-      "Organisation des sorties hebdomadaires avec l’orthophoniste lorsque le projet le prévoit.",
+      "Elle assure la coordination de l’accompagnement et veille à sa cohérence.",
+      "Elle travaille en lien avec les professionnels de l’équipe, les familles et les médecins.",
     ],
   },
-  zahra: {
-    name: "Kinésithérapie",
-    role: "Kinésithérapeute à domicile & ergonomie",
-    pole: "Pôle Rééducation",
-    points: [
-      "Évaluation de la mobilité et des capacités physiques de la personne.",
-      "Accompagnement de l’équilibre et des déplacements selon les besoins évalués.",
-      "Contribution à la prévention des chutes et à l’accompagnement des douleurs chroniques.",
-      "Coordination avec l’équipe pour adapter les activités au rythme de la personne.",
-    ],
-  },
-  amina: {
-    name: "Orthophonie",
-    role: "Orthophoniste spécialiste de la déglutition",
-    pole: "Pôle Langage & Déglutition",
-    points: [
-      "Accompagnement de la communication et des exercices cognitifs adaptés.",
-      "Contribution à la prévention des fausses routes selon les besoins évalués.",
-      "Lien avec l’infirmier coordinateur pour intégrer les exercices au quotidien.",
-      "Adaptation des propositions aux capacités et au rythme de la personne.",
-    ],
-  },
-  leila: {
-    name: "Psychologie",
-    role: "Psychologue clinicienne & écoute des aidants",
-    pole: "Pôle Soutien Émotionnel",
-    points: [
-      "Écoute des bouleversements psychiques liés à la perte d’autonomie et aux changements de vie.",
-      "Soutien aux proches confrontés au sentiment d’impuissance ou à l’épuisement.",
-      "Accompagnement des situations de refus de soins et des questions liées à l’identité.",
-      "Temps d’analyse des pratiques pour soutenir les équipes, dans un cadre sans jugement.",
-    ],
-  },
-  fatimazahra: {
-    name: "Équipe aides-soignantes",
+  "aides-soignants": {
+    name: "Nos aides-soignants à domicile",
     role: "Accompagnement au quotidien",
-    pole: "Soins et activités adaptés",
+    pole: "Vie quotidienne et autonomie",
     points: [
-      "Accompagnement de l’hygiène et du confort le matin.",
-      "Aide à l’habillage et aux repas selon les habitudes de la personne.",
-      "Activités cognitives adaptées au programme de l’après-midi.",
-      "Lien avec l’orthophoniste pour intégrer les exercices au quotidien.",
+      "Ils accompagnent la toilette, l’hygiène, les repas et les déplacements.",
+      "Ils accompagnent les sorties et les activités de stimulation tout en favorisant le maintien de l’autonomie.",
+    ],
+  },
+  psychologue: {
+    name: "La psychologue",
+    role: "Soutien psychologique",
+    pole: "Écoute et soutien",
+    points: [
+      "Elle accompagne les difficultés psychologiques liées au vieillissement, aux maladies neurodégénératives et aux troubles du comportement.",
+      "Elle apporte également un soutien aux familles et aux équipes.",
+    ],
+  },
+  orthophoniste: {
+    name: "L’orthophoniste",
+    role: "Communication et déglutition",
+    pole: "Langage et capacités cognitives",
+    points: [
+      "Elle intervient pour préserver les fonctions de communication, le langage et les capacités cognitives.",
+      "Elle participe à la prévention et à l’accompagnement des troubles de la déglutition.",
+    ],
+  },
+  kinesitherapeute: {
+    name: "La kinésithérapeute",
+    role: "Mobilité et capacités motrices",
+    pole: "Mouvement et autonomie",
+    points: [
+      "Elle contribue au maintien des capacités motrices, de la mobilité et de la force musculaire.",
+      "Elle agit afin de préserver le mouvement et l’autonomie.",
+    ],
+  },
+  nutritionniste: {
+    name: "La nutritionniste",
+    role: "Équilibre nutritionnel",
+    pole: "Nutrition et santé",
+    points: [
+      "Elle évalue les besoins nutritionnels.",
+      "Elle adapte les apports alimentaires à l’état de santé et à l’évolution des besoins de votre proche.",
+    ],
+  },
+  psychomotricienne: {
+    name: "La psychomotricienne",
+    role: "Équilibre et sensorialité",
+    pole: "Corps et coordination",
+    points: [
+      "Elle travaille l’équilibre, la coordination, la perception du corps et la sensorialité.",
+      "Elle mobilise les capacités motrices et cognitives de la personne.",
     ],
   },
 };

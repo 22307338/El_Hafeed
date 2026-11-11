@@ -180,9 +180,9 @@ All four pages include `js/site-shell.js`, which inserts the header and footer p
 
 ## Build and deployment
 
-Run `npm ci` followed by `npm run build` before publishing if generated fonts, CSS, or icon bundles need to be refreshed. The site is structured as static files with relative paths, so a static host can serve the repository root (or an equivalent directory containing the HTML pages and their referenced assets).
+Run `npm ci` followed by `npm run build` to refresh the local fonts, Tailwind CSS, icon bundle, and a clean `dist/` publishing folder. The staging script copies only runtime pages and assets into `dist/`; source files, dependencies, and editor backups stay out of the deployed site.
 
-No deployment provider, hosting configuration, CI workflow, or output-directory configuration was found in the repository. Configure the chosen static host to publish the root directory; do not assume a `dist/` output exists.
+The included GitHub Actions workflow publishes `dist/` to GitHub Pages after each push to `main` and can also be run manually. In the GitHub repository, open **Settings → Pages → Build and deployment** and select **GitHub Actions** as the source. The site uses relative URLs so it works at the repository subpath, such as `https://<account>.github.io/<repository>/`.
 
 ## Troubleshooting
 

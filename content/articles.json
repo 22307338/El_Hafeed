@@ -1,16 +1,482 @@
 [
   {
-    "slug": "autonomie-a-domicile",
+    "slug": "accompagnement-alzheimer-domicile",
+    "recommendedPath": "/conseils/accompagnement-alzheimer-domicile/",
+    "category": "Mémoire et maladie d’Alzheimer",
+    "title": "Maladie d’Alzheimer : comprendre la maladie et accompagner son proche à domicile",
+    "metaTitle": "Maladie d’Alzheimer : comprendre la maladie et accompagner son proche à domicile",
+    "excerpt": "Comprendre la maladie d’Alzheimer, ses manifestations et les possibilités d’accompagnement à domicile pour préserver le quotidien et soutenir les proches.",
+    "metaDescription": "Comprendre la maladie d’Alzheimer, ses manifestations et les possibilités d’accompagnement à domicile pour préserver le quotidien et soutenir les proches.",
+    "primaryKeyword": "accompagnement Alzheimer à domicile",
+    "secondaryKeywords": [
+      "maladie d’Alzheimer",
+      "symptômes Alzheimer",
+      "troubles de la mémoire",
+      "troubles du comportement",
+      "aide personne âgée Casablanca",
+      "accompagnement personne âgée"
+    ],
+    "body": [
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Comprendre la maladie d’Alzheimer",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "La maladie d’Alzheimer est une maladie neuro-évolutive qui affecte progressivement la mémoire, le raisonnement, le langage et la capacité à réaliser certaines activités quotidiennes. Elle est la cause la plus fréquente de démence, mais les troubles de mémoire ne suffisent pas, à eux seuls, à établir un diagnostic. Une évaluation médicale est nécessaire pour rechercher leur origine et envisager un accompagnement adapté.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Des changements qui touchent toute la vie quotidienne",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Au fil de l’évolution, la personne peut avoir davantage de difficultés à s’organiser, à retrouver ses mots, à reconnaître certains lieux ou à accomplir des gestes familiers. Des changements de comportement peuvent également apparaître : agitation, anxiété, opposition, déambulation, irritabilité ou troubles du sommeil. Ces manifestations ne sont pas des choix délibérés. Elles peuvent être liées à la maladie, mais aussi à une douleur, une infection, la fatigue, la faim, la soif, un médicament ou un environnement devenu difficile à comprendre.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Comment accompagner une personne atteinte d’Alzheimer à domicile ?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Le maintien à domicile peut rester possible lorsque la situation, la sécurité et les ressources de l’entourage le permettent. L’accompagnement doit évoluer avec les capacités de la personne. Il importe de préserver autant que possible ses habitudes, ses repères, ses choix et sa participation aux gestes du quotidien. Une communication simple, un environnement lisible et des activités qui ont du sens peuvent contribuer à réduire les situations de désorientation et à préserver le lien. Il ne s’agit pas de faire systématiquement à la place de la personne, mais de trouver le juste niveau d’aide : soutenir lorsqu’elle en a besoin, laisser faire lorsqu’elle le peut encore et respecter son rythme. Toute modification brutale ou inhabituelle du comportement doit conduire à demander rapidement un avis médical.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Pourquoi une approche pluridisciplinaire ?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "La maladie peut avoir des conséquences physiques, cognitives, psychologiques, nutritionnelles et relationnelles. Selon les besoins, l’accompagnement peut mobiliser des aides-soignants à domicile, une infirmière coordinatrice, un psychologue, un orthophoniste, un kinésithérapeute, une nutritionniste ou une psychomotricienne. La complémentarité de ces regards aide à mieux comprendre la situation et à ajuster l’accompagnement dans le temps.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "La place des proches",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Les familles sont souvent confrontées à des décisions difficiles et à une charge émotionnelle importante. Être aidant ne signifie pas devoir tout assumer seul. Être écouté, partager les responsabilités et prévoir des relais sont des éléments essentiels pour préserver la relation avec son parent et sa propre santé.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Contacter El-Hafeed",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Vous accompagnez un parent atteint de la maladie d’Alzheimer à Casablanca ou dans ses environs ? El-Hafeed peut échanger avec vous, rencontrer votre proche et évaluer avec vous les besoins d’accompagnement à domicile. Cette première évaluation de la situation ne remplace pas un diagnostic médical.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Références documentaires",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref1",
+            "_type": "link",
+            "href": "https://www.who.int/fr/news-room/fact-sheets/detail/dementia"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "OMS, Démence, fiche d’information, 26 octobre 2026",
+            "marks": [
+              "ref1"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref2",
+            "_type": "link",
+            "href": "https://www.nia.nih.gov/alzheimers/publication/managing-personality-and-behavior-changes"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "National Institute on Aging, Managing Personality and Behavior Changes",
+            "marks": [
+              "ref2"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref3",
+            "_type": "link",
+            "href": "https://www.has-sante.fr/jcms/c_1148892/fr/recommandation-maladie-d-alzheimer-diagnostic-et-prise-en-charge"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "HAS, Recommandations relatives à la maladie d’Alzheimer et maladies apparentées",
+            "marks": [
+              "ref3"
+            ]
+          }
+        ]
+      }
+    ],
+    "mainImage": "resources/healthcare-services-assets/psychologie.webp",
+    "mainImageAlt": "Échange avec une personne âgée dans le cadre d’un accompagnement psychologique.",
+    "featured": true
+  },
+  {
+    "slug": "troubles-comportement-personne-agee",
+    "recommendedPath": "/conseils/troubles-comportement-personne-agee/",
+    "category": "Mémoire et maladie d’Alzheimer",
+    "title": "Troubles du comportement chez la personne âgée : comprendre l’agitation, l’opposition et le refus d’aide",
+    "metaTitle": "Troubles du comportement chez la personne âgée : comprendre l’agitation, l’opposition et le refus d’aide",
+    "excerpt": "Agitation, opposition, refus de toilette ou agressivité : comprendre les troubles du comportement chez la personne âgée et savoir quand demander de l’aide.",
+    "metaDescription": "Agitation, opposition, refus de toilette ou agressivité : comprendre les troubles du comportement chez la personne âgée et savoir quand demander de l’aide.",
+    "primaryKeyword": "troubles du comportement personne âgée",
+    "secondaryKeywords": [
+      "agitation personne âgée",
+      "refus de soins",
+      "opposition toilette",
+      "agressivité Alzheimer",
+      "anxiété personne âgée",
+      "accompagnement Alzheimer à domicile"
+    ],
+    "body": [
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Des comportements difficiles à comprendre",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Une personne âgée peut parfois refuser une toilette, repousser une aide, se montrer irritable, crier ou sembler agitée. Ces situations sont éprouvantes pour les proches, en particulier lorsqu’elles surviennent chez une personne qui était auparavant calme et autonome. Le comportement doit être considéré comme une manifestation à comprendre, et non comme une simple volonté de contrarier l’entourage.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Rechercher ce qui peut provoquer le changement",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Les troubles cognitifs, notamment dans certaines maladies neuro-évolutives, peuvent modifier la perception de l’environnement, la compréhension des demandes et les capacités de communication. Mais un changement de comportement peut aussi signaler une douleur, une constipation, une infection, un manque de sommeil, une déshydratation, un trouble sensoriel ou un effet indésirable médicamenteux. Une apparition soudaine ou une aggravation rapide nécessite un avis médical sans attendre.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Le refus d’aide : préserver la dignité et le sentiment de contrôle",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Une toilette peut être vécue comme intrusive, froide ou incompréhensible. La personne peut avoir peur de tomber, ressentir une douleur, avoir froid ou ne pas comprendre ce qui lui est proposé. Expliquer chaque geste, demander l’accord, préserver l’intimité et respecter le rythme peuvent faciliter la relation. Insister, argumenter longuement ou multiplier les intervenants au même moment risque au contraire d’augmenter la tension.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Que peut faire la famille ?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Essayez d’observer le contexte : à quel moment le comportement apparaît-il ? Après une mauvaise nuit, pendant la toilette, au moment du repas ou dans un environnement bruyant ? Une demande à la fois, des phrases simples, un ton calme et une pause lorsque la tension monte peuvent aider. Il est préférable de solliciter un professionnel lorsque la situation se répète, met en danger la personne ou épuise l’entourage.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "L’intérêt d’un accompagnement coordonné",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Une approche pluridisciplinaire permet de croiser les observations et de ne pas réduire la situation à un seul symptôme. Les professionnels peuvent contribuer à repérer les besoins physiques, cognitifs, psychologiques et relationnels, en lien avec le médecin lorsque cela est nécessaire. L’objectif est de rechercher ce qui fait difficulté et d’adapter l’accompagnement sans recourir à la contrainte.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Contacter El-Hafeed",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Les refus d’aide, l’agitation ou les changements de comportement de votre parent deviennent difficiles à gérer à domicile ? El-Hafeed peut vous rencontrer à Casablanca afin de comprendre la situation avec vous et d’envisager un accompagnement adapté, en lien avec les professionnels de santé concernés.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Références documentaires",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref1",
+            "_type": "link",
+            "href": "https://www.who.int/fr/news-room/fact-sheets/detail/dementia"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "OMS, Démence, 26 octobre 2026",
+            "marks": [
+              "ref1"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref2",
+            "_type": "link",
+            "href": "https://www.nia.nih.gov/alzheimers/publication/managing-personality-and-behavior-changes"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "National Institute on Aging, Managing Personality and Behavior Changes",
+            "marks": [
+              "ref2"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref3",
+            "_type": "link",
+            "href": "https://www.has-sante.fr/jcms/c_2835100/"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "HAS, Repérage des risques de perte d’autonomie au domicile",
+            "marks": [
+              "ref3"
+            ]
+          }
+        ]
+      }
+    ],
+    "mainImage": "resources/healthcare-services-assets/psychologie.webp",
+    "mainImageAlt": "Temps d’écoute et d’accompagnement auprès d’une personne âgée.",
+    "featured": false
+  },
+  {
+    "slug": "maintien-domicile-personne-agee",
+    "recommendedPath": "/conseils/maintien-domicile-personne-agee/",
     "category": "Autonomie à domicile",
-    "title": "Comment se déroule l’accompagnement à domicile ?",
-    "excerpt": "Un accompagnement construit à partir de l’histoire, des habitudes et des besoins de la personne, puis coordonné avec ses proches et les professionnels concernés.",
+    "title": "Maintien à domicile de la personne âgée : comment préserver son autonomie ?",
+    "metaTitle": "Maintien à domicile de la personne âgée : comment préserver son autonomie ?",
+    "excerpt": "Comment favoriser le maintien à domicile d’une personne âgée ? Repères pour adapter l’aide, préserver l’autonomie et soutenir les proches.",
+    "metaDescription": "Comment favoriser le maintien à domicile d’une personne âgée ? Repères pour adapter l’aide, préserver l’autonomie et soutenir les proches.",
+    "primaryKeyword": "maintien à domicile personne âgée",
+    "secondaryKeywords": [
+      "accompagnement personne âgée à domicile",
+      "perte d’autonomie",
+      "aide personne âgée Casablanca",
+      "autonomie senior",
+      "aide à domicile",
+      "sécurité domicile personne âgée"
+    ],
     "body": [
       {
         "_type": "block",
         "style": "h2",
         "children": [
           {
-            "text": "Commencer par écouter la personne"
+            "_type": "span",
+            "text": "Rester chez soi : un souhait qui demande une organisation adaptée",
+            "marks": []
           }
         ]
       },
@@ -19,16 +485,9 @@
         "style": "normal",
         "children": [
           {
-            "text": "La première rencontre permet de faire connaissance, d’écouter la personne et ses proches et de comprendre la situation à domicile. Une évaluation clinique aide à vérifier que l’accompagnement proposé correspond aux besoins."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "El-Hafeed peut accepter ou refuser une admission lorsque les besoins ne correspondent pas à son champ d’intervention. Cette étape aide à construire un cadre adapté dès le départ."
+            "_type": "span",
+            "text": "Pour beaucoup de personnes âgées, rester à domicile représente la possibilité de conserver leurs habitudes, leurs objets familiers, leur intimité et leurs repères. Le maintien à domicile ne dépend toutefois pas uniquement de la volonté de la personne ou de sa famille. Il suppose de tenir compte de son état de santé, de ses capacités, de son environnement et des ressources disponibles.",
+            "marks": []
           }
         ]
       },
@@ -37,7 +496,9 @@
         "style": "h2",
         "children": [
           {
-            "text": "Construire le Projet d’Accompagnement à Domicile"
+            "_type": "span",
+            "text": "L’autonomie ne se résume pas à l’absence d’aide",
+            "marks": []
           }
         ]
       },
@@ -46,16 +507,9 @@
         "style": "normal",
         "children": [
           {
-            "text": "Le Projet d’Accompagnement à Domicile (PAD) rassemble les repères utiles : histoire de vie, habitudes, mobilité et autonomie, équilibre cognitif et émotionnel, besoins médicaux et paramédicaux et objectifs convenus."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "Le projet est renouvelé tous les trois mois afin de réévaluer les besoins et d’ajuster l’accompagnement. Sa création est facturée une seule fois."
+            "_type": "span",
+            "text": "Une personne peut avoir besoin d’aide pour la toilette, l’habillage, les repas ou les déplacements tout en conservant des capacités de choix et de participation. L’enjeu consiste à proposer une aide proportionnée : ne pas faire à sa place ce qu’elle peut encore accomplir, tout en sécurisant les gestes devenus difficiles. Cette attention contribue à préserver la confiance et le sentiment de rester acteur de sa vie.",
+            "marks": []
           }
         ]
       },
@@ -64,7 +518,9 @@
         "style": "h2",
         "children": [
           {
-            "text": "Coordonner les interventions"
+            "_type": "span",
+            "text": "Observer les besoins dans leur ensemble",
+            "marks": []
           }
         ]
       },
@@ -73,16 +529,9 @@
         "style": "normal",
         "children": [
           {
-            "text": "Les intervenants s’appuient sur le PAD pour respecter le rythme, les choix et les capacités de la personne. La coordination maintient le lien avec les proches désignés et les professionnels concernés."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "La matinée peut être consacrée aux soins d’hygiène et de confort, à l’habillage, aux repas et à l’observation de l’état général. L’après-midi peut comprendre des échanges, des activités adaptées, des exercices cognitifs ou des sorties prévues avec la personne."
+            "_type": "span",
+            "text": "Les difficultés peuvent concerner la mobilité, l’équilibre, la mémoire, l’alimentation, le sommeil, l’humeur ou la gestion des activités quotidiennes. Le logement compte également : éclairage, tapis, escaliers, salle de bain, accès aux objets usuels. Une chute, une hospitalisation ou une perte de poids peuvent modifier rapidement les besoins et justifier une nouvelle évaluation.",
+            "marks": []
           }
         ]
       },
@@ -91,7 +540,9 @@
         "style": "h2",
         "children": [
           {
-            "text": "Faire évoluer l’accompagnement"
+            "_type": "span",
+            "text": "Quand mettre en place un accompagnement à domicile ?",
+            "marks": []
           }
         ]
       },
@@ -100,286 +551,138 @@
         "style": "normal",
         "children": [
           {
-            "text": "Les besoins et les capacités peuvent changer. Les observations des proches et des intervenants sont partagées avec la coordination afin de réexaminer les objectifs et de préserver autant que possible les repères et l’autonomie résiduelle."
+            "_type": "span",
+            "text": "Un accompagnement peut être envisagé lorsque les gestes du quotidien deviennent difficiles, lorsque les proches ne peuvent plus assurer seuls la présence nécessaire ou lorsque la situation nécessite plusieurs compétences. Selon les besoins, les interventions peuvent associer aides-soignants à domicile, infirmière coordinatrice, kinésithérapeute, orthophoniste, psychologue, nutritionniste et psychomotricienne. Les interventions doivent être coordonnées avec le médecin et les autres professionnels concernés.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Réévaluer au fil du temps",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Le vieillissement n’est pas une situation figée. Les capacités peuvent varier après une maladie, une hospitalisation, un changement de traitement ou un événement de vie. Un accompagnement pertinent doit donc pouvoir être ajusté. Préserver l’autonomie signifie aussi reconnaître les limites du maintien à domicile lorsque la sécurité ou les besoins de la personne ne peuvent plus être suffisamment assurés.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Contacter El-Hafeed",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Vous vous interrogez sur le maintien à domicile de votre parent à Casablanca ? El-Hafeed peut réaliser une première rencontre à domicile pour mieux comprendre ses besoins, ses capacités et les difficultés rencontrées, puis échanger avec vous sur les possibilités d’accompagnement.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Références documentaires",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref1",
+            "_type": "link",
+            "href": "https://www.who.int/news-room/questions-and-answers/item/healthy-ageing-and-functional-ability"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "OMS, Vieillissement en bonne santé et capacité fonctionnelle",
+            "marks": [
+              "ref1"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref2",
+            "_type": "link",
+            "href": "https://www.has-sante.fr/jcms/c_2835100/"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "HAS, Repérage des risques de perte d’autonomie ou de son aggravation – volet domicile",
+            "marks": [
+              "ref2"
+            ]
           }
         ]
       }
     ],
-    "mainImage": "resources/healthcare-services-assets/infirmerie.webp"
+    "mainImage": "resources/home-safety-article.webp",
+    "mainImageAlt": "Aménagement du domicile pour favoriser la sécurité et l’autonomie.",
+    "featured": false
   },
   {
-    "slug": "maison-plus-sure",
-    "category": "Autonomie à domicile",
-    "title": "Comment rendre le domicile plus sûr ?",
-    "excerpt": "L’évaluation de la mobilité, de l’autonomie et des habitudes aide à adapter l’accompagnement au domicile sans effacer les repères de la personne.",
-    "body": [
-      {
-        "_type": "block",
-        "style": "h2",
-        "children": [
-          {
-            "text": "Partir des habitudes de vie"
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "Le domicile fait partie de l’histoire de la personne. Le Projet d’Accompagnement à Domicile prend en compte ses habitudes, ses repères, sa mobilité et les gestes qu’elle peut encore réaliser."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "Échanger avec la personne et observer son quotidien permet de comprendre où elle souhaite être accompagnée et quelle autonomie elle veut conserver."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "h2",
-        "children": [
-          {
-            "text": "Évaluer les besoins avec les professionnels"
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "L’évaluation du PAD tient compte de la mobilité, de l’autonomie physique et des besoins médicaux ou paramédicaux. Elle permet aux proches et aux professionnels concernés de définir ensemble des objectifs adaptés."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "La coordination peut intégrer les observations de l’équipe et des proches désignés pour ajuster l’organisation au quotidien."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "blockquote",
-        "children": [
-          {
-            "text": "Pour toute question sur les déplacements, les aides techniques ou l’aménagement du logement, demandez conseil à un professionnel qui connaît la situation."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "h2",
-        "children": [
-          {
-            "text": "Préserver les capacités et la dignité"
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "Accompagner ne signifie pas faire systématiquement à la place de la personne. L’équipe cherche à maintenir les capacités restantes, à respecter les choix et à soutenir la continuité de l’identité et des repères."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "Le projet est réévalué tous les trois mois pour tenir compte de l’évolution des besoins et des souhaits exprimés."
-          }
-        ]
-      }
-    ],
-    "mainImage": "resources/home-safety-article.webp"
-  },
-  {
-    "slug": "garder-le-plaisir-de-bouger",
-    "category": "Santé et qualité de vie",
-    "title": "Comment préserver la mobilité et l’équilibre ?",
-    "excerpt": "Le kinésithérapeute évalue les besoins de la personne et accompagne le maintien de la mobilité, de l’équilibre et des capacités physiques.",
-    "body": [
-      {
-        "_type": "block",
-        "style": "h2",
-        "children": [
-          {
-            "text": "Évaluer avant de proposer des exercices"
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "La mobilité et l’équilibre sont pris en compte dans l’évaluation des besoins. Le kinésithérapeute adapte son accompagnement à la situation et aux capacités de la personne."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "L’objectif est de soutenir les capacités physiques et l’autonomie, en tenant compte du rythme de chacun."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "h2",
-        "children": [
-          {
-            "text": "Prévenir les chutes et accompagner la douleur"
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "Le travail peut porter sur l’équilibre, les déplacements et la prévention des chutes. Le kinésithérapeute peut aussi contribuer à l’accompagnement des douleurs chroniques selon les besoins évalués."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "blockquote",
-        "children": [
-          {
-            "text": "Un programme d’activité ou de rééducation doit être adapté à la situation de santé de la personne par les professionnels concernés."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "h2",
-        "children": [
-          {
-            "text": "Rester en lien avec l’équipe"
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "Les observations des proches et des intervenants aident à comprendre l’évolution du quotidien. La coordination permet de partager les informations utiles avec les professionnels concernés et d’ajuster le projet si nécessaire."
-          }
-        ]
-      }
-    ],
-    "mainImage": "resources/healthcare-services-assets/kinesitherapie.webp"
-  },
-  {
-    "slug": "appetit-et-repas",
-    "category": "Santé et qualité de vie",
-    "title": "Comment accompagner les difficultés de communication et de déglutition ?",
-    "excerpt": "L’orthophoniste travaille la communication et les fonctions liées aux repas, en lien avec la personne, ses proches et l’équipe qui l’accompagne.",
-    "body": [
-      {
-        "_type": "block",
-        "style": "h2",
-        "children": [
-          {
-            "text": "Repérer les difficultés et les partager"
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "Les difficultés de communication ou de déglutition peuvent modifier le quotidien. Les proches peuvent partager leurs observations avec l’équipe afin qu’elles soient prises en compte dans le projet d’accompagnement."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "h2",
-        "children": [
-          {
-            "text": "Intégrer l’accompagnement orthophonique"
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "L’orthophoniste accompagne la communication et propose des exercices adaptés. Son intervention peut également contribuer à prévenir les fausses routes, selon les besoins évalués."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "L’infirmier coordinateur assure le lien avec l’orthophoniste afin que les exercices prévus puissent s’intégrer au quotidien de la personne."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "h2",
-        "children": [
-          {
-            "text": "Respecter les repères de la personne"
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "normal",
-        "children": [
-          {
-            "text": "Les activités et les échanges tiennent compte des habitudes, des capacités et du rythme de chacun. Toute adaptation est discutée avec les professionnels concernés et les proches désignés."
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "style": "blockquote",
-        "children": [
-          {
-            "text": "Pour une difficulté nouvelle autour de la déglutition ou des repas, contactez l’équipe de santé qui accompagne votre proche."
-          }
-        ]
-      }
-    ],
-    "mainImage": "resources/healthcare-services-assets/nutrition.webp"
-  },
-  {
-    "slug": "soutenir-sans-s-epuiser",
+    "slug": "aidants-familiaux-epuisement-parent-age",
+    "recommendedPath": "/conseils/aidants-familiaux-epuisement-parent-age/",
     "category": "Vie des aidants",
-    "title": "Comment soutenir un proche sans rester seul ?",
-    "excerpt": "La psychologue accompagne les familles confrontées aux bouleversements, au sentiment d’impuissance ou à l’épuisement liés à la perte d’autonomie.",
+    "title": "Aidants familiaux : accompagner un parent âgé sans s’épuiser",
+    "metaTitle": "Aidants familiaux : accompagner un parent âgé sans s’épuiser",
+    "excerpt": "Vous accompagnez un parent âgé ? Reconnaître les signes d’épuisement, demander du relais et préserver votre santé sans culpabiliser.",
+    "metaDescription": "Vous accompagnez un parent âgé ? Reconnaître les signes d’épuisement, demander du relais et préserver votre santé sans culpabiliser.",
+    "primaryKeyword": "aidant familial personne âgée",
+    "secondaryKeywords": [
+      "épuisement aidant familial",
+      "aide aux aidants",
+      "accompagner parent âgé",
+      "répit aidant",
+      "maintien à domicile",
+      "soutien famille Alzheimer"
+    ],
     "body": [
       {
         "_type": "block",
         "style": "h2",
         "children": [
           {
-            "text": "Reconnaître ce que vivent les proches"
+            "_type": "span",
+            "text": "Être aidant : une place importante, parfois difficile à tenir",
+            "marks": []
           }
         ]
       },
@@ -388,7 +691,9 @@
         "style": "normal",
         "children": [
           {
-            "text": "La perte d’autonomie peut bouleverser l’équilibre familial. Les proches peuvent ressentir de l’impuissance ou de l’épuisement et avoir besoin d’un espace pour exprimer leurs questions et leurs émotions."
+            "_type": "span",
+            "text": "Accompagner un parent qui perd progressivement son autonomie peut transformer la relation familiale. Il faut parfois organiser les rendez-vous, les repas, les déplacements, les démarches et la présence quotidienne. L’attachement et le sens du devoir peuvent conduire à repousser ses propres limites. Pourtant, l’épuisement d’un aidant n’est ni un manque d’amour ni un échec.",
+            "marks": []
           }
         ]
       },
@@ -397,7 +702,9 @@
         "style": "h2",
         "children": [
           {
-            "text": "S’appuyer sur un espace d’écoute"
+            "_type": "span",
+            "text": "Reconnaître les signes d’épuisement",
+            "marks": []
           }
         ]
       },
@@ -406,7 +713,9 @@
         "style": "normal",
         "children": [
           {
-            "text": "La psychologue accompagne les familles et les équipes face aux situations difficiles. Elle propose un espace d’écoute et aide à comprendre les changements qui accompagnent la perte d’autonomie, les refus de soins ou les bouleversements identitaires."
+            "_type": "span",
+            "text": "Fatigue persistante, irritabilité, troubles du sommeil, sentiment d’être constamment sollicité, isolement, douleurs ou difficulté à se concentrer peuvent signaler une charge devenue trop lourde. Certains proches ressentent également de la culpabilité lorsqu’ils prennent du temps pour eux. Ces signes méritent d’être pris au sérieux, notamment lorsqu’ils s’installent ou s’aggravent.",
+            "marks": []
           }
         ]
       },
@@ -415,7 +724,9 @@
         "style": "h2",
         "children": [
           {
-            "text": "Maintenir le lien avec la coordination"
+            "_type": "span",
+            "text": "Pourquoi est-il si difficile de demander de l’aide ?",
+            "marks": []
           }
         ]
       },
@@ -424,20 +735,1447 @@
         "style": "normal",
         "children": [
           {
-            "text": "Les proches désignés peuvent échanger avec la coordination et partager les informations utiles à l’accompagnement. Le dialogue entre la famille et les professionnels aide à préserver les repères de la personne et à ajuster le soutien."
+            "_type": "span",
+            "text": "Les familles peuvent avoir le sentiment qu’elles seules connaissent les habitudes de leur parent, ou craindre qu’un intervenant ne respecte pas sa manière de vivre. Il peut aussi être difficile d’accepter que la situation a changé. Demander du soutien ne signifie pas abandonner son proche : cela permet de répartir les responsabilités et de préserver une relation qui ne soit pas uniquement organisée autour des tâches à accomplir.",
+            "marks": []
           }
         ]
       },
       {
         "_type": "block",
-        "style": "blockquote",
+        "style": "h2",
         "children": [
           {
-            "text": "Demander un temps d’échange avec la psychologue ou la coordination fait partie de l’accompagnement proposé aux familles."
+            "_type": "span",
+            "text": "Construire des relais réalistes",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Il peut être utile d’identifier les tâches les plus lourdes, les moments où une présence est nécessaire et les personnes ou professionnels susceptibles de prendre le relais. Un accompagnement à domicile peut soutenir les actes de la vie quotidienne et mobiliser différentes compétences selon la situation. Le besoin de répit doit être abordé sans attendre une crise.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Prendre soin de l’aidant fait partie de l’accompagnement",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Les besoins de la personne âgée et ceux de son entourage sont liés. Un échange avec les professionnels peut aider à clarifier les priorités, à mieux répartir les rôles et à identifier les ressources disponibles. L’aidant doit pouvoir exprimer ses difficultés et être orienté vers un professionnel de santé s’il présente des symptômes physiques ou psychologiques persistants.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Contacter El-Hafeed",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Vous accompagnez seul(e) un parent âgé à Casablanca et vous commencez à vous épuiser ? El-Hafeed peut échanger avec vous et évaluer les besoins de votre proche à domicile afin d’envisager des relais adaptés à votre situation familiale.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Références documentaires",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref1",
+            "_type": "link",
+            "href": "https://www.has-sante.fr/upload/docs/application/pdf/2024-06/rbpp_repit_aidants-recommandations.pdf"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "HAS, Le répit des aidants – recommandations de bonnes pratiques, 2024",
+            "marks": [
+              "ref1"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref2",
+            "_type": "link",
+            "href": "https://www.has-sante.fr/jcms/c_2835100/"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "HAS, Repérage des risques de perte d’autonomie au domicile – risque sur la santé des aidants",
+            "marks": [
+              "ref2"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref3",
+            "_type": "link",
+            "href": "https://www.nia.nih.gov/alzheimers/topics/caregiving"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "National Institute on Aging, Alzheimer’s caregiving",
+            "marks": [
+              "ref3"
+            ]
           }
         ]
       }
     ],
-    "mainImage": "resources/healthcare-services-assets/psychologie.webp"
+    "mainImage": "resources/healthcare-services-assets/infirmerie.webp",
+    "mainImageAlt": "Professionnelle de santé accompagnant une personne âgée à domicile.",
+    "featured": false
+  },
+  {
+    "slug": "prevention-chutes-personne-agee-domicile",
+    "recommendedPath": "/conseils/prevention-chutes-personne-agee-domicile/",
+    "category": "Autonomie à domicile",
+    "title": "Prévention des chutes chez la personne âgée : sécuriser le domicile et préserver la mobilité",
+    "metaTitle": "Prévention des chutes chez la personne âgée : sécuriser le domicile et préserver la mobilité",
+    "excerpt": "Quels facteurs favorisent les chutes chez les personnes âgées ? Conseils pour sécuriser le domicile, préserver l’équilibre et savoir quand consulter.",
+    "metaDescription": "Quels facteurs favorisent les chutes chez les personnes âgées ? Conseils pour sécuriser le domicile, préserver l’équilibre et savoir quand consulter.",
+    "primaryKeyword": "prévention des chutes personne âgée",
+    "secondaryKeywords": [
+      "chute personne âgée domicile",
+      "risque de chute senior",
+      "équilibre personne âgée",
+      "kinésithérapie à domicile Casablanca",
+      "sécuriser maison personne âgée",
+      "peur de tomber"
+    ],
+    "body": [
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Une chute n’est jamais à banaliser",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Une chute peut entraîner une blessure, une hospitalisation, une perte de confiance et parfois une réduction des déplacements. Même sans blessure visible, elle peut provoquer une peur de tomber qui conduit la personne à limiter ses activités. Cette diminution de mobilité peut ensuite fragiliser davantage l’équilibre et l’autonomie.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Identifier les facteurs de risque",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Le risque de chute est souvent multifactoriel. Il peut être associé à une faiblesse musculaire, des troubles de l’équilibre, une baisse de la vision, des douleurs, certains médicaments, des chaussures inadaptées ou des difficultés à se relever. L’environnement intervient également : éclairage insuffisant, tapis instables, fils au sol, marches mal signalées ou salle de bain glissante.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Adapter le domicile sans transformer la maison en lieu médicalisé",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Des ajustements simples peuvent améliorer la sécurité : dégager les passages, fixer ou retirer les tapis instables, améliorer l’éclairage, rendre les objets usuels accessibles et réfléchir aux appuis nécessaires dans les zones à risque. Les aménagements doivent être adaptés aux capacités et aux habitudes de la personne. Une modification mal choisie peut parfois gêner davantage qu’elle n’aide.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Préserver la force et l’équilibre",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Une activité physique adaptée, qui travaille notamment l’équilibre et le renforcement musculaire, peut contribuer à réduire le risque de chute. Le programme doit tenir compte de l’état de santé, des douleurs, des antécédents de chute et des capacités de la personne. Le kinésithérapeute peut évaluer la mobilité et proposer une rééducation adaptée ; toute reprise d’activité doit être discutée avec un professionnel lorsque la situation médicale le nécessite.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Après une chute, que faire ?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Une chute avec traumatisme, douleur importante, impossibilité de se relever, perte de connaissance, confusion ou suspicion de fracture nécessite une évaluation médicale urgente. Même lorsqu’elle semble sans conséquence, une chute répétée ou inexpliquée doit être signalée au médecin afin d’en rechercher les causes.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Contacter El-Hafeed",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Votre parent a chuté ou vous constatez une perte d’équilibre à domicile ? El-Hafeed peut vous rencontrer à Casablanca pour examiner avec vous les besoins d’accompagnement et, selon la situation, envisager l’intervention d’un kinésithérapeute. En cas de blessure ou de signe inquiétant après une chute, contactez sans délai les services médicaux d’urgence.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Références documentaires",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref1",
+            "_type": "link",
+            "href": "https://www.who.int/fr/news-room/fact-sheets/detail/falls"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "OMS, Chutes, fiche d’information, 21 octobre 2026",
+            "marks": [
+              "ref1"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref2",
+            "_type": "link",
+            "href": "https://www.has-sante.fr/jcms/c_2835100/"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "HAS, Repérage des risques de perte d’autonomie au domicile",
+            "marks": [
+              "ref2"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref3",
+            "_type": "link",
+            "href": "https://www.who.int/publications/i/item/9789240015128"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "OMS, Recommandations sur l’activité physique et la sédentarité",
+            "marks": [
+              "ref3"
+            ]
+          }
+        ]
+      }
+    ],
+    "mainImage": "resources/healthcare-services-assets/kinesitherapie.webp",
+    "mainImageAlt": "Séance de kinésithérapie visant la mobilité et l’équilibre.",
+    "featured": false
+  },
+  {
+    "slug": "avc-personne-agee-retour-domicile",
+    "recommendedPath": "/conseils/avc-personne-agee-retour-domicile/",
+    "category": "Santé et réadaptation",
+    "title": "AVC chez la personne âgée : rééducation et accompagnement après le retour à domicile",
+    "metaTitle": "AVC chez la personne âgée : rééducation et accompagnement après le retour à domicile",
+    "excerpt": "Après un AVC, le retour à domicile demande une organisation adaptée. Découvrez les enjeux de la rééducation, de la communication et de l’accompagnement quotidien.",
+    "metaDescription": "Après un AVC, le retour à domicile demande une organisation adaptée. Découvrez les enjeux de la rééducation, de la communication et de l’accompagnement quotidien.",
+    "primaryKeyword": "accompagnement après AVC à domicile",
+    "secondaryKeywords": [
+      "AVC personne âgée",
+      "rééducation après AVC",
+      "kinésithérapeute à domicile",
+      "orthophoniste après AVC",
+      "troubles de la parole AVC",
+      "retour domicile après hospitalisation"
+    ],
+    "body": [
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Après un AVC, une nouvelle étape commence au retour à domicile",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Un accident vasculaire cérébral peut entraîner des difficultés variables selon la zone du cerveau touchée et la gravité de l’atteinte. Certaines personnes présentent une faiblesse d’un côté du corps, des troubles de l’équilibre, de la parole, de la compréhension, de la déglutition ou de la mémoire. Le retour à domicile ne signifie pas nécessairement la fin de la réadaptation.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "La rééducation concerne plusieurs dimensions",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "La réadaptation vise à retrouver, maintenir ou améliorer les capacités fonctionnelles et la participation à la vie quotidienne. Selon les séquelles, elle peut mobiliser le kinésithérapeute pour la mobilité, la force et l’équilibre, l’orthophoniste pour la communication et la déglutition, ainsi que d’autres professionnels selon les besoins. Un soutien psychologique peut également être utile face aux bouleversements émotionnels liés à l’AVC.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Préparer un domicile adapté",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Avant et après le retour, il est important d’identifier les gestes devenus difficiles : se lever, se déplacer, se laver, s’habiller, préparer un repas ou communiquer. Les espaces de circulation, les accès à la salle de bain et les habitudes de vie peuvent nécessiter des adaptations. Les proches doivent également savoir quelles aides apporter sans prendre de risques pour eux-mêmes ou pour la personne.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Une coordination essentielle",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Les besoins peuvent évoluer au fil de la récupération. La coordination entre la famille, le médecin et les professionnels de réadaptation permet de garder des objectifs cohérents et d’ajuster les interventions. Les exercices et les aides doivent être individualisés : il n’existe pas de programme identique pour toutes les personnes après un AVC.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Ne pas négliger les nouveaux symptômes",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Tout nouvel épisode brutal de faiblesse d’un côté du corps, de trouble de la parole, de trouble de la vision ou de déséquilibre soudain peut évoquer un nouvel AVC. Il s’agit d’une urgence médicale : contactez immédiatement les services d’urgence locaux, sans attendre une amélioration spontanée.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Contacter El-Hafeed",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Votre parent revient à domicile après un AVC à Casablanca ? El-Hafeed peut échanger avec votre famille et évaluer les besoins quotidiens afin d’envisager un accompagnement coordonné, en complément du suivi médical et du programme de réadaptation prescrit.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Références documentaires",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref1",
+            "_type": "link",
+            "href": "https://www.who.int/fr/news-room/fact-sheets/detail/stroke"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "OMS, Accident vasculaire cérébral (AVC), réadaptation",
+            "marks": [
+              "ref1"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref2",
+            "_type": "link",
+            "href": "https://www.who.int/fr/news-room/fact-sheets/detail/rehabilitation"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "OMS, Réadaptation",
+            "marks": [
+              "ref2"
+            ]
+          }
+        ]
+      }
+    ],
+    "mainImage": "resources/healthcare-services-assets/kinesitherapie.webp",
+    "mainImageAlt": "Accompagnement de la mobilité dans le cadre d’une réadaptation.",
+    "featured": false
+  },
+  {
+    "slug": "troubles-deglutition-personne-agee",
+    "recommendedPath": "/conseils/troubles-deglutition-personne-agee/",
+    "category": "Santé et réadaptation",
+    "title": "Troubles de la déglutition chez la personne âgée : reconnaître les signes et prévenir les fausses routes",
+    "metaTitle": "Troubles de la déglutition chez la personne âgée : reconnaître les signes et prévenir les fausses routes",
+    "excerpt": "Toux pendant les repas, voix mouillée, difficultés à avaler : repérer les signes possibles de dysphagie et demander une évaluation adaptée.",
+    "metaDescription": "Toux pendant les repas, voix mouillée, difficultés à avaler : repérer les signes possibles de dysphagie et demander une évaluation adaptée.",
+    "primaryKeyword": "troubles de la déglutition personne âgée",
+    "secondaryKeywords": [
+      "dysphagie personne âgée",
+      "fausse route",
+      "difficulté à avaler",
+      "toux pendant repas",
+      "orthophoniste déglutition Casablanca",
+      "dénutrition personne âgée"
+    ],
+    "body": [
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Qu’appelle-t-on un trouble de la déglutition ?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "La déglutition permet de transporter les aliments, les boissons et la salive de la bouche vers l’œsophage. Lorsqu’elle devient difficile ou mal coordonnée, on parle de dysphagie. Ces troubles peuvent survenir notamment après un AVC ou dans certaines maladies neurologiques et neuro-évolutives. Ils peuvent rendre les repas longs, fatigants ou anxiogènes.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Quels signes doivent alerter ?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Certains signes peuvent évoquer une difficulté à avaler : toux pendant ou après le repas, raclements de gorge, voix qui devient humide ou gargouillante, aliments qui restent dans la bouche, mastication difficile, repas anormalement longs ou évitement de certaines textures. Une perte de poids, une déshydratation ou des infections respiratoires répétées doivent également attirer l’attention. L’absence de toux n’exclut pas toujours un risque de fausse route.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Pourquoi ne faut-il pas modifier seul les textures ?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Épaissir les boissons, mixer systématiquement les aliments ou supprimer certaines consistances sans évaluation peut être inadapté et réduire le plaisir de manger ou les apports nutritionnels. Les adaptations doivent être décidées à partir d’une évaluation individualisée, en tenant compte de la santé, des capacités, des préférences et des habitudes alimentaires de la personne.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Le rôle de l’orthophoniste et de l’équipe",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "L’orthophoniste peut évaluer les difficultés de déglutition et proposer une prise en charge adaptée. Selon la situation, des examens complémentaires peuvent être nécessaires. La coordination avec le médecin et les professionnels de la nutrition permet de tenir compte à la fois de la sécurité des repas, de l’hydratation et de l’équilibre nutritionnel.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Quand demander un avis médical ?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Une difficulté nouvelle à avaler, des épisodes répétés de toux ou d’étouffement pendant les repas, une perte de poids ou une déshydratation justifient un avis médical rapide. En cas d’étouffement aigu ou de difficulté respiratoire, contactez immédiatement les services d’urgence.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Contacter El-Hafeed",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Vous remarquez que votre parent tousse pendant les repas ou semble avoir du mal à avaler ? El-Hafeed peut vous orienter vers une évaluation adaptée et, lorsque cela est indiqué, envisager l’intervention d’un orthophoniste à domicile à Casablanca. Ne modifiez pas les textures ou les boissons sans avis professionnel.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Références documentaires",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref1",
+            "_type": "link",
+            "href": "https://www.asha.org/practice-portal/clinical-topics/adult-dysphagia/"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "American Speech-Language-Hearing Association, Adult Dysphagia",
+            "marks": [
+              "ref1"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref2",
+            "_type": "link",
+            "href": "https://www.has-sante.fr/upload/docs/application/pdf/2020-08/guide_mnd_-_ladaptation_des_pratiques_daccompagnement.pdf"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "HAS, Guide d’adaptation des pratiques d’accompagnement des personnes atteintes de maladies neurodégénératives",
+            "marks": [
+              "ref2"
+            ]
+          }
+        ]
+      }
+    ],
+    "mainImage": "resources/healthcare-services-assets/orthophonie.webp",
+    "mainImageAlt": "Séance d’orthophonie auprès d’une personne âgée.",
+    "featured": false
+  },
+  {
+    "slug": "denutrition-personne-agee-perte-poids",
+    "recommendedPath": "/conseils/denutrition-personne-agee-perte-poids/",
+    "category": "Santé et réadaptation",
+    "title": "Dénutrition chez la personne âgée : pourquoi une perte de poids doit alerter",
+    "metaTitle": "Dénutrition chez la personne âgée : pourquoi une perte de poids doit alerter",
+    "excerpt": "Une perte de poids chez une personne âgée n’est pas toujours anodine. Découvrez les signes de dénutrition et l’importance d’une évaluation nutritionnelle.",
+    "metaDescription": "Une perte de poids chez une personne âgée n’est pas toujours anodine. Découvrez les signes de dénutrition et l’importance d’une évaluation nutritionnelle.",
+    "primaryKeyword": "dénutrition personne âgée",
+    "secondaryKeywords": [
+      "perte de poids personne âgée",
+      "dénutrition senior",
+      "manque d’appétit personne âgée",
+      "nutrition personne âgée Casablanca",
+      "risque nutritionnel",
+      "alimentation Alzheimer"
+    ],
+    "body": [
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "La perte de poids n’est pas une conséquence normale à banaliser",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Chez une personne âgée, une perte de poids involontaire peut révéler une dénutrition ou un problème de santé qui nécessite une attention particulière. La dénutrition correspond à un déséquilibre entre les besoins de l’organisme et les apports nutritionnels. Elle peut fragiliser les muscles, réduire les capacités physiques et compliquer la récupération après une maladie.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Quels signes observer ?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Une diminution de l’appétit, des vêtements devenus trop larges, une fatigue inhabituelle, une perte de force ou une réduction des quantités consommées peuvent constituer des signaux d’alerte. Les difficultés dentaires, les douleurs, les troubles de la déglutition, la dépression, l’isolement, les troubles cognitifs ou certains traitements peuvent contribuer à réduire les apports alimentaires.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Pourquoi une évaluation est-elle importante ?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Le poids et son évolution doivent être interprétés avec l’état général et le contexte médical. Un poids qui semble normal ne suffit pas à exclure une dénutrition. Le diagnostic repose sur des critères cliniques et étiologiques évalués par un professionnel de santé. Il ne faut donc pas se fier uniquement à l’apparence ou à l’indice de masse corporelle.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Adapter l’alimentation à la personne",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Les réponses ne se limitent pas à augmenter les quantités. Il faut comprendre ce qui gêne les repas : fatigue, douleur, difficultés à mâcher ou avaler, oubli, solitude, perte du goût ou contraintes alimentaires. Une nutritionniste ou un diététicien peut contribuer à adapter les apports aux besoins, aux goûts et aux possibilités de la personne, en lien avec le médecin. En cas de trouble de la déglutition, l’avis de l’orthophoniste est essentiel.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Le plaisir de manger compte aussi",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Les repas sont des moments de plaisir, de repères et de lien social. Respecter les préférences, les habitudes culturelles et le rythme de la personne fait partie de l’accompagnement nutritionnel. Toute perte de poids involontaire ou persistante doit être signalée au médecin.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Contacter El-Hafeed",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Votre parent mange moins, perd du poids ou semble s’affaiblir ? El-Hafeed peut vous rencontrer à Casablanca pour mieux comprendre les difficultés rencontrées et envisager, selon les besoins, une évaluation nutritionnelle et un accompagnement coordonné. Une perte de poids involontaire doit être discutée avec le médecin.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Références documentaires",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref1",
+            "_type": "link",
+            "href": "https://www.has-sante.fr/jcms/p_3280456/fr/diagnostic-de-la-denutrition-chez-la-personne-de-70-ans-et-plus"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "HAS, Diagnostic de la dénutrition chez la personne de 70 ans et plus, 2021",
+            "marks": [
+              "ref1"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref2",
+            "_type": "link",
+            "href": "https://www.has-sante.fr/jcms/c_2835100/"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "HAS, Repérage des risques de perte d’autonomie au domicile",
+            "marks": [
+              "ref2"
+            ]
+          }
+        ]
+      }
+    ],
+    "mainImage": "resources/healthcare-services-assets/nutrition.webp",
+    "mainImageAlt": "Accompagnement nutritionnel adapté aux besoins d’une personne âgée.",
+    "featured": false
+  },
+  {
+    "slug": "stimulation-cognitive-personne-agee",
+    "recommendedPath": "/conseils/stimulation-cognitive-personne-agee/",
+    "category": "Mémoire et maladie d’Alzheimer",
+    "title": "Stimulation cognitive chez la personne âgée : entretenir les capacités et préserver les repères",
+    "metaTitle": "Stimulation cognitive chez la personne âgée : entretenir les capacités et préserver les repères",
+    "excerpt": "À quoi sert la stimulation cognitive chez la personne âgée ? Comprendre ses objectifs, choisir des activités adaptées et éviter les exercices infantilisants.",
+    "metaDescription": "À quoi sert la stimulation cognitive chez la personne âgée ? Comprendre ses objectifs, choisir des activités adaptées et éviter les exercices infantilisants.",
+    "primaryKeyword": "stimulation cognitive personne âgée",
+    "secondaryKeywords": [
+      "mémoire personne âgée",
+      "exercices mémoire senior",
+      "stimulation cognitive Alzheimer",
+      "fonctions cognitives",
+      "ateliers mémoire",
+      "accompagnement gérontologique"
+    ],
+    "body": [
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Qu’est-ce que la stimulation cognitive ?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "La stimulation cognitive regroupe des activités qui sollicitent différentes fonctions : mémoire, attention, langage, raisonnement, orientation ou capacités à organiser une action. Elle peut prendre des formes variées, de la conversation à la lecture, en passant par des jeux, des activités manuelles ou des tâches familières.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Une activité adaptée à l’histoire de la personne",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Il n’existe pas d’exercice universel qui conviendrait à toutes les personnes âgées. Une activité pertinente tient compte des capacités actuelles, des centres d’intérêt, de la fatigue, de la culture et du parcours de vie. Pour certaines personnes, évoquer une recette connue, écouter une musique appréciée ou participer à une activité quotidienne peut être plus signifiant qu’une fiche d’exercices standardisée.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Stimuler sans mettre en échec",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Le but n’est pas de tester la personne ni de souligner ses oublis. Une activité trop difficile peut provoquer frustration et découragement. Il est préférable de proposer des tâches accessibles, de valoriser la participation et d’accepter que les réponses soient différentes d’un jour à l’autre. Le plaisir, la relation et le sentiment de compétence ont toute leur place.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Stimulation cognitive et maladie d’Alzheimer",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Chez une personne atteinte de troubles neurocognitifs, les activités doivent être ajustées au stade de la maladie et aux capacités préservées. Elles ne guérissent pas la maladie et ne garantissent pas l’arrêt de son évolution. Elles peuvent toutefois soutenir la participation, les échanges et la qualité de vie lorsqu’elles sont adaptées à la personne.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Une approche globale du vieillissement",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Les fonctions cognitives ne sont pas indépendantes du sommeil, de l’humeur, de l’audition, de la vision, de l’activité physique ou de la santé générale. En cas de difficultés nouvelles ou qui s’aggravent, un bilan médical est nécessaire. Selon les besoins, des professionnels de la psychologie, de l’orthophonie ou de la psychomotricité peuvent contribuer à un accompagnement individualisé.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Contacter El-Hafeed",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Vous souhaitez proposer à votre parent des activités adaptées à ses capacités et à ses centres d’intérêt ? El-Hafeed peut évaluer ses besoins à domicile à Casablanca et envisager un accompagnement mobilisant les compétences appropriées, sans réduire la personne à ses difficultés de mémoire.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Références documentaires",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref1",
+            "_type": "link",
+            "href": "https://www.who.int/fr/news-room/fact-sheets/detail/dementia"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "OMS, Principaux repères sur la démence, 26 octobre 2026",
+            "marks": [
+              "ref1"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref2",
+            "_type": "link",
+            "href": "https://www.has-sante.fr/jcms/c_1148892/fr/recommandation-maladie-d-alzheimer-diagnostic-et-prise-en-charge"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "HAS, Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge",
+            "marks": [
+              "ref2"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref3",
+            "_type": "link",
+            "href": "https://www.who.int/publications/i/item/B09867"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "OMS, Réduction des risques de déclin cognitif et de démence, 2e édition, 2026",
+            "marks": [
+              "ref3"
+            ]
+          }
+        ]
+      }
+    ],
+    "mainImage": "resources/healthcare-services-assets/psychologie.webp",
+    "mainImageAlt": "Activité d’accompagnement cognitif et d’échange.",
+    "featured": false
+  },
+  {
+    "slug": "equipe-pluridisciplinaire-gerontologie",
+    "recommendedPath": "/conseils/equipe-pluridisciplinaire-gerontologie/",
+    "category": "Accompagnement gérontologique",
+    "title": "Pourquoi une équipe pluridisciplinaire est essentielle en gérontologie",
+    "metaTitle": "Pourquoi une équipe pluridisciplinaire est essentielle en gérontologie",
+    "excerpt": "Pourquoi associer plusieurs professionnels autour d’une personne âgée ? Comprendre l’intérêt d’une approche pluridisciplinaire et coordonnée à domicile.",
+    "metaDescription": "Pourquoi associer plusieurs professionnels autour d’une personne âgée ? Comprendre l’intérêt d’une approche pluridisciplinaire et coordonnée à domicile.",
+    "primaryKeyword": "équipe pluridisciplinaire gérontologie",
+    "secondaryKeywords": [
+      "accompagnement gérontologique à domicile",
+      "équipe personne âgée Casablanca",
+      "prise en charge personne âgée",
+      "coordination domicile",
+      "professionnels personne âgée"
+    ],
+    "body": [
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Le vieillissement concerne plusieurs dimensions de la personne",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Avancer en âge peut s’accompagner de changements physiques, cognitifs, psychologiques, nutritionnels et sociaux. Une difficulté à marcher peut par exemple modifier les sorties et les relations sociales. Des troubles de mémoire peuvent compliquer les repas ou la prise de repères. Une perte d’appétit peut fragiliser la force musculaire. Ces dimensions interagissent et ne peuvent pas toujours être comprises séparément.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Pourquoi un seul regard ne suffit-il pas toujours ?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Chaque professionnel observe la situation à partir de sa compétence. Le kinésithérapeute s’intéresse notamment à la mobilité et à l’équilibre ; l’orthophoniste à la communication et à la déglutition ; la nutritionniste aux besoins alimentaires ; la psychologue aux dimensions psychiques et relationnelles ; la psychomotricienne aux liens entre corps, mouvement et vécu. Les aides-soignants accompagnent les actes essentiels du quotidien et peuvent contribuer à repérer les changements observés.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "La coordination donne de la cohérence à l’accompagnement",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Multiplier les interventions ne suffit pas. Il est important que les professionnels partagent une compréhension commune des besoins, dans le respect du rôle de chacun et avec l’accord de la personne concernée. La coordination permet de limiter les réponses contradictoires, de tenir compte des priorités et d’ajuster l’accompagnement lorsque la situation évolue. Le médecin conserve sa place dans l’évaluation et le suivi médical.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "La personne âgée reste au centre des décisions",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Une approche pluridisciplinaire ne doit pas transformer le domicile en lieu de soins impersonnel. Les habitudes, les préférences, l’histoire et les choix de la personne doivent guider les propositions. La famille peut être associée aux échanges, tout en respectant la volonté et la confidentialité de la personne accompagnée.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "L’approche El-Hafeed",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "El-Hafeed propose un accompagnement gérontologique à domicile qui peut mobiliser, selon les besoins, une infirmière coordinatrice, des aides-soignants à domicile, une psychologue, un orthophoniste, un kinésithérapeute, une nutritionniste et une psychomotricienne. Les interventions sont envisagées en fonction de la situation de chaque personne et en lien avec les professionnels médicaux concernés.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Contacter El-Hafeed",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Vous ne savez pas quels professionnels pourraient accompagner votre parent à domicile ? El-Hafeed vous propose un premier échange et une rencontre à domicile à Casablanca afin de comprendre la situation et d’identifier les besoins d’accompagnement.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "h2",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Références documentaires",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref1",
+            "_type": "link",
+            "href": "https://www.who.int/fr/news-room/fact-sheets/detail/rehabilitation"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "OMS, Réadaptation",
+            "marks": [
+              "ref1"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref2",
+            "_type": "link",
+            "href": "https://www.who.int/fr/news-room/fact-sheets/detail/stroke"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "OMS, Accident vasculaire cérébral (AVC) – réadaptation multidisciplinaire",
+            "marks": [
+              "ref2"
+            ]
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "markDefs": [
+          {
+            "_key": "ref3",
+            "_type": "link",
+            "href": "https://www.has-sante.fr/jcms/c_2835100/"
+          }
+        ],
+        "children": [
+          {
+            "_type": "span",
+            "text": "HAS, Repérage des risques de perte d’autonomie au domicile",
+            "marks": [
+              "ref3"
+            ]
+          }
+        ]
+      }
+    ],
+    "mainImage": "resources/healthcare-services-assets/infirmerie.webp",
+    "mainImageAlt": "Coordination de soins entre une professionnelle et une personne âgée.",
+    "featured": false
   }
 ]
