@@ -1,7 +1,6 @@
 const teamMissions = {
   coordinatrice: {
     name: "Infirmière coordinatrice",
-    role: "Coordonne l’accompagnement autour de votre proche.",
     pole: "Coordination des soins",
     description: "Elle assure la coordination de l’accompagnement et veille à sa cohérence, en lien avec les professionnels de l’équipe, les familles et les médecins.",
     points: [
@@ -11,7 +10,6 @@ const teamMissions = {
   },
   "aides-soignants": {
     name: "Aides-soignants, infirmiers auxiliaires et infirmiers polyvalents",
-    role: "Accompagnent les soins et les gestes du quotidien.",
     pole: "Soins et autonomie",
     description: "Ils accompagnent votre proche dans les actes essentiels de la vie quotidienne : toilette, hygiène, repas, déplacements, sorties et activités de stimulation, tout en favorisant le maintien de son autonomie.",
     points: [
@@ -21,7 +19,6 @@ const teamMissions = {
   },
   psychologue: {
     name: "Psychologue clinicienne",
-    role: "Soutient la personne, ses proches et les équipes.",
     pole: "Écoute et soutien",
     description: "Elle accompagne les personnes confrontées aux difficultés psychologiques liées au vieillissement, aux maladies neurodégénératives et aux troubles du comportement. Elle apporte également un soutien aux familles et aux équipes.",
     points: [
@@ -31,7 +28,6 @@ const teamMissions = {
   },
   orthophoniste: {
     name: "Orthophoniste",
-    role: "Soutient la communication, le langage et la déglutition.",
     pole: "Langage et capacités cognitives",
     description: "Elle intervient dans la préservation des fonctions de communication, du langage et des capacités cognitives, ainsi que dans la prévention et l’accompagnement des troubles de la déglutition.",
     points: [
@@ -41,7 +37,6 @@ const teamMissions = {
   },
   kinesitherapeute: {
     name: "Kinésithérapeutes",
-    role: "Préservent la mobilité et les capacités motrices.",
     pole: "Mouvement et autonomie",
     description: "Leur accompagnement contribue au maintien des capacités motrices, de la mobilité et de la force musculaire afin de préserver le mouvement et l’autonomie.",
     points: [
@@ -51,7 +46,6 @@ const teamMissions = {
   },
   nutritionniste: {
     name: "Nutritionniste",
-    role: "Adapte l’alimentation à la santé et aux besoins de chacun.",
     pole: "Nutrition et santé",
     description: "Elle évalue les besoins nutritionnels et adapte les apports alimentaires à l’état de santé et à l’évolution des besoins de votre proche.",
     points: [
@@ -61,7 +55,6 @@ const teamMissions = {
   },
   psychomotricienne: {
     name: "Psychomotricienne",
-    role: "Mobilise les capacités motrices, cognitives et sensorielles.",
     pole: "Corps et coordination",
     description: "Elle travaille sur l’équilibre, la coordination, la perception du corps et la sensorialité, en mobilisant les capacités motrices et cognitives de la personne.",
     points: [
@@ -90,7 +83,6 @@ window.toggleMissionModal = function (memberKey) {
 
   document.getElementById("team-mission-pole").textContent = member.pole;
   document.getElementById("team-mission-title").textContent = member.name;
-  document.getElementById("team-mission-role").textContent = member.role;
   document.getElementById("team-mission-description").textContent = member.description || "";
   missionList.replaceChildren(
     ...member.points.map((point) => {

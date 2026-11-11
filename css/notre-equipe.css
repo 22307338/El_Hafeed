@@ -422,13 +422,6 @@
     Georgia,
     serif;
 }
-.team-member-capsule-heading p {
-  margin: 0.35rem 0 0;
-  color: #52645f;
-  font-size: 0.78rem;
-  font-weight: 600;
-  line-height: 1.35;
-}
 .team-member-photo {
   width: 100%;
   aspect-ratio: 1/1.18;
@@ -565,9 +558,6 @@
     overflow-wrap: break-word;
     hyphens: auto;
     text-wrap: balance;
-  }
-  .team-member-capsule-heading p {
-    font-size: 0.78rem;
   }
   .team-member-photo {
     flex: 0 0 auto;
@@ -985,12 +975,6 @@
   color: #173d3a;
   width: 95%;
 }
-.team-member-capsule-heading p {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: #61716e;
-}
 .team-member-photo {
   aspect-ratio: 1/1.28;
 }
@@ -1029,12 +1013,6 @@
     600 1.3rem/1.2 "Fraunces",
     Georgia,
     serif;
-}
-.team-mission-role {
-  margin: 0.35rem 0 1rem;
-  color: #5b6b68;
-  font-size: 0.76rem;
-  line-height: 1.4;
 }
 .team-mission-label {
   margin: 0 0 0.65rem;
@@ -1137,10 +1115,6 @@
   }
   .team-mission-copy h2 {
     font-size: clamp(1.75rem, 2.6vw, 2.35rem);
-  }
-  .team-mission-role {
-    font-size: 0.9rem;
-    margin: 0.45rem 0 1.4rem;
   }
   .team-mission-label {
     font-size: 0.75rem;

@@ -5,7 +5,7 @@ const TEAM_PAGE_QUERY = `*[_id == "teamPage"][0]{
   ..., intro{eyebrow,title,description,highlights[]{label,icon}},
   membersHeading{eyebrow,title,description},
   multidisciplinary{eyebrow,title,overview,explanation,principles[]{label,icon}},
-  members[]{..., "photoUrl": photo.asset->url},
+  members[]{_key,name,speciality,photoAlt,description,missions,"photoUrl":photo.asset->url},
   homeCareJourney{title,steps[]{label,title,description}}, services
 }`;
 const SERVICES_QUERY = `*[_type == "service"] | order(order asc, title asc){
@@ -105,7 +105,6 @@ function renderMembers(members) {
     MEMBER_STYLES.forEach((className) => capsule?.classList.remove(className));
     capsule?.classList.add(MEMBER_STYLES[index % MEMBER_STYLES.length]);
     setText(card.querySelector(".team-member-capsule-heading h3"), member.name);
-    setText(card.querySelector(".team-member-capsule-heading p"), member.role);
     setText(card.querySelector(".team-member-role"), member.speciality || member.specialty);
     const missionPreview = card.querySelector(".team-member-missions-preview");
     if (missionPreview) {
@@ -129,7 +128,6 @@ function renderMembers(members) {
     }
     missions[key] = {
       name: member.name || "",
-      role: member.role || "",
       pole: member.speciality || member.specialty || "",
       description: member.description || "",
       points: Array.isArray(member.missions) ? member.missions : [],
