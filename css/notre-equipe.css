@@ -581,10 +581,6 @@
     align-self: center;
   }
 
-  #team-page-intro-copy {
-    font-size: 22px !important;
-    font-weight: 200;
-  }
 }
 @media (max-width: 480px) {
   .team-members-grid {
@@ -609,10 +605,6 @@
     font-size: 0.94rem;
   }
 
-  #team-page-intro-copy {
-    font-size: 20px !important;
-    font-weight: 200;
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   .director-portrait-frame img,
@@ -1412,5 +1404,106 @@
   .team-members-grid .team-member-photo {
     aspect-ratio: 1.15 / 1;
     border-radius: 0.75rem;
+  }
+}
+
+/* Match Notre équipe typography to the Articles page scale and font system. */
+.team-page-main {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.team-page-main .team-eyebrow,
+.team-page-main .team-homecare-timeline-step {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.team-page-main .team-page-intro h1 {
+  font-family: "Fraunces", "Playfair Display", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.12;
+}
+
+.team-page-main .team-page-intro-copy,
+.team-page-main .team-multidisciplinary-copy p,
+.team-page-main .team-section-heading > p:last-child {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.team-page-main .team-section-heading h2,
+.team-page-main #team-multidisciplinary-title,
+.team-page-main .team-homecare-timeline-title {
+  font-family: "Fraunces", "Playfair Display", Georgia, serif;
+  font-size: clamp(1.45rem, 2.3vw, 1.9rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.team-page-main .team-member-capsule-heading h3,
+.team-page-main .team-mission-copy h2,
+.team-page-main .team-homecare-timeline-card h3 {
+  font-family: "Fraunces", "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+.team-page-main .team-member-capsule-heading h3 {
+  font-size: clamp(1rem, 1.4vw, 1.35rem);
+  font-weight: 450;
+  line-height: 1.25;
+}
+
+.team-page-main .team-member-role,
+.team-page-main .team-mission-pole {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.team-page-main .team-member-missions-preview li,
+.team-page-main .team-homecare-timeline-card p,
+.team-page-main .team-mission-description,
+.team-page-main .team-mission-points li {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.team-page-main .team-member-mission-button,
+.team-page-main .team-mission-label,
+.team-page-main .team-mission-actions a,
+.team-page-main .team-contact-link {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* The legacy ID rule set Arial and 22px, overriding the class-level style above. */
+.team-page-main #team-page-intro-copy {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.65;
+}
+
+@media (max-width: 767px) {
+  .team-page-main .team-page-intro h1 {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .team-page-main .team-member-missions-preview li,
+  .team-page-main .team-homecare-timeline-card p,
+  .team-page-main .team-mission-description,
+  .team-page-main .team-mission-points li {
+    font-size: 0.88rem;
   }
 }
