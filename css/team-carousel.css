@@ -1,0 +1,208 @@
+.team-carousel-section {
+  --team-carousel-teal: #4d9f98;
+  --team-carousel-deep: #004d49;
+  --team-carousel-mint: #e0fbf8;
+  --team-carousel-gap: clamp(0.75rem, 2.5vw, 1.5rem);
+  padding: clamp(2.5rem, 5vw, 4.5rem) 1rem;
+  background: #e3fffc;
+}
+
+.team-carousel-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.team-carousel {
+  position: relative;
+  width: min(100%, 980px);
+  margin-inline: auto;
+  padding-inline: clamp(2.75rem, 6vw, 3.5rem);
+}
+
+.team-carousel-viewport {
+  overflow: hidden;
+  border-radius: 1rem;
+  touch-action: pan-y;
+}
+
+.team-carousel-track {
+  display: flex;
+  gap: var(--team-carousel-gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.team-carousel-slide {
+  position: relative;
+  flex: 0 0 calc((100% - var(--team-carousel-gap)) / 2.2);
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: var(--team-carousel-mint);
+  box-shadow: 0 6px 20px rgba(0, 77, 73, 0.1);
+  user-select: none;
+}
+
+.team-carousel-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  transition: transform 0.8s ease;
+}
+
+.team-carousel-slide.is-active img {
+  transform: scale(1.03);
+}
+
+.team-carousel-arrow {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  place-items: center;
+  transform: translateY(-50%);
+  border: 0;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--team-carousel-teal);
+  box-shadow: 0 2px 8px rgba(0, 77, 73, 0.25);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.team-carousel-arrow:hover {
+  transform: translateY(-50%) scale(1.08);
+  background: var(--team-carousel-deep);
+}
+
+.team-carousel-arrow:focus-visible,
+.team-carousel-thumb:focus-visible,
+.team-carousel:focus-visible {
+  outline: 3px solid #75c9c2;
+  outline-offset: 3px;
+}
+
+.team-carousel-arrow svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.team-carousel-arrow--prev {
+  left: 0.5rem;
+}
+
+.team-carousel-arrow--next {
+  right: 0.5rem;
+}
+
+.team-carousel-thumbs {
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team-carousel-thumb {
+  display: block;
+  width: 2.375rem;
+  height: 2.125rem;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: 0.3rem;
+  background: var(--team-carousel-mint);
+  opacity: 0.65;
+  cursor: pointer;
+  transition: opacity 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.team-carousel-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-carousel-thumb:hover {
+  opacity: 0.9;
+}
+
+.team-carousel-thumb[aria-current="true"] {
+  transform: translateY(-2px);
+  border-color: var(--team-carousel-deep);
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .team-carousel {
+    --team-carousel-desktop-viewport: min(120%, calc(100vw - 8rem));
+  }
+
+  .team-carousel-viewport {
+    position: relative;
+    left: 50%;
+    width: var(--team-carousel-desktop-viewport);
+    transform: translateX(-50%);
+  }
+
+  .team-carousel-arrow--prev {
+    left: calc((100% - var(--team-carousel-desktop-viewport)) / 2 - 3rem);
+  }
+
+  .team-carousel-arrow--next {
+    right: calc((100% - var(--team-carousel-desktop-viewport)) / 2 - 3rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .team-carousel-section {
+    padding-inline: 0.5rem;
+  }
+
+  .team-carousel {
+    padding-inline: 2.75rem;
+  }
+
+  .team-carousel-slide {
+    flex-basis: 86%;
+  }
+
+  .team-carousel-arrow {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .team-carousel-arrow--prev {
+    left: 0.2rem;
+  }
+
+  .team-carousel-arrow--next {
+    right: 0.2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-carousel-track,
+  .team-carousel-slide img,
+  .team-carousel-arrow,
+  .team-carousel-thumb {
+    transition: none;
+  }
+}

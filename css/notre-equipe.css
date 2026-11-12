@@ -1264,7 +1264,10 @@
   max-width: 60rem;
   margin: 0 auto clamp(2.5rem, 5vw, 4rem);
   color: #004642;
-  font: 600 clamp(1.65rem, 3.2vw, 2.7rem) / 1.2 "Fraunces", Georgia, serif;
+  font:
+    600 clamp(1.65rem, 3.2vw, 2.7rem) / 1.2 "Fraunces",
+    Georgia,
+    serif;
   text-align: center;
   text-wrap: balance;
   text-transform: uppercase;
@@ -1334,7 +1337,9 @@
   background: #fff;
   box-shadow: 0 12px 30px -18px rgba(19, 51, 49, 0.24);
   text-align: left;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 .team-homecare-timeline-card:hover {
   transform: translateY(-3px);
@@ -1343,7 +1348,10 @@
 .team-homecare-timeline-card h3 {
   margin: 0 0 0.5rem;
   color: #174b47;
-  font: 600 1.08rem / 1.35 "Fraunces", Georgia, serif;
+  font:
+    600 1.08rem / 1.35 "Fraunces",
+    Georgia,
+    serif;
 }
 .team-homecare-timeline-card p {
   margin: 0;

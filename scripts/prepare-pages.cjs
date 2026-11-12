@@ -25,6 +25,7 @@ const stylesheets = [
   "notre-equipe.css",
   "questions-reponses.css",
   "style.css",
+  "team-carousel.css",
   "tailwind.css",
 ];
 const scripts = [
@@ -37,6 +38,7 @@ const scripts = [
   "services.js",
   "site-shell.js",
   "team-page-content.js",
+  "team-carousel.js",
 ];
 
 async function copyFile(relativePath) {

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/notre-equipe.css" />
+    <link rel="stylesheet" href="./css/team-carousel.css" />
     <script defer src="./js/lucide.js"></script>
   </head>
   <body
@@ -34,6 +35,57 @@
             interventions pour préserver les repères, les capacités et la
             dignité des personnes âgées à leur domicile.
           </p>
+        </div>
+      </section>
+      <section class="team-carousel-section" aria-labelledby="team-carousel-title">
+        <h2 class="team-carousel-sr-only" id="team-carousel-title">
+          Galerie de l’accompagnement El-Hafeed
+        </h2>
+        <div
+          class="team-carousel"
+          role="region"
+          aria-roledescription="carrousel"
+          aria-label="Images des accompagnements El-Hafeed"
+          tabindex="0"
+        >
+          <button
+            class="team-carousel-arrow team-carousel-arrow--prev"
+            type="button"
+            aria-label="Image précédente"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M19 12H5M11 6l-6 6 6 6" />
+            </svg>
+          </button>
+          <div class="team-carousel-viewport">
+            <ul class="team-carousel-track" aria-live="polite">
+              <li class="team-carousel-slide" aria-roledescription="diapositive" aria-label="1 sur 5">
+                <img src="./resources/team-carousel/team.webp" alt="Une professionnelle accompagne une personne âgée à domicile." fetchpriority="high" decoding="async" />
+              </li>
+              <li class="team-carousel-slide" aria-roledescription="diapositive" aria-label="2 sur 5">
+                <img src="./resources/team-carousel/el-hafeed.webp" alt="Une séance d’accompagnement autour du langage et de la communication." loading="lazy" decoding="async" />
+              </li>
+              <li class="team-carousel-slide" aria-roledescription="diapositive" aria-label="3 sur 5">
+                <img src="./resources/team-carousel/tower.webp" alt="Une séance de kinésithérapie et de mobilité." loading="lazy" decoding="async" />
+              </li>
+              <li class="team-carousel-slide" aria-roledescription="diapositive" aria-label="4 sur 5">
+                <img src="./resources/team-carousel/tower-reception.webp" alt="Un espace d’accueil chaleureux au sein d’un établissement de soins." loading="lazy" decoding="async" />
+              </li>
+              <li class="team-carousel-slide" aria-roledescription="diapositive" aria-label="5 sur 5">
+                <img src="./resources/team-carousel/Art-decoration.webp" alt="Un espace de vie aménagé avec soin pour le confort des personnes accompagnées." loading="lazy" decoding="async" />
+              </li>
+            </ul>
+          </div>
+          <button
+            class="team-carousel-arrow team-carousel-arrow--next"
+            type="button"
+            aria-label="Image suivante"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </button>
+          <ul class="team-carousel-thumbs" aria-label="Choisir une image"></ul>
         </div>
       </section>
       <section
@@ -311,6 +363,7 @@
     <script type="module" src="./js/main.js"></script>
     <script defer src="./js/notre-equipe.js"></script>
     <script type="module" src="./js/team-page-content.js"></script>
+    <script type="module" src="./js/team-carousel.js"></script>
       <script type="module" src="./js/site-shell.js"></script>
 </body>
 </html>
