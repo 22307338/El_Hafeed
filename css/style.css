@@ -47,6 +47,11 @@
 .header-inner {
   position: relative;
 }
+
+#mobile-drawer {
+  border-radius: 1.5rem;
+}
+
 .brand-mark {
   display: inline-flex;
   flex: none;
