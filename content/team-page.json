@@ -1,25 +1,21 @@
 {
   "intro": {
-    "eyebrow":"Accompagner · Préserver · Soulager",
     "title":"Une équipe attentive à chaque personne",
-    "description":"À Rabat et Casablanca, des professionnels coordonnent leurs interventions pour préserver les repères, les capacités et la dignité des personnes âgées à leur domicile.",
-    "highlights":[
-      {"label":"Une équipe pluridisciplinaire","icon":"users-round"},
-      {"label":"Présence 7 jours sur 7","icon":"clock-3"},
-      {"label":"À domicile, selon les besoins","icon":"house-plus"}
-    ]
+    "description":"À Rabat et Casablanca, des professionnels coordonnent leurs interventions pour préserver les repères, les capacités et la dignité des personnes âgées à leur domicile."
   },
+  "carouselImages":[
+    {"image":"resources/team-carousel/team.webp","alt":"Une professionnelle accompagne une personne âgée à domicile."},
+    {"image":"resources/team-carousel/el-hafeed.webp","alt":"Une séance d’accompagnement autour du langage et de la communication."},
+    {"image":"resources/team-carousel/tower.webp","alt":"Une séance de kinésithérapie et de mobilité."},
+    {"image":"resources/team-carousel/tower-reception.webp","alt":"Un espace d’accueil chaleureux au sein d’un établissement de soins."},
+    {"image":"resources/team-carousel/Art-decoration.webp","alt":"Un espace de vie aménagé avec soin pour le confort des personnes accompagnées."}
+  ],
   "membersHeading": {"eyebrow":"NOTRE ÉQUIPE","title":"Venez rencontrer notre équipe pluridisciplinaire","description":"Chez El-Hafeed, chaque professionnel met ses compétences et son expérience au service des personnes âgées. Notre équipe pluridisciplinaire travaille en complémentarité afin de proposer un accompagnement coordonné, personnalisé et adapté aux besoins de chacun."},
   "multidisciplinary": {
     "eyebrow":"Pourquoi El-Hafeed accorde-t-il une place si importante à la pluridisciplinarité ?",
     "title":"Pourquoi la pluridisciplinarité est-elle essentielle en gérontologie ?",
     "overview":"Parce que le vieillissement ne concerne jamais une seule dimension de la personne. Il mobilise à la fois les fonctions physiques, cognitives, psychologiques et nutritionnelles.",
-    "explanation":"Nous sommes convaincus qu’un accompagnement de qualité nécessite de croiser les compétences et les regards de plusieurs professionnels. Cette complémentarité nous permet de mieux comprendre les besoins de votre proche, de préserver ses capacités et d’adapter son accompagnement au fil du temps.",
-    "principles":[
-      {"label":"Accompagnement humain","icon":"heart-handshake"},
-      {"label":"Coordination des interventions","icon":"users-round"},
-      {"label":"Dignité et confiance","icon":"shield-check"}
-    ]
+    "explanation":"Nous sommes convaincus qu’un accompagnement de qualité nécessite de croiser les compétences et les regards de plusieurs professionnels. Cette complémentarité nous permet de mieux comprendre les besoins de votre proche, de préserver ses capacités et d’adapter son accompagnement au fil du temps."
   },
   "members":[
     {"name":"Infirmière coordinatrice","speciality":"Coordination des soins","photo":"resources/healthcare-services-assets/infirmerie.webp","photoAlt":"Illustration de soins infirmiers et de coordination à domicile","description":"Elle assure la coordination de l’accompagnement et veille à sa cohérence, en lien avec les professionnels de l’équipe, les familles et les médecins.","missions":["Veiller à la cohérence de l’accompagnement.","Faire le lien entre l’équipe, les familles et les médecins."]},
@@ -39,8 +35,6 @@
       {"label":"Étape 4","title":"Nous assurons un accompagnement coordonné dans la durée","description":"Nous mobilisons les professionnels adaptés et veillons à la continuité de l’accompagnement, en tenant compte de l’évolution de la situation et des besoins de votre proche."}
     ]
   },
-  "services": {"eyebrow":"Nos services","intro":"Sélectionnez une bulle pour découvrir chaque spécialité."},
-  "closingQuote":"Chaque personne âgée mérite un accompagnement qui honore ce qu’elle a été, respecte ce qu’elle est, et soutient ce qu’elle traverse.",
   "metaTitle":"Notre équipe — El-Hafeed",
   "metaDescription":"Découvrez la fondatrice d’El-Hafeed et les compétences mobilisées pour accompagner les personnes âgées à domicile, à Rabat et Casablanca."
 }

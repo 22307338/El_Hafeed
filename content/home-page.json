@@ -20,7 +20,6 @@
     "videoTitle":"Un accompagnement pensé pour chaque personne",
     "videoDescription":"Un aperçu de notre approche de l’accompagnement à domicile et de la coordination autour de la personne âgée.",
     "videoPoster":"resources/healthcare-services-assets/infirmerie.webp",
-    "videoUrl":"",
     "stories":[
       {"title":"Une expérience clinique et de terrain","description":"Diplômée en psychopathologie clinique de Paris XI, la fondatrice a exercé plus de dix ans en France avant de créer El-Hafeed au Maroc.","photos":["resources/team-members/directrice.webp","resources/home-safety-article.webp"]},
       {"title":"La santé, une démarche collective","description":"L’infirmière coordinatrice organise les interventions et maintient le lien entre les professionnels et la famille.","photos":["resources/healthcare-services-assets/infirmerie.webp","resources/healthcare-services-assets/kinesitherapie.webp"]},
@@ -33,10 +32,10 @@
     "title":"L’accompagnement, étape par étape",
     "intro":"Découvrir le Projet d’Accompagnement à Domicile, les interventions coordonnées et la place des proches.",
     "steps":[
-      {"eyebrow":"Capsule 01 · Le projet à domicile","title":"Chaque accompagnement commence par une évaluation","description":"La fondatrice conduit une évaluation d’admission qui prend en compte l’histoire de vie, les habitudes, la mobilité, l’autonomie et les besoins de la personne.","buttonLabel":"Découvrir le projet à domicile","videoId":"mission","cover":"resources/healthcare-services-assets/infirmerie.webp"},
-      {"eyebrow":"Capsule 02 · Soins et accompagnement","title":"Des soins le matin, un accompagnement l’après-midi","description":"Le matin est consacré aux soins, à l’hygiène et au confort. L’après-midi, les activités cognitives, les échanges et les sorties suivent le programme défini avec la personne.","buttonLabel":"Voir comment la journée s’organise","videoId":"services","cover":"resources/healthcare-services-assets/kinesitherapie.webp"},
-      {"eyebrow":"Capsule 03 · Coordination pluridisciplinaire","title":"Des professionnels qui partagent leurs repères","description":"L’infirmière coordinatrice travaille en lien avec l’orthophoniste et les aides-soignants pour intégrer les exercices cognitifs au quotidien et assurer la continuité des informations.","buttonLabel":"Découvrir l’espace familles","videoId":"families","cover":"resources/healthcare-services-assets/psychologie.webp"},
-      {"eyebrow":"Capsule 04 · Respecter les capacités","title":"Respecter le rythme et les capacités de chacun","description":"L’équipe adapte les soins au rythme de la personne et cherche à préserver ses capacités, ses repères et son autonomie résiduelle.","buttonLabel":"En savoir plus sur notre approche","videoId":"vision","cover":"resources/healthcare-services-assets/orthophonie.webp"}
+      {"eyebrow":"Capsule 01 · Le projet à domicile","title":"Chaque accompagnement commence par une évaluation","description":"La fondatrice conduit une évaluation d’admission qui prend en compte l’histoire de vie, les habitudes, la mobilité, l’autonomie et les besoins de la personne.","videoId":"mission","cover":"resources/healthcare-services-assets/infirmerie.webp"},
+      {"eyebrow":"Capsule 02 · Soins et accompagnement","title":"Des soins le matin, un accompagnement l’après-midi","description":"Le matin est consacré aux soins, à l’hygiène et au confort. L’après-midi, les activités cognitives, les échanges et les sorties suivent le programme défini avec la personne.","videoId":"services","cover":"resources/healthcare-services-assets/kinesitherapie.webp"},
+      {"eyebrow":"Capsule 03 · Coordination pluridisciplinaire","title":"Des professionnels qui partagent leurs repères","description":"L’infirmière coordinatrice travaille en lien avec l’orthophoniste et les aides-soignants pour intégrer les exercices cognitifs au quotidien et assurer la continuité des informations.","videoId":"families","cover":"resources/healthcare-services-assets/psychologie.webp"},
+      {"eyebrow":"Capsule 04 · Respecter les capacités","title":"Respecter le rythme et les capacités de chacun","description":"L’équipe adapte les soins au rythme de la personne et cherche à préserver ses capacités, ses repères et son autonomie résiduelle.","videoId":"vision","cover":"resources/healthcare-services-assets/orthophonie.webp"}
     ]
   },
   "closing": {
