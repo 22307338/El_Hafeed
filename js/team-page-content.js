@@ -5,7 +5,7 @@ const TEAM_PAGE_QUERY = `*[_id == "teamPage"][0]{
   carouselImages[]{_key,alt,"imageUrl":image.asset->url},
   membersHeading{eyebrow,title,description},
   multidisciplinary{eyebrow,title,overview,explanation},
-  members[]{_key,name,speciality,photoAlt,description,missions,"photoUrl":photo.asset->url},
+  members[]{_key,name,speciality,description,missions},
   homeCareJourney{title,steps[]{label,title,description}},
   metaTitle,metaDescription
 }`;
@@ -117,13 +117,6 @@ function renderMembers(members) {
         item.textContent = mission;
         return item;
       }));
-    }
-    const image = card.querySelector(".team-member-photo img");
-    const photoUrl = member.photoUrl || (typeof member.photo === "string" ? member.photo : "");
-    if (image) {
-      if (photoUrl) image.src = photoUrl;
-      else image.removeAttribute("src");
-      image.alt = member.photoAlt || member.name || "";
     }
     const button = card.querySelector(".team-member-mission-button");
     if (button) {

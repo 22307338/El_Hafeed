@@ -97,21 +97,6 @@
   background: #fff;
   box-shadow: 0 12px 32px rgba(19, 51, 49, 0.06);
 }
-.team-member-photo {
-  aspect-ratio: 4/3;
-  overflow: hidden;
-  background: #d8fbf7;
-}
-.team-member-photo img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.45s ease;
-}
-.team-member-card:hover .team-member-photo img {
-  transform: scale(1.04);
-}
 .team-member-copy {
   padding: 1.25rem 1.35rem 1.5rem;
 }
@@ -332,7 +317,7 @@
   color: #d7fffa;
 }
 .team-members-grid {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: clamp(0.85rem, 1.7vw, 1.5rem);
   align-items: start;
 }
@@ -373,7 +358,7 @@
 }
 .team-member-infirmary {
   --capsule-bg: #fef3c7;
-  --capsule-ink: #451a03;
+  --capsule-ink: #134e4a;
 }
 .team-member-physio {
   --capsule-bg: #ccfbf1;
@@ -385,19 +370,19 @@
 }
 .team-member-speech {
   --capsule-bg: #ede9fe;
-  --capsule-ink: #4c1d95;
+  --capsule-ink: #134e4a;
 }
 .team-member-psychology {
   --capsule-bg: #ffe4e6;
-  --capsule-ink: #881337;
+  --capsule-ink: #134e4a;
 }
 .team-member-nutrition {
   --capsule-bg: #fed7aa;
-  --capsule-ink: #7c2d12;
+  --capsule-ink: #134e4a;
 }
 .team-member-psychomotor {
   --capsule-bg: #e5e2f2;
-  --capsule-ink: #43375f;
+  --capsule-ink: #134e4a;
 }
 .team-member-capsule-heading {
   display: flex;
@@ -421,25 +406,6 @@
     700 clamp(1.15rem, 1.5vw, 1.45rem)/1.2 "Fraunces",
     Georgia,
     serif;
-}
-.team-member-photo {
-  width: 100%;
-  aspect-ratio: 1/1.18;
-  overflow: hidden;
-  border: 4px solid rgba(255, 255, 255, 0.88);
-  border-radius: 999px;
-  background: #fff;
-  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-.team-member-photo img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-.team-member-card:hover .team-member-photo img {
-  transform: scale(1.05);
 }
 .team-member-copy {
   display: flex;
@@ -559,12 +525,6 @@
     hyphens: auto;
     text-wrap: balance;
   }
-  .team-member-photo {
-    flex: 0 0 auto;
-    width: min(76%, 14rem);
-    aspect-ratio: 1.2 / 1;
-    border-radius: 0.85rem;
-  }
   .team-member-copy {
     align-items: stretch;
     padding: 0.75rem 0.25rem 0.15rem;
@@ -591,13 +551,6 @@
     width: 100%;
     margin-inline: 0;
   }
-  .team-member-photo {
-    flex: 0 0 auto;
-    width: min(76%, 13rem);
-  }
-  .team-member-photo {
-    aspect-ratio: 1/1.12;
-  }
   .team-multidisciplinary-card {
     padding: 1rem;
   }
@@ -609,7 +562,6 @@
 @media (prefers-reduced-motion: reduce) {
   .director-portrait-frame img,
   .team-member-capsule,
-  .team-member-photo img,
   .director-contact-link svg,
   .team-member-copy > a svg {
     transition: none;
@@ -967,9 +919,6 @@
   color: #173d3a;
   width: 95%;
 }
-.team-member-photo {
-  aspect-ratio: 1/1.28;
-}
 .team-mission-dialog {
   width: min(90vw, 22rem);
   max-width: 22rem;
@@ -1082,9 +1031,6 @@
   height: 0.9rem;
 }
 @media (max-width: 640px) {
-  .team-member-photo {
-    aspect-ratio: 1/1.2;
-  }
   .team-mission-dialog-inner {
     padding: 1.15rem;
   }
@@ -1393,20 +1339,6 @@
     transform: none;
   }
 }
-/* Use compact portrait rectangles for the role-card images on smaller screens. */
-@media (max-width: 767px) {
-  .team-members-grid .team-member-photo {
-    aspect-ratio: 1.2 / 1;
-    border-radius: 0.85rem;
-  }
-}
-@media (max-width: 480px) {
-  .team-members-grid .team-member-photo {
-    aspect-ratio: 1.15 / 1;
-    border-radius: 0.75rem;
-  }
-}
-
 /* Match Notre équipe typography to the Articles page scale and font system. */
 .team-page-main {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -1461,12 +1393,57 @@
   line-height: 1.25;
 }
 
+.team-page-main .team-member-capsule {
+  padding-block: 1.5rem;
+}
+
+.team-page-main .team-member-capsule-heading {
+  min-height: 0;
+  margin-bottom: 0;
+}
+
+.team-page-main .team-member-copy {
+  width: 100%;
+  align-items: center;
+  padding: 0.85rem 0 0;
+  color: var(--capsule-ink);
+  text-align: center;
+}
+
+.team-page-main .team-member-role {
+  align-self: center;
+}
+
+.team-page-main .team-member-missions-preview {
+  color: var(--capsule-ink);
+}
+
+.team-page-main .team-member-missions-preview li::before {
+  background: #4b9e96;
+}
+
 .team-page-main .team-member-role,
 .team-page-main .team-mission-pole {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.04em;
+}
+
+.team-page-main .team-member-copy .team-member-role {
+  display: block;
+  align-self: center;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--capsule-ink);
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  text-transform: none;
+  opacity: 0.8;
 }
 
 .team-page-main .team-member-missions-preview li,
@@ -1505,5 +1482,39 @@
   .team-page-main .team-mission-description,
   .team-page-main .team-mission-points li {
     font-size: 0.88rem;
+  }
+}
+
+/* Center each wrapped row of role capsules without leaving a blank grid cell. */
+.team-members-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.team-members-grid > .team-member-card {
+  flex: 0 0 calc(25% - 0.9375rem);
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.team-page-main .team-member-capsule-heading h3 {
+  color: var(--capsule-ink);
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .team-members-grid {
+    gap: 1.25rem;
+  }
+
+  .team-members-grid > .team-member-card {
+    flex-basis: calc(33.333333% - 0.833333rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .team-members-grid > .team-member-card {
+    flex-basis: 100%;
   }
 }
