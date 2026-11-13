@@ -9,6 +9,8 @@ const files = [
   "notre-equipe.html",
   "articles.html",
   "questions_reponses.html",
+  "robots.txt",
+  "sitemap.xml",
   "favicon.ico",
   "favicon-16x16.png",
   "favicon-32x32.png",
