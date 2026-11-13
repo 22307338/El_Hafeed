@@ -4,3 +4,7 @@ dist/
 .DS_Store
 Thumbs.db
 npm-debug.log*
+.env
+.env.*
+token.txt
+*.token
