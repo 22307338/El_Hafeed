@@ -22,12 +22,12 @@ Maintenance guide for the French-language El-Hafeed website. This repository is 
 
 The site is a French-language static frontend. It has four public HTML pages:
 
-| Page | File | Main purpose |
-| --- | --- | --- |
-| Accueil | `index.html` | Organization introduction, values, legitimacy stories, and care approach |
-| Notre équipe | `notre-equipe.html` | Team professions, photo carousel, and home-care process |
-| Articles | `articles.html` | Searchable article index and query-string article details |
-| Questions & réponses | `questions_reponses.html` | Topics, questions, and answers |
+| Page                 | File                      | Main purpose                                                             |
+| -------------------- | ------------------------- | ------------------------------------------------------------------------ |
+| Accueil              | `index.html`              | Organization introduction, values, legitimacy stories, and care approach |
+| Notre équipe         | `notre-equipe.html`       | Team professions, photo carousel, and home-care process                  |
+| Articles             | `articles.html`           | Searchable article index and query-string article details                |
+| Questions & réponses | `questions_reponses.html` | Topics, questions, and answers                                           |
 
 The shared header and footer are HTML fragments under `partials/`. Browser JavaScript fetches published content from Sanity. Local JSON files provide fallback content if Sanity cannot be reached.
 
@@ -161,15 +161,15 @@ The five staff JPGs in `resources/team-members/` are retained as possible carous
 
 All page-specific reads below are public, unauthenticated Sanity GROQ requests made by the browser. Shared `siteSettings` is also requested on every page by `js/site-shell.js` and falls back to `content/site-settings.json`.
 
-| Page/content | Sanity document or collection | Querying module | Local fallback |
-| --- | --- | --- | --- |
-| Homepage | Singleton `_id == "homePage"` (`homePage`) | `js/main.js` | `content/home-page.json` |
-| Shared header/footer | Singleton `_id == "siteSettings"` (`siteSettings`) | `js/site-shell.js` | `content/site-settings.json` |
-| Team page | Singleton `_id == "teamPage"` (`teamPage`) | `js/team-page-content.js` | `content/team-page.json` |
-| Article page labels and SEO | Singleton `_id == "articlePage"` (`articlePage`) | `js/articles.js` | `content/articles-page.json` |
-| Article records | `article` documents | `js/articles.js` | `content/articles.json` |
-| Article filters | `articleCategory` documents; if unavailable, categories are derived from loaded article records | `js/articles.js` | Derived from `content/articles.json` |
-| Questions & answers | Singleton `_id == "qaPage"` (`qaPage`) | `js/questions-reponses.js` | `content/qa.json` |
+| Page/content                | Sanity document or collection                                                                   | Querying module            | Local fallback                       |
+| --------------------------- | ----------------------------------------------------------------------------------------------- | -------------------------- | ------------------------------------ |
+| Homepage                    | Singleton `_id == "homePage"` (`homePage`)                                                      | `js/main.js`               | `content/home-page.json`             |
+| Shared header/footer        | Singleton `_id == "siteSettings"` (`siteSettings`)                                              | `js/site-shell.js`         | `content/site-settings.json`         |
+| Team page                   | Singleton `_id == "teamPage"` (`teamPage`)                                                      | `js/team-page-content.js`  | `content/team-page.json`             |
+| Article page labels and SEO | Singleton `_id == "articlePage"` (`articlePage`)                                                | `js/articles.js`           | `content/articles-page.json`         |
+| Article records             | `article` documents                                                                             | `js/articles.js`           | `content/articles.json`              |
+| Article filters             | `articleCategory` documents; if unavailable, categories are derived from loaded article records | `js/articles.js`           | Derived from `content/articles.json` |
+| Questions & answers         | Singleton `_id == "qaPage"` (`qaPage`)                                                          | `js/questions-reponses.js` | `content/qa.json`                    |
 
 Current website queries do **not** read a `service` collection. `content/services.json` and `js/services.js` are retained legacy files; `services.js` is included in the `dist/` copy list but is not loaded by the current HTML pages. Do not assume these legacy files control the current team page.
 
@@ -258,25 +258,25 @@ After production deployment, verify the domain, HTTPS, `https://el-hafeed.com/ro
 
 The client should fill in the owner/contact field for each service. Do not put passwords, tokens, or personal email addresses in this README.
 
-| Service | Account / organization | Owner (client to fill in) |
-| --- | --- | --- |
-| Domain registrar for `el-hafeed.com` |  |  |
-| Cloudflare / Pages |  |  |
-| GitHub repository |  |  |
-| Sanity project `pxacju14` |  |  |
-| Mux |  |  |
+| Service                              | Account / organization | Owner (client to fill in) |
+| ------------------------------------ | ---------------------- | ------------------------- |
+| Domain registrar for `el-hafeed.com` |                        |                           |
+| Cloudflare / Pages                   |                        |                           |
+| GitHub repository                    |                        |                           |
+| Sanity project `pxacju14`            |                        |                           |
+| Mux                                  |                        |                           |
 
 ## 12. Troubleshooting
 
-| Symptom | Check |
-| --- | --- |
-| Content does not update | Confirm the Sanity document was published, the page queries the expected document/slug, and the browser can reach `api.sanity.io`. This project currently uses the uncached API host. |
-| CORS error | Add the exact origin (scheme, hostname, and port) in Sanity Manage. `localhost` and `127.0.0.1` are separate origins. |
-| Blank page or failed module imports | Serve over HTTP instead of `file://`; check the browser console for failed relative paths. |
-| Styles, fonts, or icons missing | Check `css/tailwind.css`, `css/fonts.css`, `js/lucide.js`, and the matching `resources/fonts/` files. Rebuild if their source/config changed. |
-| Video does not play | Check the Mux asset has a playback ID, Mux Player loads from jsDelivr, and the visitor's browser/network permits media playback. |
-| Fallback copy appears | Sanity may be unreachable, the document may be missing/unpublished, or CORS may be blocking the request. Check the console and fallback JSON. |
-| Build reports `EPERM` on Windows/OneDrive | OneDrive or an editor may hold a generated file open. Close the lock-holding process and retry; do not delete generated assets as a workaround. |
+| Symptom                                   | Check                                                                                                                                                                                 |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Content does not update                   | Confirm the Sanity document was published, the page queries the expected document/slug, and the browser can reach `api.sanity.io`. This project currently uses the uncached API host. |
+| CORS error                                | Add the exact origin (scheme, hostname, and port) in Sanity Manage. `localhost` and `127.0.0.1` are separate origins.                                                                 |
+| Blank page or failed module imports       | Serve over HTTP instead of `file://`; check the browser console for failed relative paths.                                                                                            |
+| Styles, fonts, or icons missing           | Check `css/tailwind.css`, `css/fonts.css`, `js/lucide.js`, and the matching `resources/fonts/` files. Rebuild if their source/config changed.                                         |
+| Video does not play                       | Check the Mux asset has a playback ID, Mux Player loads from jsDelivr, and the visitor's browser/network permits media playback.                                                      |
+| Fallback copy appears                     | Sanity may be unreachable, the document may be missing/unpublished, or CORS may be blocking the request. Check the console and fallback JSON.                                         |
+| Build reports `EPERM` on Windows/OneDrive | OneDrive or an editor may hold a generated file open. Close the lock-holding process and retry; do not delete generated assets as a workaround.                                       |
 
 ## 13. Conventions and gotchas
 
