@@ -10,7 +10,7 @@
     {"image":"resources/team-carousel/tower-reception.webp","alt":"Un espace d’accueil chaleureux au sein d’un établissement de soins."},
     {"image":"resources/team-carousel/Art-decoration.webp","alt":"Un espace de vie aménagé avec soin pour le confort des personnes accompagnées."}
   ],
-  "membersHeading": {"eyebrow":"NOTRE ÉQUIPE","title":"Venez rencontrer notre équipe pluridisciplinaire","description":"Chez El-Hafeed, chaque professionnel met ses compétences et son expérience au service des personnes âgées. Notre équipe pluridisciplinaire travaille en complémentarité afin de proposer un accompagnement coordonné, personnalisé et adapté aux besoins de chacun."},
+  "membersHeading": {"eyebrow":"NOTRE ÉQUIPE","title":"Venez rencontrer notre équipe pluridisciplinaire","description":"Chez El-Hafeed, chaque professionnel met ses compétences et son expérience au service des personnes âgées. Notre équipe pluridisciplinaire travaille en complémentarité afin de proposer un accompagnement coordonné, personnalisé et adapté aux besoins de chacun.","missionButtonLabel":"Voir ses missions","missionDialogHeading":"Missions au chevet du patient :","missionContactLabel":"Programmer une évaluation"},
   "multidisciplinary": {
     "eyebrow":"Pourquoi El-Hafeed accorde-t-il une place si importante à la pluridisciplinarité ?",
     "title":"Pourquoi la pluridisciplinarité est-elle essentielle en gérontologie ?",
@@ -35,6 +35,7 @@
       {"label":"Étape 4","title":"Nous assurons un accompagnement coordonné dans la durée","description":"Nous mobilisons les professionnels adaptés et veillons à la continuité de l’accompagnement, en tenant compte de l’évolution de la situation et des besoins de votre proche."}
     ]
   },
+  "ogImage":"resources/team-carousel/team.webp",
   "metaTitle":"Notre équipe — El-Hafeed",
   "metaDescription":"Découvrez la fondatrice d’El-Hafeed et les compétences mobilisées pour accompagner les personnes âgées à domicile, à Rabat et Casablanca."
 }

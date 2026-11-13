@@ -1,4 +1,4 @@
-import { sanityFetch } from "./sanity.js";
+import { sanityFetch, sanityImageUrl, applyPageMetadata } from "./sanity.js";
 
 const ARTICLES_QUERY = `*[_type == "article" && defined(slug.current)] | order(publishedAt desc){
   title,
@@ -6,14 +6,16 @@ const ARTICLES_QUERY = `*[_type == "article" && defined(slug.current)] | order(p
   excerpt,
   "category": category->title,
   publishedAt,
+  featured,
   metaTitle,
   metaDescription,
+  "ogImageUrl": ogImage.asset->url,
   "imageUrl": mainImage.asset->url,
   mainImageAlt,
   "media": media[]{type, "imageUrl": image.asset->url, "posterUrl": poster.asset->url, videoUrl, alt, caption},
   body[]{..., "imageUrl": asset->url}
 }`;
-const ARTICLE_PAGE_QUERY = `*[_id == "articlePage"][0]`;
+const ARTICLE_PAGE_QUERY = `*[_id == "articlePage"][0]{..., "ogImageUrl": ogImage.asset->url}`;
 const CATEGORIES_QUERY = `*[_type == "articleCategory"] | order(title asc){title}`;
 let articles = [];
 let categories = ["Tous les sujets"];
@@ -131,11 +133,11 @@ function normalizeArticle(raw) {
     .join(" ");
   const words = text.split(/\s+/).filter(Boolean).length;
   const imageUrl = raw.imageUrl || raw.mainImage || "resources/logo-cropped.webp";
-  const cover = /^https?:/.test(imageUrl) ? `${imageUrl}?w=1200&auto=format` : imageUrl;
+  const cover = /^https?:/.test(imageUrl) ? sanityImageUrl(imageUrl, {width: 1200, fit: "max"}) : imageUrl;
   const supplementaryMedia = (raw.media || []).map((item) => ({
     type: item.type === "video" ? "video" : "image",
-    src: item.type === "video" ? item.videoUrl : (item.imageUrl || item.image),
-    poster: item.posterUrl || item.poster || "",
+    src: item.type === "video" ? item.videoUrl : sanityImageUrl(item.imageUrl || item.image || "", {width: 1200, fit: "max"}),
+    poster: sanityImageUrl(item.posterUrl || item.poster || "", {width: 1000, fit: "max"}),
     alt: item.alt || raw.title,
     caption: item.caption || "",
   })).filter((item) => item.src);
@@ -145,12 +147,16 @@ function normalizeArticle(raw) {
     title: raw.title,
     excerpt: raw.excerpt || "",
     category: typeof raw.category === "string" ? raw.category : (raw.category?.title || "Autres sujets"),
+    featured: Boolean(raw.featured),
     minutes: Math.max(1, Math.ceil(words / 200)),
     date: raw.publishedAt
       ? new Date(raw.publishedAt).toLocaleDateString("fr-FR", {day: "numeric", month: "long", year: "numeric"})
       : "",
     media: [{type: "image", src: cover, alt: raw.mainImageAlt || raw.title}, ...supplementaryMedia],
     bodyHtml: portableTextToHtml(body),
+    metaTitle: raw.metaTitle || "",
+    metaDescription: raw.metaDescription || "",
+    ogImage: raw.ogImageUrl || cover,
   };
 }
 
@@ -209,8 +215,7 @@ function applyPageContent() {
     contact.textContent = pageContent.contactButtonLabel || "Parlons-en";
     if (icon) contact.append(icon);
   }
-  if (pageContent.metaTitle) document.title = pageContent.metaTitle;
-  if (pageContent.metaDescription) document.querySelector('meta[name="description"]')?.setAttribute("content", pageContent.metaDescription);
+  applyPageMetadata({title: pageContent.metaTitle, description: pageContent.metaDescription, image: pageContent.ogImageUrl || pageContent.ogImage});
 }
 
 async function loadArticles() {
@@ -310,7 +315,9 @@ function renderListing() {
       );
     return inCategory && (!query || searchable.includes(query));
   });
-  const [featuredArticle, ...otherArticles] = matches;
+  const selectedFeatured = matches.find((article) => article.featured) || matches[0];
+  const featuredArticle = selectedFeatured;
+  const otherArticles = featuredArticle ? matches.filter((article) => article !== featuredArticle) : [];
 
   featured.hidden = !featuredArticle;
   if (featuredArticle) renderFeatured(featuredArticle);
@@ -374,10 +381,11 @@ function showCurrentPage({ scroll = false } = {}) {
     topicsSection.hidden = true;
     detail.classList.add("is-visible");
     renderDetail(article);
-    document.title = article.metaTitle || `${article.title} — El-Hafeed`;
-    document
-      .querySelector('meta[name="description"]')
-      ?.setAttribute("content", article.metaDescription || article.excerpt);
+    applyPageMetadata({
+      title: article.metaTitle || `${article.title} — El-Hafeed`,
+      description: article.metaDescription || article.excerpt,
+      image: article.ogImage || article.media?.[0]?.src,
+    });
     if (scroll) window.scrollTo({ top: 0, behavior: "smooth" });
     return;
   }

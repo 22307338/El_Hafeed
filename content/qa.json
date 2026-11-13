@@ -363,6 +363,7 @@
   "contactText": "Présentez-nous votre situation : nous prendrons le temps d’écouter vos besoins et de vous orienter.",
   "contactButtonLabel": "Nous contacter",
   "contactButtonUrl": "index.html#contact",
+  "ogImage": "resources/logo-cropped.webp",
   "metaTitle": "Questions & réponses — El-Hafeed",
   "metaDescription": "Les réponses d’El-Hafeed sur l’évaluation, le Projet d’Accompagnement à Domicile, les interventions et la coordination avec les proches."
 }

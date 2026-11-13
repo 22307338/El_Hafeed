@@ -1,4 +1,4 @@
-import { sanityFetch } from "./sanity.js";
+import { sanityFetch, sanityImageUrl } from "./sanity.js";
 
 const PARTIALS = {
   header: new URL("../partials/header.html", import.meta.url),
@@ -10,6 +10,10 @@ const SITE_SETTINGS_QUERY = `*[_id == "siteSettings"][0]{
   navigation[]{label, href}, contactButtonLabel, contactButtonUrl,
   phone, whatsapp, email, address, mapUrl,
   footerDescription, familySupportTitle, familySupportText, copyrightText,
+  footerNavigationHeading, footerLinks[]{label, href}, footerContactHeading,
+  footerPhoneLabel, footerAddressLabel, footerContactNote,
+  footerSocialHeading, footerSocialText, whatsappMessage,
+  legalNoticeLabel, privacyPolicyLabel,
   socialLinks[]{network, label, url}
 }`;
 
@@ -128,20 +132,44 @@ function applySiteSettings(settings, header, footer) {
   setText(footer, '[data-site-setting="footer-description"]', settings.footerDescription);
   setText(footer, '[data-site-setting="family-support-title"]', settings.familySupportTitle);
   setText(footer, '[data-site-setting="family-support-text"]', settings.familySupportText);
+  setText(footer, '[data-site-setting="footer-navigation-heading"]', settings.footerNavigationHeading);
+  setText(footer, '[data-site-setting="footer-contact-heading"]', settings.footerContactHeading);
+  setText(footer, '[data-site-setting="footer-phone-label"]', settings.footerPhoneLabel);
+  setText(footer, '[data-site-setting="footer-address-label"]', settings.footerAddressLabel);
+  setText(footer, '[data-site-setting="footer-contact-note"]', settings.footerContactNote);
+  setText(footer, '[data-site-setting="footer-social-heading"]', settings.footerSocialHeading);
+  setText(footer, '[data-site-setting="footer-social-text"]', settings.footerSocialText);
+  setText(footer, '[data-site-setting="legal-notice-label"]', settings.legalNoticeLabel);
+  setText(footer, '[data-site-setting="privacy-policy-label"]', settings.privacyPolicyLabel);
 
   const brandImage = header?.querySelector('[data-site-setting="brand-logo"]');
   const logoUrl = brand.logoUrl || brand.logo;
   if (brandImage && logoUrl) {
-    brandImage.src = logoUrl;
+    brandImage.src = sanityImageUrl(logoUrl, {width: 500, height: 250, fit: "max"});
     brandImage.alt = brand.logoAlt || "";
   }
   const footerBrandImage = footer?.querySelector('[data-site-setting="footer-logo"]');
   if (footerBrandImage && logoUrl) {
-    footerBrandImage.src = logoUrl;
+    footerBrandImage.src = sanityImageUrl(logoUrl, {width: 500, height: 250, fit: "max"});
     footerBrandImage.alt = brand.logoAlt || brand.name || "";
   }
 
   renderNavigation(header, settings.navigation);
+  const footerLinks = footer?.querySelector('[data-site-setting="footer-links"]');
+  if (footerLinks && Array.isArray(settings.footerLinks) && settings.footerLinks.length) {
+    const classes = footerLinks.querySelector("a")?.className || "hover:text-secondary-fixed transition-colors";
+    footerLinks.replaceChildren(...settings.footerLinks.map((item) => {
+      const href = safeSiteUrl(item.href, ["https:", "mailto:", "tel:"]);
+      if (!item.label || !href) return null;
+      const listItem = document.createElement("li");
+      const link = document.createElement("a");
+      link.className = classes;
+      link.href = href;
+      link.textContent = item.label;
+      listItem.append(link);
+      return listItem;
+    }).filter(Boolean));
+  }
   const contactUrl = safeSiteUrl(settings.contactButtonUrl);
   document.querySelectorAll('[data-site-setting="contact-cta"]').forEach((link) => {
     if (settings.contactButtonLabel) link.textContent = settings.contactButtonLabel;
@@ -154,10 +182,16 @@ function applySiteSettings(settings, header, footer) {
     email.href = `mailto:${settings.email}`;
   }
   const phone = footer?.querySelector('[data-site-setting="phone"]');
+  const digits = String(settings.whatsapp || settings.phone || "").replace(/\D/g, "");
+  const whatsappUrl = digits
+    ? `https://wa.me/${digits}${settings.whatsappMessage ? `?text=${encodeURIComponent(settings.whatsappMessage)}` : ""}`
+    : "";
+  document.querySelectorAll('[data-site-setting="whatsapp-link"]').forEach((link) => {
+    if (whatsappUrl) link.href = whatsappUrl;
+  });
   if (phone && settings.phone) {
     phone.textContent = settings.phone;
-    const digits = String(settings.whatsapp || settings.phone).replace(/\D/g, "");
-    if (digits) phone.href = `https://wa.me/${digits}`;
+    if (whatsappUrl) phone.href = whatsappUrl;
   }
   const address = footer?.querySelector('[data-site-setting="address"]');
   if (address && settings.address) address.textContent = settings.address;

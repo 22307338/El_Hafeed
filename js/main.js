@@ -1,10 +1,10 @@
-import { sanityFetch } from "./sanity.js";
+import { sanityFetch, sanityImageUrl, applyPageMetadata } from "./sanity.js";
 
 const HOME_PAGE_QUERY = `*[_id == "homePage"][0]{
-  hero{title,description,supportingText,valuesTitle,values[]{title,description,icon},"desktopBackgroundUrl":desktopBackground.asset->url,"mobileBackgroundUrl":mobileBackground.asset->url,"brandSymbolUrl":brandSymbol.asset->url},
-  legitimacy{eyebrow,title,intro,videoTitle,videoDescription,video{asset->{playbackId}},"videoPosterUrl":videoPoster.asset->url,stories[]{title,description,"photos":photos[].asset->url}},
-  approach{eyebrow,title,intro,steps[]{eyebrow,title,description,videoId,video{asset->{playbackId}},"coverUrl":cover.asset->url}},
-  closing{eyebrow,title,intro,founderName,founderRole,message,values[],"portraitUrl":founderPortrait.asset->url},metaTitle,metaDescription
+  hero{title,description,supportingText,valuesTitle,values[]{title,description,icon},"desktopBackgroundUrl":desktopBackground.asset->url,"mobileBackgroundUrl":mobileBackground.asset->url,"brandSymbolUrl":brandSymbol.asset->url,brandSymbolAlt},
+  legitimacy{eyebrow,title,intro,videoTitle,videoDescription,video{asset->{playbackId}},"videoPosterUrl":videoPoster.asset->url,videoPosterAlt,stories[]{title,description,photoAltTexts,"photos":photos[].asset->url}},
+  approach{eyebrow,title,intro,steps[]{eyebrow,title,description,videoId,video{asset->{playbackId}},"coverUrl":cover.asset->url,coverAlt}},
+  closing{eyebrow,title,intro,founderName,founderRole,message,values[],founderPortraitAlt,"portraitUrl":founderPortrait.asset->url},metaTitle,metaDescription,"ogImageUrl":ogImage.asset->url
 }`;
 let muxPlayerLoadPromise;
 let activeInlineVideo = null;
@@ -15,15 +15,15 @@ function escapeHtml(value = "") {
   })[char]);
 }
 
-function homepageImageUrl(value) {
+function homepageImageUrl(value, width = 1600, height) {
   if (!value) return "";
-  if (/^https:\/\/cdn\.sanity\.io\//i.test(value)) return value;
+  if (/^https:\/\/cdn\.sanity\.io\//i.test(value)) return sanityImageUrl(value, {width, height, fit: height ? "crop" : "max"});
   if (/^(\.\/)?resources\/[\w./-]+$/i.test(value)) return new URL(value, document.baseURI).href;
   return "";
 }
 
-function setImage(image, value, alt, {priority = false} = {}) {
-  const src = homepageImageUrl(value);
+function setImage(image, value, alt, {priority = false, width = 1200, height} = {}) {
+  const src = homepageImageUrl(value, width, height);
   if (!image || !src) return;
   image.src = src;
   image.loading = priority ? "eager" : "lazy";
@@ -33,7 +33,7 @@ function setImage(image, value, alt, {priority = false} = {}) {
 }
 
 function setBackgroundImage(element, property, value) {
-  const src = homepageImageUrl(value);
+  const src = homepageImageUrl(value, 1920);
   if (!element || !src) return;
   element.style.setProperty(property, `url("${src.replaceAll('"', "%22")}")`);
 }
@@ -42,10 +42,10 @@ function renderHomepageStories(stories = []) {
   const container = document.querySelector(".legitimacy-stories");
   if (!container || !Array.isArray(stories)) return;
   container.innerHTML = stories.map((story) => {
-    const photos = (story.photos || []).map(homepageImageUrl).filter(Boolean);
+    const photos = (story.photos || []).map((photo) => homepageImageUrl(photo, 960)).filter(Boolean);
     const slides = photos.map((src, index) => `
       <figure class="legitimacy-carousel-slide${index === 0 ? " is-active" : ""}"${index ? ' hidden aria-hidden="true"' : ' aria-hidden="false"'}>
-        <img src="${escapeHtml(src)}" alt="${escapeHtml(story.title || "Rencontre professionnelle El-Hafeed")}" loading="lazy" decoding="async">
+        <img src="${escapeHtml(src)}" alt="${escapeHtml(story.photoAltTexts?.[index] || story.title || "Rencontre professionnelle El-Hafeed")}" loading="lazy" decoding="async">
       </figure>`).join("");
     const carousel = `
       <div class="legitimacy-carousel" role="group" aria-roledescription="carrousel" aria-label="Photos : ${escapeHtml(story.title || "rencontre professionnelle")}">
@@ -82,7 +82,7 @@ function updateApproachSteps(steps = []) {
       videoTrigger.dataset.videoContainer = videoId;
       videoTrigger.setAttribute("aria-label", `Visionner : ${step.title || "Capsule El-Hafeed"}`);
     }
-    setImage(cover, step.coverUrl || step.cover, step.title || "Capsule El-Hafeed");
+    setImage(cover, step.coverUrl || step.cover, step.coverAlt || step.title || "Capsule El-Hafeed");
     const videoLabel = videoTrigger?.querySelector(".absolute.bottom-3");
     if (videoLabel) videoLabel.textContent = step.eyebrow || `Capsule ${String(index + 1).padStart(2, "0")}`;
     const copy = row.querySelector(".md\\:col-span-7");
@@ -125,7 +125,7 @@ async function loadHomepageContent() {
   const heroDescription = document.querySelector(".hero-description");
   if (heroTitle && hero.title) heroTitle.textContent = hero.title;
   if (heroDescription) heroDescription.textContent = [hero.description, hero.supportingText].filter(Boolean).join("\n");
-  setImage(document.querySelector(".hero-brand-symbol img"), hero.brandSymbolUrl || hero.brandSymbol, "Symbole El-Hafeed", {priority: true});
+  setImage(document.querySelector(".hero-brand-symbol img"), hero.brandSymbolUrl || hero.brandSymbol, hero.brandSymbolAlt || "Symbole El-Hafeed", {priority: true});
   const valuesTitle = document.querySelector("#hero-values-title");
   if (valuesTitle && hero.valuesTitle) valuesTitle.textContent = hero.valuesTitle;
   const valueCards = Array.from(document.querySelectorAll(".hero-value-card"));
@@ -161,7 +161,7 @@ async function loadHomepageContent() {
     if (intro) intro.textContent = legitimacy.intro || "";
   }
   const videoImage = document.querySelector(".legitimacy-video-frame img");
-  setImage(videoImage, legitimacy.videoPosterUrl || legitimacy.videoPoster, legitimacy.videoTitle || "Présentation El-Hafeed");
+  setImage(videoImage, legitimacy.videoPosterUrl || legitimacy.videoPoster, legitimacy.videoPosterAlt || legitimacy.videoTitle || "Présentation El-Hafeed", {width: 1200});
   const videoCopy = document.querySelector(".legitimacy-video-copy");
   if (videoCopy) {
     const [kicker, title, description] = [videoCopy.querySelector(".legitimacy-kicker"), videoCopy.querySelector("h3"), videoCopy.querySelector("p:last-child")];
@@ -215,7 +215,8 @@ async function loadHomepageContent() {
       setImage(
         portrait,
         closing.portraitUrl || closing.founderPortrait,
-        "Portrait de " + (closing.founderName || "la fondatrice d’El-Hafeed"),
+        closing.founderPortraitAlt || "Portrait de " + (closing.founderName || "la fondatrice d’El-Hafeed"),
+        {width: 900},
       );
     }
 
@@ -223,7 +224,7 @@ async function loadHomepageContent() {
       founderSection.querySelectorAll(".founder-name").forEach((name) => {
         name.textContent = closing.founderName;
       });
-      if (portrait) portrait.alt = "Portrait de " + closing.founderName + ", fondatrice et directrice d’El-Hafeed";
+      if (portrait && !closing.founderPortraitAlt) portrait.alt = "Portrait de " + closing.founderName + ", fondatrice et directrice d’El-Hafeed";
     }
     if (closing.founderRole) {
       founderSection.querySelectorAll(".founder-role").forEach((role) => {
@@ -244,8 +245,7 @@ async function loadHomepageContent() {
       });
     }
   }
-  if (data.metaTitle) document.title = data.metaTitle;
-  if (data.metaDescription) document.querySelector('meta[name="description"]')?.setAttribute("content", data.metaDescription);
+  applyPageMetadata({title: data.metaTitle, description: data.metaDescription, image: data.ogImageUrl || data.ogImage});
   window.lucide?.createIcons();
 }
 

@@ -3,6 +3,7 @@ import {
   escapeHtml,
   safeUrl,
   portableTextToHtml,
+  applyPageMetadata,
 } from "./sanity.js";
 
 const QA_QUERY = `*[_id == "qaPage"][0]{
@@ -10,7 +11,7 @@ const QA_QUERY = `*[_id == "qaPage"][0]{
   topics[]{ title, questions[]{ question, answer } },
   disclaimerTitle, disclaimerText,
   contactTitle, contactText, contactButtonLabel, contactButtonUrl,
-  metaTitle, metaDescription
+  metaTitle, metaDescription, "ogImageUrl": ogImage.asset->url
 }`;
 
 async function loadLocalQaContent() {
@@ -80,12 +81,7 @@ function renderPage(data) {
           ${disclaimer}
         </div>`;
 
-  if (data.metaTitle) document.title = data.metaTitle;
-  if (data.metaDescription) {
-    document
-      .querySelector('meta[name="description"]')
-      ?.setAttribute("content", data.metaDescription);
-  }
+  applyPageMetadata({title: data.metaTitle, description: data.metaDescription, image: data.ogImageUrl || data.ogImage});
   window.lucide?.createIcons();
 }
 

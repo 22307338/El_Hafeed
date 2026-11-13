@@ -7,6 +7,7 @@
     "desktopBackground": "resources/hero-desktop.webp",
     "mobileBackground": "resources/hero-mobile.webp",
     "brandSymbol": "resources/logo-symbol.webp",
+    "brandSymbolAlt": "Logo El-Hafeed avec la signature Chez soi, en toute dignité.",
     "values": [
       {"title":"ACCOMPAGNER","description":"Être présents auprès de nos aînés et leur proposer un accompagnement adapté à leurs besoins.","icon":"users-round"},
       {"title":"PRÉSERVER","description":"Préserver leurs capacités, leur autonomie et leur qualité de vie.","icon":"person-protected"},
@@ -20,11 +21,12 @@
     "videoTitle":"Un accompagnement pensé pour chaque personne",
     "videoDescription":"Un aperçu de notre approche de l’accompagnement à domicile et de la coordination autour de la personne âgée.",
     "videoPoster":"resources/healthcare-services-assets/infirmerie.webp",
+    "videoPosterAlt":"Une infirmière accompagne une patiente âgée lors d’un soin à domicile.",
     "stories":[
-      {"title":"Une expérience clinique et de terrain","description":"Diplômée en psychopathologie clinique de Paris XI, la fondatrice a exercé plus de dix ans en France avant de créer El-Hafeed au Maroc.","photos":["resources/team-members/directrice.webp","resources/home-safety-article.webp"]},
-      {"title":"La santé, une démarche collective","description":"L’infirmière coordinatrice organise les interventions et maintient le lien entre les professionnels et la famille.","photos":["resources/healthcare-services-assets/infirmerie.webp","resources/healthcare-services-assets/kinesitherapie.webp"]},
-      {"title":"Partager les savoirs","description":"L’analyse des pratiques offre à l’équipe un espace d’échange animé par une psychologue, sans jugement.","photos":["resources/healthcare-services-assets/orthophonie.webp","resources/healthcare-services-assets/psychologie.webp"]},
-      {"title":"Soutenir aussi les proches","description":"La psychologue accompagne les familles face aux bouleversements, à l’impuissance et à l’épuisement.","photos":["resources/healthcare-services-assets/nutrition.webp"]}
+      {"title":"Une expérience clinique et de terrain","description":"Diplômée en psychopathologie clinique de Paris XI, la fondatrice a exercé plus de dix ans en France avant de créer El-Hafeed au Maroc.","photoAltTexts":["Portrait de Fatima-Zahra El Amrani, fondatrice et directrice d’El-Hafeed.","Aménagement du domicile pour sécuriser les déplacements d’une personne âgée."],"photos":["resources/team-members/directrice.webp","resources/home-safety-article.webp"]},
+      {"title":"La santé, une démarche collective","description":"L’infirmière coordinatrice organise les interventions et maintient le lien entre les professionnels et la famille.","photoAltTexts":["Une infirmière accompagne une patiente âgée lors d’un soin à domicile.","Un kinésithérapeute accompagne un patient lors d’un exercice de rééducation."],"photos":["resources/healthcare-services-assets/infirmerie.webp","resources/healthcare-services-assets/kinesitherapie.webp"]},
+      {"title":"Partager les savoirs","description":"L’analyse des pratiques offre à l’équipe un espace d’échange animé par une psychologue, sans jugement.","photoAltTexts":["Une orthophoniste accompagne un enfant dans une activité de langage.","Une psychologue échange avec une patiente dans un bureau apaisant."],"photos":["resources/healthcare-services-assets/orthophonie.webp","resources/healthcare-services-assets/psychologie.webp"]},
+      {"title":"Soutenir aussi les proches","description":"La psychologue accompagne les familles face aux bouleversements, à l’impuissance et à l’épuisement.","photoAltTexts":["Un accompagnement à domicile autour des gestes du quotidien et des repas."],"photos":["resources/healthcare-services-assets/nutrition.webp"]}
     ]
   },
   "approach": {
@@ -32,10 +34,10 @@
     "title":"L’accompagnement, étape par étape",
     "intro":"Découvrir le Projet d’Accompagnement à Domicile, les interventions coordonnées et la place des proches.",
     "steps":[
-      {"eyebrow":"Capsule 01 · Le projet à domicile","title":"Chaque accompagnement commence par une évaluation","description":"La fondatrice conduit une évaluation d’admission qui prend en compte l’histoire de vie, les habitudes, la mobilité, l’autonomie et les besoins de la personne.","videoId":"mission","cover":"resources/healthcare-services-assets/infirmerie.webp"},
-      {"eyebrow":"Capsule 02 · Soins et accompagnement","title":"Des soins le matin, un accompagnement l’après-midi","description":"Le matin est consacré aux soins, à l’hygiène et au confort. L’après-midi, les activités cognitives, les échanges et les sorties suivent le programme défini avec la personne.","videoId":"services","cover":"resources/healthcare-services-assets/kinesitherapie.webp"},
-      {"eyebrow":"Capsule 03 · Coordination pluridisciplinaire","title":"Des professionnels qui partagent leurs repères","description":"L’infirmière coordinatrice travaille en lien avec l’orthophoniste et les aides-soignants pour intégrer les exercices cognitifs au quotidien et assurer la continuité des informations.","videoId":"families","cover":"resources/healthcare-services-assets/psychologie.webp"},
-      {"eyebrow":"Capsule 04 · Respecter les capacités","title":"Respecter le rythme et les capacités de chacun","description":"L’équipe adapte les soins au rythme de la personne et cherche à préserver ses capacités, ses repères et son autonomie résiduelle.","videoId":"vision","cover":"resources/healthcare-services-assets/orthophonie.webp"}
+      {"eyebrow":"Capsule 01 · Le projet à domicile","title":"Chaque accompagnement commence par une évaluation","description":"La fondatrice conduit une évaluation d’admission qui prend en compte l’histoire de vie, les habitudes, la mobilité, l’autonomie et les besoins de la personne.","videoId":"mission","cover":"resources/healthcare-services-assets/infirmerie.webp","coverAlt":"Une infirmière accompagne une patiente âgée lors d’un soin à domicile."},
+      {"eyebrow":"Capsule 02 · Soins et accompagnement","title":"Des soins le matin, un accompagnement l’après-midi","description":"Le matin est consacré aux soins, à l’hygiène et au confort. L’après-midi, les activités cognitives, les échanges et les sorties suivent le programme défini avec la personne.","videoId":"services","cover":"resources/healthcare-services-assets/kinesitherapie.webp","coverAlt":"Un kinésithérapeute accompagne un patient lors d’un exercice de rééducation."},
+      {"eyebrow":"Capsule 03 · Coordination pluridisciplinaire","title":"Des professionnels qui partagent leurs repères","description":"L’infirmière coordinatrice travaille en lien avec l’orthophoniste et les aides-soignants pour intégrer les exercices cognitifs au quotidien et assurer la continuité des informations.","videoId":"families","cover":"resources/healthcare-services-assets/psychologie.webp","coverAlt":"Une psychologue échange avec une patiente dans un bureau apaisant."},
+      {"eyebrow":"Capsule 04 · Respecter les capacités","title":"Respecter le rythme et les capacités de chacun","description":"L’équipe adapte les soins au rythme de la personne et cherche à préserver ses capacités, ses repères et son autonomie résiduelle.","videoId":"vision","cover":"resources/healthcare-services-assets/orthophonie.webp","coverAlt":"Une orthophoniste accompagne un enfant dans une activité de langage."}
     ]
   },
   "closing": {
@@ -45,9 +47,11 @@
     "founderName":"Fatima-Zahra El Amrani",
     "founderRole":"Psychologue clinicienne · Fondatrice & directrice",
     "founderPortrait":"resources/team-members/directrice.webp",
+    "founderPortraitAlt":"Portrait de Fatima-Zahra El Amrani, fondatrice et directrice d’El-Hafeed.",
     "message":"[Message personnel de la fondatrice à ajouter ici, à la première personne.]",
     "values":["Respect de la personne","Préservation de l’autonomie","Bienveillance et écoute"]
   },
+  "ogImage":"resources/hero-desktop.webp",
   "metaTitle":"El-Hafeed — Accompagnement gériatrique à domicile",
   "metaDescription":"El-Hafeed accompagne les personnes âgées en perte d’autonomie à domicile, à Rabat et Casablanca, dans le respect de leur histoire et de leur rythme."
 }

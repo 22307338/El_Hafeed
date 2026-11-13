@@ -1,13 +1,13 @@
-import { sanityFetch } from "./sanity.js";
+import { sanityFetch, sanityImageUrl, applyPageMetadata } from "./sanity.js";
 
 const TEAM_PAGE_QUERY = `*[_id == "teamPage"][0]{
   intro{title,description},
   carouselImages[]{_key,alt,"imageUrl":image.asset->url},
-  membersHeading{eyebrow,title,description},
+  membersHeading{eyebrow,title,description,missionButtonLabel,missionDialogHeading,missionContactLabel},
   multidisciplinary{eyebrow,title,overview,explanation},
   members[]{_key,name,speciality,description,missions},
   homeCareJourney{title,steps[]{label,title,description}},
-  metaTitle,metaDescription
+  metaTitle,metaDescription,"ogImageUrl":ogImage.asset->url
 }`;
 
 async function loadJson(path) {
@@ -65,7 +65,7 @@ function renderCarouselImages(images) {
   const usableImages = images.filter((item) => item.imageUrl || item.image);
   section.hidden = usableImages.length === 0;
   track.replaceChildren(...usableImages.map((item, index) => {
-    const imageUrl = item.imageUrl || item.image;
+    const imageUrl = sanityImageUrl(item.imageUrl || item.image, {width: 1400, fit: "max"});
     const slide = document.createElement("li");
     slide.className = `team-carousel-slide${index === 0 ? " is-active" : ""}`;
     slide.setAttribute("aria-roledescription", "diapositive");
@@ -152,9 +152,13 @@ function applyTeamPage(data) {
   setText(approachParagraphs[0], multidisciplinary.overview);
   setText(approachParagraphs[1], multidisciplinary.explanation);
   renderMembers(data.members || []);
+  document.querySelectorAll(".team-member-mission-button span").forEach((label) => {
+    label.textContent = membersHeading.missionButtonLabel || "Voir ses missions";
+  });
+  setText(document.querySelector(".team-mission-label"), membersHeading.missionDialogHeading || "Missions au chevet du patient :");
+  setText(document.querySelector(".team-mission-actions a"), membersHeading.missionContactLabel);
   renderJourney(data.homeCareJourney);
-  if (data.metaTitle) document.title = data.metaTitle;
-  if (data.metaDescription) document.querySelector('meta[name="description"]')?.setAttribute("content", data.metaDescription);
+  applyPageMetadata({title: data.metaTitle, description: data.metaDescription, image: data.ogImageUrl || data.ogImage});
   window.lucide?.createIcons();
 }
 
@@ -170,7 +174,7 @@ async function initTeamContent() {
     carouselImages: Array.isArray(page.carouselImages)
       ? page.carouselImages
       : localTeamPage.carouselImages,
-    membersHeading: page.membersHeading || localTeamPage.membersHeading,
+    membersHeading: {...localTeamPage.membersHeading, ...(page.membersHeading || {})},
     members: Array.isArray(page.members) ? page.members : localTeamPage.members,
     multidisciplinary: {
       ...localTeamPage.multidisciplinary,
